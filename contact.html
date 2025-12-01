@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Zamto Africa | Japanese Imported Vehicles Zambia</title>
+  <meta name="description" content="Contact Zamto Africa for premium Japanese imported vehicles in Zambia. Visit our showroom, call us, or send a message for exceptional service." />
+
+  <!-- Google Fonts - Professional Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <style>
+    :root {
+      --navy: #003087;
+      --red: #e11d48;
+    }
+    .bg-navy { background-color: var(--navy); }
+    .bg-red { background-color: var(--red); }
+    .text-navy { color: var(--navy); }
+    .hover-red:hover { background-color: #be123c; }
+    .card-hover:hover { transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,48,135,0.2); transition: all 0.4s; }
+    
+    /* Professional Typography */
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    .font-heading {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+    .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/260572213038" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white p-5 rounded-full shadow-2xl hover:scale-110 transition">
+    <i data-lucide="message-circle" class="w-9 h-9"></i>
+  </a>
+
+  <!-- HEADER - Modern Standard Design -->
+  <header class="fixed top-0 w-full z-50 bg-white shadow-lg border-b border-gray-200">
+    <!-- Top Bar -->
+    <div class="bg-navy text-white py-2">
+      <div class="container mx-auto px-6 flex justify-between items-center text-sm">
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            zamtoafrica@gmail.com
+          </span>
+          <span class="hidden md:flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+            Roma Park, Lusaka
+          </span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="tel:+260572213038" class="flex items-center gap-2 hover:text-red-300 transition">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            +260 572 213 038
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Navigation -->
+    <div class="bg-white py-4">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-between">
+          <!-- Logo Section -->
+          <div class="flex items-center gap-3 lg:gap-4">
+            <!-- Enhanced Logo -->
+            <div class="relative group">
+              <div class="absolute -inset-1 bg-gradient-to-r from-red to-navy rounded-2xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+              <div class="relative bg-white p-2 rounded-2xl shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 border-2 border-red">
+                <img src="logo.png" alt="Zamto Africa" class="w-10 h-10 lg:w-14 lg:h-14 object-contain">
+              </div>
+            </div>
+            <div>
+              <h1 class="text-xl lg:text-2xl font-black text-navy font-heading">ZAMTO AFRICA</h1>
+              <p class="text-xs lg:text-sm text-red font-medium hidden lg:block">Japanese Imported Vehicles</p>
+              <p class="text-xs text-red font-medium lg:hidden">Japanese Vehicles</p>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition">
+            <i data-lucide="menu" class="w-6 h-6 text-navy"></i>
+          </button>
+
+          <!-- Desktop Navigation Menu -->
+          <nav class="hidden lg:flex items-center gap-6 lg:gap-8">
+            <a href="index.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Home
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="about.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              About
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="inventory.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Inventory
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="services.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Services
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="testimonials.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Testimonials
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="blog.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Blog
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="contact.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Contact
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </nav>
+
+          <!-- CTA Button -->
+          <div class="hidden lg:flex items-center gap-4">
+            <a href="tel:+260572213038" class="bg-gradient-to-r from-red to-red-600 hover:from-red-600 hover:to-red text-white px-6 py-3 rounded-lg font-semibold font-heading transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-2">
+              <i data-lucide="phone" class="w-5 h-5"></i>
+              <span class="hidden xl:inline">Call Now</span>
+              <span class="xl:hidden">Call</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden hidden">
+    <!-- Backdrop -->
+    <div class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+    
+    <!-- Menu Panel -->
+    <div class="fixed right-0 top-0 h-full w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out">
+      <div class="flex flex-col h-full">
+        <!-- Menu Header -->
+        <div class="flex items-center justify-between p-6 border-b border-gray-200">
+          <div class="flex items-center gap-3">
+            <div class="bg-gradient-to-r from-red to-navy p-1 rounded-xl">
+              <img src="logo.png" alt="Zamto Africa" class="w-10 h-10 rounded-lg bg-white">
+            </div>
+            <div>
+              <h3 class="text-lg font-black text-navy font-heading">ZAMTO AFRICA</h3>
+              <p class="text-xs text-gray-600">Japanese Imported Vehicles</p>
+            </div>
+          </div>
+          <button id="close-mobile-menu" class="p-2 rounded-lg hover:bg-gray-100 transition">
+            <i data-lucide="x" class="w-5 h-5 text-gray-600"></i>
+          </button>
+        </div>
+        
+        <!-- Menu Items -->
+        <nav class="flex-1 overflow-y-auto p-6">
+          <div class="space-y-2">
+            <a href="index.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="home" class="w-5 h-5 inline mr-3"></i>Home
+            </a>
+            <a href="about.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="info" class="w-5 h-5 inline mr-3"></i>About
+            </a>
+            <a href="inventory.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="car" class="w-5 h-5 inline mr-3"></i>Inventory
+            </a>
+            <a href="services.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="wrench" class="w-5 h-5 inline mr-3"></i>Services
+            </a>
+            <a href="testimonials.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="star" class="w-5 h-5 inline mr-3"></i>Testimonials
+            </a>
+            <a href="blog.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="blog" class="w-5 h-5 inline mr-3"></i>Blog
+            </a>
+            <a href="contact.html" class="block px-4 py-3 text-navy bg-red text-white rounded-lg font-semibold font-heading">
+              <i data-lucide="phone" class="w-5 h-5 inline mr-3"></i>Contact
+            </a>
+          </div>
+          
+          <!-- Mobile CTA -->
+          <div class="mt-8 p-4 bg-gradient-to-r from-red to-navy rounded-xl">
+            <a href="tel:+260572213038" class="block w-full text-white text-center font-semibold font-heading py-3 rounded-lg">
+              <i data-lucide="phone" class="w-5 h-5 inline mr-2"></i>
+              Call Us Now: +260 572 213 038
+            </a>
+          </div>
+        </nav>
+        
+        <!-- Menu Footer -->
+        <div class="p-6 border-t border-gray-200">
+          <div class="text-center text-sm text-gray-600">
+            <p>&copy; 2025 Zamto Africa Company Ltd.</p>
+            <p class="mt-1">All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-screen flex flex-col justify-center items-center text-center bg-navy text-white pt-32">
+    <!-- Background Image -->
+    <div class="absolute inset-0 bg-[url('Back-ground-image.jpg')] bg-cover bg-center opacity-30"></div>
+
+    <div class="relative z-10 px-6 max-w-6xl mx-auto">
+      <!-- Page Title -->
+      <div class="inline-block bg-red text-white px-10 py-6 rounded-2xl text-2xl md:text-3xl font-black tracking-wider shadow-2xl mb-10">
+        <i data-lucide="phone" class="w-12 h-12 inline-block mr-4"></i>
+        GET IN TOUCH
+      </div>
+
+      <!-- Main Title -->
+      <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight">
+        Contact<br>
+        <span class="text-red text-6xl md:text-8xl">ZAMTO AFRICA</span>
+      </h1>
+
+      <p class="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto mb-16">
+        Reach out to us for premium Japanese imported vehicles, exceptional service, and expert automotive solutions
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Information Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-navy mb-4">Get In Touch</h2>
+        <p class="text-xl text-gray-600">Multiple ways to reach our team</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Phone Contact -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl text-center card-hover">
+          <div class="w-20 h-20 bg-red rounded-full flex items-center justify-center text-white mx-auto mb-6">
+            <i data-lucide="phone" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-2xl font-heading text-navy mb-4">Call Us</h3>
+          <p class="text-gray-600 mb-4">Speak directly with our team</p>
+          <a href="tel:+260572213038" class="text-2xl font-black text-red hover:text-red-700 transition">
+            +260 572 213 038
+          </a>
+          <p class="text-gray-500 mt-2">Monday - Friday: 8:00 AM - 6:00 PM</p>
+          <p class="text-gray-500">Saturday: 9:00 AM - 4:00 PM</p>
+        </div>
+
+        <!-- Email Contact -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl text-center card-hover">
+          <div class="w-20 h-20 bg-red rounded-full flex items-center justify-center text-white mx-auto mb-6">
+            <i data-lucide="mail" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-2xl font-heading text-navy mb-4">Email Us</h3>
+          <p class="text-gray-600 mb-4">Send us a message anytime</p>
+          <a href="mailto:zamtoafrica@gmail.com" class="text-xl font-heading text-red hover:text-red-700 transition">
+            zamtoafrica@gmail.com
+          </a>
+          <p class="text-gray-500 mt-2">We respond within 24 hours</p>
+        </div>
+
+        <!-- Location -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl text-center card-hover">
+          <div class="w-20 h-20 bg-red rounded-full flex items-center justify-center text-white mx-auto mb-6">
+            <i data-lucide="map-pin" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-2xl font-heading text-navy mb-4">Visit Us</h3>
+          <p class="text-gray-600 mb-4">Our showroom location</p>
+          <p class="text-lg font-semibold text-gray-800">
+            Handyman's Great East Road<br>
+            Plot 1222, Roma Park<br>
+            Lusaka, Zambia
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-navy mb-4">Send Us a Message</h2>
+        <p class="text-xl text-gray-600">We'd love to hear from you</p>
+      </div>
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-gray-50 rounded-3xl p-10">
+          <form id="contact-form" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-700 font-heading mb-2">First Name *</label>
+                <input type="text" name="first_name" required class="w-full px-4 py-4 rounded-xl border border-gray-300 focus:border-red focus:outline-none" placeholder="John">
+              </div>
+              <div>
+                <label class="block text-gray-700 font-heading mb-2">Last Name *</label>
+                <input type="text" name="last_name" required class="w-full px-4 py-4 rounded-xl border border-gray-300 focus:border-red focus:outline-none" placeholder="Doe">
+              </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-700 font-heading mb-2">Email *</label>
+                <input type="email" name="email" required class="w-full px-4 py-4 rounded-xl border border-gray-300 focus:border-red focus:outline-none" placeholder="john@example.com">
+              </div>
+              <div>
+                <label class="block text-gray-700 font-heading mb-2">Phone *</label>
+                <input type="tel" name="phone" required class="w-full px-4 py-4 rounded-xl border border-gray-300 focus:border-red focus:outline-none" placeholder="+260 123 456 789">
+              </div>
+            </div>
+            
+            <div>
+              <label class="block text-gray-700 font-heading mb-2">Subject *</label>
+              <select name="subject" required class="w-full px-4 py-4 rounded-xl border border-gray-300 focus:border-red focus:outline-none">
+                <option value="">Select a subject</option>
+                <option value="vehicle-inquiry">Vehicle Inquiry</option>
+                <option value="service-request">Service Request</option>
+                <option value="general">General Information</option>
+                <option value="complaint">Complaint</option>
+                <option value="partnership">Partnership Opportunity</option>
+              </select>
+            </div>
+            
+            <div>
+              <label class="block text-gray-700 font-heading mb-2">Message *</label>
+              <textarea name="message" required rows="6" class="w-full px-4 py-4 rounded-xl border border-gray-300 focus:border-red focus:outline-none" placeholder="Tell us how we can help you..."></textarea>
+            </div>
+            
+            <div class="text-center">
+              <button type="submit" class="bg-red hover-red text-white px-12 py-4 rounded-2xl font-heading text-lg transition">
+                <i data-lucide="send" class="w-6 h-6 inline mr-2"></i>
+                Send Message
+              </button>
+            </div>
+            <div id="form-message" class="text-center hidden mt-4"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-navy mb-4">Find Us</h2>
+        <p class="text-xl text-gray-600">Visit our showroom in Roma Park</p>
+      </div>
+      
+      <div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61538.20957847388!2d28.26807293163058!3d-15.42309606027558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408b007cc35c85%3A0x90468781b4708abf!2sZAMTO%20AFRICA%20CO.LTD!5e0!3m2!1sen!2szm!4v1764447810528!5m2!1sen!2szm" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-96 md:h-[500px]"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Hours Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-navy mb-4">Business Hours</h2>
+        <p class="text-xl text-gray-600">When you can reach us</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <h3 class="text-2xl font-heading text-navy mb-6">Showroom Hours</h3>
+          <div class="space-y-3">
+            <div class="flex justify-between">
+              <span class="font-semibold">Monday - Friday</span>
+              <span>8:00 AM - 6:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="font-semibold">Saturday</span>
+              <span>9:00 AM - 4:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="font-semibold">Sunday</span>
+              <span>Closed</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <h3 class="text-2xl font-heading text-navy mb-6">Service Center</h3>
+          <div class="space-y-3">
+            <div class="flex justify-between">
+              <span class="font-semibold">Monday - Friday</span>
+              <span>8:00 AM - 5:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="font-semibold">Saturday</span>
+              <span>9:00 AM - 3:00 PM</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="font-semibold">Sunday</span>
+              <span>Closed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-navy text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-black mb-6">Ready to Get Started?</h2>
+      <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today and let us help you find your perfect Japanese imported vehicle</p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="tel:+260572213038" class="bg-red hover-red text-white px-8 py-4 rounded-2xl font-heading text-lg transition">
+          <i data-lucide="phone" class="w-6 h-6 inline mr-2"></i>
+          Call Now
+        </a>
+        <a href="inventory.html" class="bg-white text-navy hover:bg-gray-100 px-8 py-4 rounded-2xl font-heading text-lg transition">
+          <i data-lucide="car" class="w-6 h-6 inline mr-2"></i>
+          Browse Vehicles
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER - Modern Standard Design -->
+  <footer class="bg-navy text-white">
+    <!-- Main Footer Content -->
+    <div class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12">
+          <!-- Company Info -->
+          <div class="col-span-1">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-red to-white rounded-xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                <div class="relative bg-white p-2 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 border-2 border-red">
+                  <img src="logo.png" alt="Zamto Africa" class="w-8 h-8 object-contain">
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-black font-heading">ZAMTO AFRICA</h3>
+                <p class="text-sm text-red font-medium">Japanese Imported Vehicles</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Zambia's premier destination for authentic Japanese imported vehicles. Quality, reliability, and exceptional service guaranteed.
+            </p>
+            
+            <!-- Follow Us Section -->
+            <div class="mt-8">
+              <h4 class="text-lg font-bold mb-4 text-red">Follow Us</h4>
+              <div class="flex flex-wrap gap-4">
+                <a href="https://www.facebook.com/profile.php?id=61581947339658&mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="facebook" class="w-6 h-6"></i>
+                  <span class="text-xs">Car Sales</span>
+                </a>
+                <a href="https://www.facebook.com/share/16yfxxVNUf/?mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="users" class="w-6 h-6"></i>
+                  <span class="text-xs">Car Rentals</span>
+                </a>
+                <a href="https://www.instagram.com/zamtoafrica?igsh=MWN3b3ZxMGk0OXIzaA%3D%3D&utm_source=qr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="instagram" class="w-6 h-6"></i>
+                  <span class="text-xs">Instagram</span>
+                </a>
+                <a href="http://www.tiktok.com/@zamtoafrica" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="video" class="w-6 h-6"></i>
+                  <span class="text-xs">TikTok</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Quick Links -->
+          </div>
+          
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Quick Links</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Home
+              </a></li>
+              <li><a href="about.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> About Us
+              </a></li>
+              <li><a href="inventory.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Vehicle Inventory
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Our Services
+              </a></li>
+              <li><a href="testimonials.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Testimonials
+              </a></li>
+              <li><a href="blog.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Blog
+              </a></li>
+              <li><a href="contact.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Contact
+              </a></li>
+            </ul>
+          </div>
+          
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Our Services</h4>
+            <ul class="space-y-3">
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="car" class="w-4 h-4 text-red"></i> Vehicle Sales
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="key" class="w-4 h-4 text-red"></i> Vehicle Hire
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="wrench" class="w-4 h-4 text-red"></i> Maintenance & Repair
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="ship" class="w-4 h-4 text-red"></i> Vehicle Importation
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-4 h-4 text-red"></i> Insurance Services
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="file-text" class="w-4 h-4 text-red"></i> Vehicle Documentation
+              </a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Get In Touch</h4>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <i data-lucide="map-pin" class="w-5 h-5 text-red mt-1 flex-shrink-0"></i>
+                <div>
+                  <p class="text-gray-300">Handyman's Great East Road</p>
+                  <p class="text-gray-300">Plot 1222, Roma Park</p>
+                  <p class="text-gray-300">Lusaka, Zambia</p>
+                </div>
+              </div>
+              
+              <div class="flex items-center gap-3">
+                <i data-lucide="phone" class="w-5 h-5 text-red flex-shrink-0"></i>
+                <a href="tel:+260572213038" class="text-gray-300 hover:text-white transition">
+                  +260 572 213 038
+                </a>
+              </div>
+              
+              <div class="flex items-center gap-3">
+                <i data-lucide="mail" class="w-5 h-5 text-red flex-shrink-0"></i>
+                <a href="mailto:zamtoafrica@gmail.com" class="text-gray-300 hover:text-white transition">
+                  zamtoafrica@gmail.com
+                </a>
+              </div>
+              
+                            
+              <!-- Business Hours -->
+              <div class="mt-6 p-4 bg-white/5 rounded-lg">
+                <p class="text-red font-semibold mb-2">Business Hours</p>
+                <p class="text-sm text-gray-300">Mon-Fri: 8:00 AM - 6:00 PM</p>
+                <p class="text-sm text-gray-300">Saturday: 9:00 AM - 4:00 PM</p>
+                <p class="text-sm text-gray-300">Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/10 py-6">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="text-gray-400 text-sm">
+            &copy; 2025 Zamto Africa Company Ltd. All rights reserved.
+          </div>
+          <div class="flex gap-6 text-sm">
+            <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+            <a href="#" class="text-gray-400 hover:text-white transition">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    
+    // EmailJS Configuration
+    (function() {
+      emailjs.init("gf6jUi7eA0maA9rzH");
+    })();
+    
+    // Contact Form Handler
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const formMessage = document.getElementById('form-message');
+      const submitButton = this.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton.innerHTML;
+      
+      // Show loading state
+      submitButton.innerHTML = '<i data-lucide="loader" class="w-6 h-6 inline mr-2 animate-spin"></i>Sending...';
+      submitButton.disabled = true;
+      lucide.createIcons();
+      
+      // Prepare form data
+      const formData = {
+        first_name: this.first_name.value,
+        last_name: this.last_name.value,
+        email: this.email.value,
+        phone: this.phone.value,
+        subject: this.subject.value,
+        message: this.message.value
+      };
+      
+      // Send email using EmailJS
+      emailjs.send('service_tsgs1az', 'template_d03hddw', formData)
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          
+          // Show success message
+          formMessage.innerHTML = `
+            <div class="bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-xl">
+              <div class="flex items-center justify-center gap-2">
+                <i data-lucide="check-circle" class="w-5 h-5"></i>
+                <span class="font-semibold">Message sent successfully! We'll get back to you soon.</span>
+              </div>
+            </div>
+          `;
+          formMessage.classList.remove('hidden');
+          lucide.createIcons();
+          
+          // Reset form
+          document.getElementById('contact-form').reset();
+          
+          // Reset button
+          submitButton.innerHTML = originalButtonText;
+          submitButton.disabled = false;
+          
+          // Hide message after 5 seconds
+          setTimeout(() => {
+            formMessage.classList.add('hidden');
+          }, 5000);
+          
+        }, function(error) {
+          console.log('FAILED...', error);
+          
+          // Show error message
+          formMessage.innerHTML = `
+            <div class="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-xl">
+              <div class="flex items-center justify-center gap-2">
+                <i data-lucide="alert-circle" class="w-5 h-5"></i>
+                <span class="font-semibold">Failed to send message. Please try again or call us directly.</span>
+              </div>
+            </div>
+          `;
+          formMessage.classList.remove('hidden');
+          lucide.createIcons();
+          
+          // Reset button
+          submitButton.innerHTML = originalButtonText;
+          submitButton.disabled = false;
+          
+          // Hide message after 5 seconds
+          setTimeout(() => {
+            formMessage.classList.add('hidden');
+          }, 5000);
+        });
+    });
+    
+    // Mobile Menu Functionality
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const closeMobileMenu = document.getElementById('close-mobile-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuPanel = mobileMenu.querySelector('.transform.translate-x-full');
+    
+    function openMobileMenu() {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => {
+        menuPanel.classList.remove('translate-x-full');
+        menuPanel.classList.add('translate-x-0');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMobileMenuFunc() {
+      menuPanel.classList.remove('translate-x-0');
+      menuPanel.classList.add('translate-x-full');
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+      }, 300);
+      document.body.style.overflow = '';
+    }
+    
+    mobileMenuButton.addEventListener('click', openMobileMenu);
+    closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+    
+    // Close menu when clicking backdrop
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu || e.target.classList.contains('bg-opacity-50')) {
+        closeMobileMenuFunc();
+      }
+    });
+    
+    // Close menu when clicking on links
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', closeMobileMenuFunc);
+    });
+    
+    // Handle escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+        closeMobileMenuFunc();
+      }
+    });
+  </script>
+</body>
+</html>

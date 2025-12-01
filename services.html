@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Zamto Africa | Japanese Imported Vehicles Zambia</title>
+  <meta name="description" content="Explore comprehensive automotive services at Zamto Africa - vehicle sales, hire, maintenance, and importation services in Zambia." />
+
+  <!-- Google Fonts - Professional Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <style>
+    :root {
+      --navy: #003087;
+      --red: #e11d48;
+    }
+    .bg-navy { background-color: var(--navy); }
+    .bg-red { background-color: var(--red); }
+    .text-navy { color: var(--navy); }
+    .hover-red:hover { background-color: #be123c; }
+    .card-hover:hover { transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,48,135,0.2); transition: all 0.4s; }
+    
+    /* Professional Typography */
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    .font-heading {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+    .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/260572213038" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white p-5 rounded-full shadow-2xl hover:scale-110 transition">
+    <i data-lucide="message-circle" class="w-9 h-9"></i>
+  </a>
+
+  <!-- HEADER - Modern Standard Design -->
+  <header class="fixed top-0 w-full z-50 bg-white shadow-lg border-b border-gray-200">
+    <!-- Top Bar -->
+    <div class="bg-navy text-white py-2">
+      <div class="container mx-auto px-6 flex justify-between items-center text-sm">
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            zamtoafrica@gmail.com
+          </span>
+          <span class="hidden md:flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+            Roma Park, Lusaka
+          </span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="tel:+260572213038" class="flex items-center gap-2 hover:text-red-300 transition">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            +260 572 213 038
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Navigation -->
+    <div class="bg-white py-4">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-between">
+          <!-- Logo Section -->
+          <div class="flex items-center gap-3 lg:gap-4">
+            <!-- Enhanced Logo -->
+            <div class="relative group">
+              <div class="absolute -inset-1 bg-gradient-to-r from-red to-navy rounded-2xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+              <div class="relative bg-white p-2 rounded-2xl shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 border-2 border-red">
+                <img src="logo.png" alt="Zamto Africa" class="w-10 h-10 lg:w-14 lg:h-14 object-contain">
+              </div>
+            </div>
+            <div>
+              <h1 class="text-xl lg:text-2xl font-black text-navy font-heading">ZAMTO AFRICA</h1>
+              <p class="text-xs lg:text-sm text-red font-medium hidden lg:block">Japanese Imported Vehicles</p>
+              <p class="text-xs text-red font-medium lg:hidden">Japanese Vehicles</p>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition">
+            <i data-lucide="menu" class="w-6 h-6 text-navy"></i>
+          </button>
+
+          <!-- Desktop Navigation Menu -->
+          <nav class="hidden lg:flex items-center gap-6 lg:gap-8">
+            <a href="index.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Home
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="about.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              About
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="inventory.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Inventory
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="services.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Services
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="testimonials.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Testimonials
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="blog.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Blog
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="contact.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Contact
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </nav>
+
+          <!-- CTA Button -->
+          <div class="hidden lg:flex items-center gap-4">
+            <a href="tel:+260572213038" class="bg-gradient-to-r from-red to-red-600 hover:from-red-600 hover:to-red text-white px-6 py-3 rounded-lg font-semibold font-heading transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-2">
+              <i data-lucide="phone" class="w-5 h-5"></i>
+              <span class="hidden xl:inline">Call Now</span>
+              <span class="xl:hidden">Call</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden hidden">
+    <!-- Backdrop -->
+    <div class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+    
+    <!-- Menu Panel -->
+    <div class="fixed right-0 top-0 h-full w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out">
+      <div class="flex flex-col h-full">
+        <!-- Menu Header -->
+        <div class="flex items-center justify-between p-6 border-b border-gray-200">
+          <div class="flex items-center gap-3">
+            <div class="bg-gradient-to-r from-red to-navy p-1 rounded-xl">
+              <img src="logo.png" alt="Zamto Africa" class="w-10 h-10 rounded-lg bg-white">
+            </div>
+            <div>
+              <h3 class="text-lg font-black text-navy font-heading">ZAMTO AFRICA</h3>
+              <p class="text-xs text-gray-600">Japanese Imported Vehicles</p>
+            </div>
+          </div>
+          <button id="close-mobile-menu" class="p-2 rounded-lg hover:bg-gray-100 transition">
+            <i data-lucide="x" class="w-5 h-5 text-gray-600"></i>
+          </button>
+        </div>
+        
+        <!-- Menu Items -->
+        <nav class="flex-1 overflow-y-auto p-6">
+          <div class="space-y-2">
+            <a href="index.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="home" class="w-5 h-5 inline mr-3"></i>Home
+            </a>
+            <a href="about.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="info" class="w-5 h-5 inline mr-3"></i>About
+            </a>
+            <a href="inventory.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="car" class="w-5 h-5 inline mr-3"></i>Inventory
+            </a>
+            <a href="services.html" class="block px-4 py-3 text-navy bg-red text-white rounded-lg font-semibold font-heading">
+              <i data-lucide="wrench" class="w-5 h-5 inline mr-3"></i>Services
+            </a>
+            <a href="testimonials.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="star" class="w-5 h-5 inline mr-3"></i>Testimonials
+            </a>
+            <a href="blog.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="blog" class="w-5 h-5 inline mr-3"></i>Blog
+            </a>
+            <a href="contact.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="phone" class="w-5 h-5 inline mr-3"></i>Contact
+            </a>
+          </div>
+          
+          <!-- Mobile CTA -->
+          <div class="mt-8 p-4 bg-gradient-to-r from-red to-navy rounded-xl">
+            <a href="tel:+260572213038" class="block w-full text-white text-center font-semibold font-heading py-3 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300">
+              <i data-lucide="phone" class="w-5 h-5 inline mr-2"></i>
+              Call Us Now: +260 572 213 038
+            </a>
+          </div>
+        </nav>
+        
+        <!-- Menu Footer -->
+        <div class="p-6 border-t border-gray-200">
+          <div class="text-center text-sm text-gray-600">
+            <p>&copy; 2025 Zamto Africa Company Ltd.</p>
+            <p class="mt-1">All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-screen flex flex-col justify-center items-center text-center bg-navy text-white pt-32">
+    <!-- Background Image -->
+    <div class="absolute inset-0 bg-[url('Back-ground-image.jpg')] bg-cover bg-center opacity-30"></div>
+
+    <div class="relative z-10 px-6 max-w-6xl mx-auto">
+      <!-- Page Title -->
+      <div class="inline-block bg-red text-white px-10 py-6 rounded-2xl text-2xl md:text-3xl font-black tracking-wider shadow-2xl mb-10">
+        <i data-lucide="wrench" class="w-12 h-12 inline-block mr-4"></i>
+        OUR SERVICES
+      </div>
+
+      <!-- Main Title -->
+      <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight">
+        Complete Automotive<br>
+        <span class="text-red text-6xl md:text-8xl">SOLUTIONS</span>
+      </h1>
+
+      <p class="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto mb-16">
+        From vehicle sales to maintenance, we provide comprehensive automotive services tailored to your needs
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Grid Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-navy mb-4">Our Premium Services</h2>
+        <p class="text-xl text-gray-600">Comprehensive solutions for all your automotive needs</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Vehicle Sales -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-32 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="car" class="w-16 h-16 text-white"></i>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-heading text-navy mb-4">Vehicle Sales</h3>
+            <p class="text-gray-600 mb-6">Premium Japanese imports with flexible financing options and complete documentation</p>
+            <ul class="space-y-2 mb-6 text-gray-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>Authentic Japanese vehicles</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>Complete documentation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>Financing available</span>
+              </li>
+            </ul>
+            <a href="inventory.html" class="bg-navy hover:bg-blue-900 text-white px-6 py-3 rounded-xl font-heading transition">
+              View Inventory
+            </a>
+          </div>
+        </div>
+
+        <!-- Vehicle Hire -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-32 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="key" class="w-16 h-16 text-white"></i>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-heading text-navy mb-4">Vehicle Hire</h3>
+            <p class="text-gray-600 mb-6">Short and long-term rentals for all your personal and business needs</p>
+            <ul class="space-y-2 mb-6 text-gray-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>Daily, weekly, monthly rates</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>Well-maintained fleet</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>24/7 roadside assistance</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="bg-navy hover:bg-blue-900 text-white px-6 py-3 rounded-xl font-heading transition">
+              Book Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Maintenance & Repair -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-32 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="wrench" class="w-16 h-16 text-white"></i>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-heading text-navy mb-4">Maintenance & Repair</h3>
+            <p class="text-gray-600 mb-6">Expert servicing by certified technicians using genuine parts</p>
+            <ul class="space-y-2 mb-6 text-gray-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>Certified technicians</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>Genuine parts</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>Warranty service</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="bg-navy hover:bg-blue-900 text-white px-6 py-3 rounded-xl font-heading transition">
+              Schedule Service
+            </a>
+          </div>
+        </div>
+
+        <!-- Vehicle Importation -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-32 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="ship" class="w-16 h-16 text-white"></i>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-heading text-navy mb-4">Vehicle Importation</h3>
+            <p class="text-gray-600 mb-6">Direct import services from Japan with complete logistics support</p>
+            <ul class="space-y-2 mb-6 text-gray-600">
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>Direct from Japan</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>Customs clearance</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                <span>Doorstep delivery</span>
+              </li>
+            </ul>
+            <a href="contact.html" class="bg-navy hover:bg-blue-900 text-white px-6 py-3 rounded-xl font-heading transition">
+              Import Inquiry
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Process Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-navy mb-4">Our Service Process</h2>
+        <p class="text-xl text-gray-600">How we deliver excellence at every step</p>
+      </div>
+      
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-20 h-20 bg-red rounded-full flex items-center justify-center text-white text-2xl font-heading mx-auto mb-4">1</div>
+          <h3 class="text-xl font-heading mb-2">Consultation</h3>
+          <p class="text-gray-600">Understanding your needs and requirements</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-red rounded-full flex items-center justify-center text-white text-2xl font-heading mx-auto mb-4">2</div>
+          <h3 class="text-xl font-heading mb-2">Selection</h3>
+          <p class="text-gray-600">Finding the perfect vehicle or service</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-red rounded-full flex items-center justify-center text-white text-2xl font-heading mx-auto mb-4">3</div>
+          <h3 class="text-xl font-heading mb-2">Processing</h3>
+          <p class="text-gray-600">Handling all documentation and logistics</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-red rounded-full flex items-center justify-center text-white text-2xl font-heading mx-auto mb-4">4</div>
+          <h3 class="text-xl font-heading mb-2">Delivery</h3>
+          <p class="text-gray-600">Ensuring smooth delivery and handover</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-navy mb-4">Why Choose Our Services?</h2>
+        <p class="text-xl text-gray-600">The Zamto Africa advantage in service delivery</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-xl text-center">
+          <i data-lucide="clock" class="w-16 h-16 mx-auto mb-4 text-red"></i>
+          <h3 class="text-2xl font-heading mb-2">24/7 Support</h3>
+          <p class="text-gray-600">Round-the-clock customer service for all your automotive needs</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-xl text-center">
+          <i data-lucide="shield-check" class="w-16 h-16 mx-auto mb-4 text-red"></i>
+          <h3 class="text-2xl font-heading mb-2">Warranty Protection</h3>
+          <p class="text-gray-600">Comprehensive warranty coverage for peace of mind on every service</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-xl text-center">
+          <i data-lucide="users" class="w-16 h-16 mx-auto mb-4 text-red"></i>
+          <h3 class="text-2xl font-heading mb-2">Expert Team</h3>
+          <p class="text-gray-600">Professional staff with extensive knowledge and experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-navy text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-black mb-6">Ready to Experience Our Services?</h2>
+      <p class="text-xl mb-8 max-w-3xl mx-auto">Get in touch with our team to discuss your automotive needs</p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="inventory.html" class="bg-red hover-red text-white px-8 py-4 rounded-2xl font-heading text-lg transition">
+          <i data-lucide="car" class="w-6 h-6 inline mr-2"></i>
+          Browse Vehicles
+        </a>
+        <a href="contact.html" class="bg-white text-navy hover:bg-gray-100 px-8 py-4 rounded-2xl font-heading text-lg transition">
+          <i data-lucide="phone" class="w-6 h-6 inline mr-2"></i>
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER - Modern Standard Design -->
+  <footer class="bg-navy text-white">
+    <!-- Main Footer Content -->
+    <div class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12">
+          <!-- Company Info -->
+          <div class="col-span-1">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-red to-white rounded-xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                <div class="relative bg-white p-2 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 border-2 border-red">
+                  <img src="logo.png" alt="Zamto Africa" class="w-8 h-8 object-contain">
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-black font-heading">ZAMTO AFRICA</h3>
+                <p class="text-sm text-red font-medium">Japanese Imported Vehicles</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Zambia's premier destination for authentic Japanese imported vehicles. Quality, reliability, and exceptional service guaranteed.
+            </p>
+            
+            <!-- Follow Us Section -->
+            <div class="mt-8">
+              <h4 class="text-lg font-bold mb-4 text-red">Follow Us</h4>
+              <div class="flex flex-wrap gap-4">
+                <a href="https://www.facebook.com/profile.php?id=61581947339658&mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="facebook" class="w-6 h-6"></i>
+                  <span class="text-xs">Car Sales</span>
+                </a>
+                <a href="https://www.facebook.com/share/16yfxxVNUf/?mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="users" class="w-6 h-6"></i>
+                  <span class="text-xs">Car Rentals</span>
+                </a>
+                <a href="https://www.instagram.com/zamtoafrica?igsh=MWN3b3ZxMGk0OXIzaA%3D%3D&utm_source=qr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="instagram" class="w-6 h-6"></i>
+                  <span class="text-xs">Instagram</span>
+                </a>
+                <a href="http://www.tiktok.com/@zamtoafrica" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="video" class="w-6 h-6"></i>
+                  <span class="text-xs">TikTok</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Quick Links</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Home
+              </a></li>
+              <li><a href="about.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> About Us
+              </a></li>
+              <li><a href="inventory.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Vehicle Inventory
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Our Services
+              </a></li>
+              <li><a href="testimonials.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Testimonials
+              </a></li>
+              <li><a href="blog.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Blog
+              </a></li>
+              <li><a href="contact.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Contact
+              </a></li>
+            </ul>
+          </div>
+          
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Our Services</h4>
+            <ul class="space-y-3">
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="car" class="w-4 h-4 text-red"></i> Vehicle Sales
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="key" class="w-4 h-4 text-red"></i> Vehicle Hire
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="wrench" class="w-4 h-4 text-red"></i> Maintenance & Repair
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="ship" class="w-4 h-4 text-red"></i> Vehicle Importation
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-4 h-4 text-red"></i> Insurance Services
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="file-text" class="w-4 h-4 text-red"></i> Vehicle Documentation
+              </a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Get In Touch</h4>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <i data-lucide="map-pin" class="w-5 h-5 text-red mt-1 flex-shrink-0"></i>
+                <div>
+                  <p class="text-gray-300">Handyman's Great East Road</p>
+                  <p class="text-gray-300">Plot 1222, Roma Park</p>
+                  <p class="text-gray-300">Lusaka, Zambia</p>
+                </div>
+              </div>
+              
+              <div class="flex items-center gap-3">
+                <i data-lucide="phone" class="w-5 h-5 text-red flex-shrink-0"></i>
+                <a href="tel:+260572213038" class="text-gray-300 hover:text-white transition">
+                  +260 572 213 038
+                </a>
+              </div>
+              
+              <div class="flex items-center gap-3">
+                <i data-lucide="mail" class="w-5 h-5 text-red flex-shrink-0"></i>
+                <a href="mailto:zamtoafrica@gmail.com" class="text-gray-300 hover:text-white transition">
+                  zamtoafrica@gmail.com
+                </a>
+              </div>
+              
+                            
+              <!-- Business Hours -->
+              <div class="mt-6 p-4 bg-white/5 rounded-lg">
+                <p class="text-red font-semibold mb-2">Business Hours</p>
+                <p class="text-sm text-gray-300">Mon-Fri: 8:00 AM - 6:00 PM</p>
+                <p class="text-sm text-gray-300">Saturday: 9:00 AM - 4:00 PM</p>
+                <p class="text-sm text-gray-300">Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/10 py-6">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="text-gray-400 text-sm">
+            &copy; 2025 Zamto Africa Company Ltd. All rights reserved.
+          </div>
+          <div class="flex gap-6 text-sm">
+            <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+            <a href="#" class="text-gray-400 hover:text-white transition">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    
+    // Mobile Menu Functionality
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const closeMobileMenu = document.getElementById('close-mobile-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuPanel = mobileMenu.querySelector('.transform.translate-x-full');
+    
+    function openMobileMenu() {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => {
+        menuPanel.classList.remove('translate-x-full');
+        menuPanel.classList.add('translate-x-0');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMobileMenuFunc() {
+      menuPanel.classList.remove('translate-x-0');
+      menuPanel.classList.add('translate-x-full');
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+      }, 300);
+      document.body.style.overflow = '';
+    }
+    
+    mobileMenuButton.addEventListener('click', openMobileMenu);
+    closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+    
+    // Close menu when clicking backdrop
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu || e.target.classList.contains('bg-opacity-50')) {
+        closeMobileMenuFunc();
+      }
+    });
+    
+    // Close menu when clicking on links
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', closeMobileMenuFunc);
+    });
+    
+    // Handle escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+        closeMobileMenuFunc();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toyota Passo - Hire Vehicle | Zamto Africa | Japanese Imported Vehicles Zambia</title>
+  <meta name="description" content="Toyota Passo - Compact and efficient hatchback available for hire at Zamto Africa Company Ltd." />
+
+  <!-- Google Fonts - Professional Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="image-gallery.js"></script>
+  <style>
+        :root {
+          --navy: #003087;
+          --red: #e11d48;
+        }
+        .bg-navy { background-color: var(--navy); }
+        .bg-red { background-color: var(--red); }
+        .text-navy { color: var(--navy); }
+        .hover-red:hover { background-color: #be123c; }
+        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,48,135,0.2); transition: all 0.4s; }
+        
+        /* Professional Typography */
+        body {
+          font-family: 'Source Sans Pro', sans-serif;
+        }
+        .font-heading {
+          font-family: 'Montserrat', sans-serif;
+        }
+        .font-serif {
+          font-family: 'Playfair Display', serif;
+        }
+        .font-montserrat {
+          font-family: 'Montserrat', sans-serif;
+        }
+        
+        /* Mobile-First Responsive Enhancements */
+        @media (max-width: 640px) {
+          .hero-title {
+            font-size: 2.5rem !important;
+            line-height: 1.1 !important;
+          }
+          .hero-subtitle {
+            font-size: 1.25rem !important;
+          }
+          .mobile-padding {
+            padding: 1rem !important;
+          }
+          .mobile-button {
+            padding: 0.75rem 1.5rem !important;
+            font-size: 1rem !important;
+          }
+          .vehicle-gallery {
+            grid-template-columns: 1fr !important;
+          }
+        }
+        
+        @media (max-width: 768px) {
+          .tablet-hidden {
+            display: none !important;
+          }
+          .tablet-full {
+            width: 100% !important;
+          }
+        }
+        
+        /* Touch-friendly interactions */
+        @media (hover: none) and (pointer: coarse) {
+          .card-hover:hover {
+            transform: none;
+          }
+          .card-hover:active {
+            transform: scale(0.98);
+          }
+        }
+        
+        /* Smooth scrolling for mobile */
+        html {
+          scroll-behavior: smooth;
+          -webkit-overflow-scrolling: touch;
+        }
+        
+        /* Prevent horizontal scroll */
+        body {
+          overflow-x: hidden;
+          max-width: 100vw;
+        }
+        
+        /* Mobile video optimizations */
+        video {
+          max-width: 100%;
+          height: auto;
+        }
+        
+        /* Mobile menu improvements */
+        .mobile-menu {
+          transform: translateX(100%);
+          transition: transform 0.3s ease-in-out;
+        }
+        
+        .mobile-menu.active {
+          transform: translateX(0);
+        }
+        
+        /* Responsive image galleries */
+        .image-gallery img {
+          max-width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+        
+        /* Mobile card layouts */
+        @media (max-width: 640px) {
+          .vehicle-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+          }
+        }
+        
+        /* Mobile form inputs */
+        input, textarea, select {
+          font-size: 16px !important; /* Prevents zoom on iOS */
+        }
+        
+        /* Safe area for notched phones */
+        @supports (padding: max(0px)) {
+          .safe-area-top {
+            padding-top: max(1rem, env(safe-area-inset-top));
+          }
+          .safe-area-bottom {
+            padding-bottom: max(1rem, env(safe-area-inset-bottom));
+          }
+        }
+        
+        .image-gallery img {
+            transition: all 0.3s ease;
+        }
+        
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+  <!-- HEADER - Modern Professional Design -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div class="bg-gradient-to-r from-red to-navy p-1 rounded-xl">
+            <img src="logo.png" alt="Zamto Africa" class="w-10 h-10 rounded-lg bg-white">
+          </div>
+          <div>
+            <h1 class="text-xl font-black text-navy font-heading">ZAMTO AFRICA</h1>
+            <p class="text-xs text-gray-600">Japanese Imported Vehicles</p>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Home
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="about.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            About
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="inventory.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Inventory
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="services.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Services
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="testimonials.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Testimonials
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="blog.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Blog
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="contact.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Contact
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="tel:+260572213038" class="bg-gradient-to-r from-red to-red-600 hover:from-red-600 hover:to-red text-white px-6 py-3 rounded-lg font-semibold font-heading transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-2">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+            <span class="hidden xl:inline">Call Now</span>
+            <span class="xl:hidden">Call</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Add spacing for fixed header -->
+  <div class="pt-32"></div>
+
+  <!-- Breadcrumbs -->
+  <div class="bg-gray-50 py-4">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center gap-2 text-sm text-gray-600">
+        <a href="index.html" class="hover:text-navy transition">Home</a>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        <a href="inventory.html" class="hover:text-navy transition">Inventory</a>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        <span class="text-navy font-medium">Toyota Passo - Hire</span>
+      </div>
+    </div>
+  </div>
+
+    <!-- Vehicle Details -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Enhanced Image Gallery -->
+                <div class="space-y-4">
+                    <!-- Main Image with Zoom -->
+                    <div class="bg-gray-100 rounded-2xl h-96 overflow-hidden relative group">
+                        <img src="images/vehicles/Toyota-Passo-for-hire-1.jpg" 
+                             alt="Toyota Passo - Hire Vehicle" 
+                             class="main-vehicle-image w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                             data-gallery="images/vehicles/Toyota-Passo-for-hire-1.jpg,images/vehicles/Toyota-Passo-for-hire-2.jpg">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-3 shadow-lg">
+                                <i data-lucide="search" class="w-6 h-6 text-gray-800"></i>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white rounded-lg px-3 py-1 shadow-md">
+                            <span class="text-sm font-medium text-gray-700">Click to zoom</span>
+                        </div>
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-lg shadow-lg">
+                            <span class="text-sm font-bold">FOR HIRE</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Thumbnail Gallery -->
+                    <div class="grid grid-cols-4 gap-2">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg">
+                            <img src="images/vehicles/Toyota-Passo-for-hire-1.jpg" 
+                                 alt="Toyota Passo - Front View" 
+                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                        </div>
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
+                            <img src="images/vehicles/Toyota-Passo-for-hire-2.jpg" 
+                                 alt="Toyota Passo - Side View" 
+                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                        </div>
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center bg-gray-200">
+                            <div class="text-center">
+                                <i data-lucide="image" class="w-6 h-6 text-gray-400 mx-auto mb-1"></i>
+                                <span class="text-xs text-gray-500 font-medium">2 Images</span>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-colors duration-300"
+                             onclick="window.openLightbox(['images/vehicles/Toyota-Passo-for-hire-1.jpg','images/vehicles/Toyota-Passo-for-hire-2.jpg'], 0)">
+                            <div class="text-center">
+                                <i data-lucide="grid" class="w-6 h-6 text-gray-400 mx-auto mb-1"></i>
+                                <span class="text-xs text-gray-500 font-medium">View All</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vehicle Information -->
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold">FOR HIRE</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Hatchback</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Compact</span>
+                        </div>
+                        <h1 class="text-4xl font-black font-heading text-navy mb-2">Toyota Passo</h1>
+                        <p class="text-xl text-gray-600 mb-4">Compact Hatchback • Petrol • Automatic</p>
+                        
+                        <div class="flex items-baseline gap-4 mb-6">
+                            <div class="text-4xl font-black text-red">ZMW500</div>
+                            <div class="text-xl text-gray-500 font-medium">Per day hire rate</div>
+                        </div>
+
+                        <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
+                            <p class="text-blue-800 font-medium">✓ Available for Daily Hire</p>
+                            <p class="text-blue-800 font-medium">✓ Fuel Efficient</p>
+                            <p class="text-blue-800 font-medium">✓ Easy to Drive</p>
+                        </div>
+                    </div>
+
+                    <!-- Key Specifications -->
+                    <div class="bg-gray-50 rounded-2xl p-6">
+                        <h3 class="text-xl font-bold font-heading text-navy mb-4">Toyota Passo Hire Specifications</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-sm text-gray-500">Engine</p>
+                                <p class="font-semibold">1000cc Petrol</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Power</p>
+                                <p class="font-semibold">69 hp</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Transmission</p>
+                                <p class="font-semibold">Automatic</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Drive Train</p>
+                                <p class="font-semibold">2WD</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Seats</p>
+                                <p class="font-semibold">5 Seats</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Doors</p>
+                                <p class="font-semibold">5 Doors</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Fuel Consumption</p>
+                                <p class="font-semibold">5.1L/100km</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Color</p>
+                                <p class="font-semibold">Various Colors</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div>
+                        <h3 class="text-xl font-bold text-navy mb-3 font-heading">Toyota Passo Hire Description</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Perfect for city driving and short trips! The Toyota Passo offers exceptional fuel efficiency and easy maneuverability, making it ideal for urban commuting. This compact hatchback provides comfortable seating for 5 passengers while being incredibly easy to park in tight spaces. With its reliable Toyota engineering and low running costs, it's the perfect choice for budget-conscious travelers.
+                        </p>
+                        <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mt-4">
+                            <p class="text-blue-800 font-medium mb-2">✓ Daily Rate: ZMW500</p>
+                            <p class="text-blue-800 font-medium mb-2">✓ Excellent Fuel Economy</p>
+                            <p class="text-blue-800 font-medium mb-2">✓ Easy to Drive & Park</p>
+                            <p class="text-blue-800 font-medium">✓ Perfect for City Use</p>
+                        </div>
+                    </div>
+
+                    <!-- Toyota Passo Hire Features -->
+                    <div>
+                        <h3 class="text-xl font-bold text-navy mb-3 font-heading">Toyota Passo Hire Features</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">Compact Design</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">Excellent Fuel Economy</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">Easy Parking</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">Air Conditioning</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">Power Steering</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">AM/FM Radio</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/260572213038" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-heading font-bold transition flex-1 text-center">
+                            <i data-lucide="message-circle" class="w-5 h-5 inline mr-2"></i>
+                            Book Now
+                        </a>
+                        <a href="tel:+260572213038" class="bg-navy hover:bg-blue-900 text-white px-8 py-4 rounded-xl font-heading font-bold transition flex-1 text-center">
+                            <i data-lucide="phone" class="w-5 h-5 inline mr-2"></i>
+                            Call Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Information Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-navy mb-8 font-heading text-center">Hire Information & Terms</h2>
+            
+            <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-navy mb-4 font-heading">Hire Rates</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="font-medium">Daily Rate</span>
+                                <span class="font-bold text-red">ZMW500</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="font-medium">Weekly Rate (7 days)</span>
+                                <span class="font-bold text-red">ZMW3,000</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+                                <span class="font-medium">Monthly Rate (30 days)</span>
+                                <span class="font-bold text-red">ZMW10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-navy mb-4 font-heading">Hire Terms</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-0.5"></i>
+                                <span class="text-gray-700">Valid driver's license required</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-0.5"></i>
+                                <span class="text-gray-700">Security deposit required</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-0.5"></i>
+                                <span class="text-gray-700">Insurance included</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-0.5"></i>
+                                <span class="text-gray-700">Fuel cost not included</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-0.5"></i>
+                                <span class="text-gray-700">24/7 roadside assistance</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- FOOTER - Modern Standard Design -->
+  <footer class="bg-navy text-white">
+        <div class="py-12">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 font-heading">ZAMTO AFRICA</h3>
+                        <p class="text-gray-300">Zambia's premier destination for authentic Japanese imported vehicles.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+                            <li><a href="inventory.html" class="text-gray-300 hover:text-white transition">Inventory</a></li>
+                            <li><a href="contact.html" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4">Contact</h4>
+                        <p class="text-gray-300">+260 572 213 038</p>
+                        <p class="text-gray-300">zamtoafrica@gmail.com</p>
+                        <p class="text-gray-300">Lusaka Great East Road, Lusaka</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-4">Follow Us</h4>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <i data-lucide="facebook" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <i data-lucide="instagram" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10 py-6">
+            <div class="container mx-auto px-6 text-center text-gray-400">
+                &copy; 2025 Zamto Africa Company Ltd. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Mobile Menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+        
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+        
+        // Image Gallery functionality
+        document.querySelectorAll('.thumbnail-image').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                const mainImg = document.querySelector('.main-vehicle-image');
+                const gallery = mainImg.dataset.gallery.split(',');
+                const clickedSrc = this.src;
+                const index = gallery.findIndex(img => img.includes(clickedSrc.split('/').pop()));
+                
+                if (index !== -1) {
+                    mainImg.src = gallery[index];
+                    
+                    // Update ring states
+                    document.querySelectorAll('.thumbnail-image').forEach(t => {
+                        t.parentElement.classList.remove('ring-2', 'ring-blue-500');
+                    });
+                    this.parentElement.classList.add('ring-2', 'ring-blue-500');
+                }
+            });
+        });
+        
+        // Lightbox functionality
+        window.openLightbox = function(images, startIndex = 0) {
+            // Simple lightbox implementation
+            const lightbox = document.createElement('div');
+            lightbox.className = 'fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center';
+            lightbox.innerHTML = `
+                <div class="relative max-w-4xl max-h-screen">
+                    <img src="${images[startIndex]}" class="max-w-full max-h-full object-contain">
+                    <button class="absolute top-4 right-4 bg-white text-black p-2 rounded-full" onclick="this.parentElement.parentElement.remove()">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(lightbox);
+            lucide.createIcons();
+            
+            // Close on background click
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.remove();
+                }
+            });
+        };
+    </script>
+</body>
+</html>

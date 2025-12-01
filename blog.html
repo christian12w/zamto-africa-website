@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Zamto Africa | Japanese Imported Vehicles Zambia</title>
+  <meta name="description" content="Stay updated with the latest automotive news, tips, and insights from Zamto Africa - your trusted Japanese vehicle importer in Zambia." />
+
+  <!-- Google Fonts - Professional Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <style>
+    :root {
+      --navy: #003087;
+      --red: #e11d48;
+    }
+    .bg-navy { background-color: var(--navy); }
+    .bg-red { background-color: var(--red); }
+    .text-navy { color: var(--navy); }
+    .hover-red:hover { background-color: #be123c; }
+    .card-hover:hover { transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,48,135,0.2); transition: all 0.4s; }
+    
+    /* Professional Typography */
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    .font-heading {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+    .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/260572213038" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white p-5 rounded-full shadow-2xl hover:scale-110 transition">
+    <i data-lucide="message-circle" class="w-9 h-9"></i>
+  </a>
+
+  <!-- HEADER - Modern Standard Design -->
+  <header class="fixed top-0 w-full z-50 bg-white shadow-lg border-b border-gray-200">
+    <!-- Top Bar -->
+    <div class="bg-navy text-white py-2">
+      <div class="container mx-auto px-6 flex justify-between items-center text-sm">
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            zamtoafrica@gmail.com
+          </span>
+          <span class="hidden md:flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+            Roma Park, Lusaka
+          </span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="tel:+260572213038" class="flex items-center gap-2 hover:text-red-300 transition">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            +260 572 213 038
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Navigation -->
+    <div class="bg-white py-4">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-between">
+          <!-- Logo Section -->
+          <div class="flex items-center gap-3 lg:gap-4">
+            <!-- Enhanced Logo -->
+            <div class="relative group">
+              <div class="absolute -inset-1 bg-gradient-to-r from-red to-navy rounded-2xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+              <div class="relative bg-white p-2 rounded-2xl shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 border-2 border-red">
+                <img src="logo.png" alt="Zamto Africa" class="w-10 h-10 lg:w-14 lg:h-14 object-contain">
+              </div>
+            </div>
+            <div>
+              <h1 class="text-xl lg:text-2xl font-black text-navy font-heading">ZAMTO AFRICA</h1>
+              <p class="text-xs lg:text-sm text-red font-medium hidden lg:block">Japanese Imported Vehicles</p>
+              <p class="text-xs text-red font-medium lg:hidden">Japanese Vehicles</p>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition">
+            <i data-lucide="menu" class="w-6 h-6 text-navy"></i>
+          </button>
+
+          <!-- Desktop Navigation Menu -->
+          <nav class="hidden lg:flex items-center gap-6 lg:gap-8">
+            <a href="index.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Home
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="about.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              About
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="inventory.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Inventory
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="services.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Services
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="testimonials.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Testimonials
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="blog.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Blog
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="contact.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+              Contact
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </nav>
+
+          <!-- CTA Button -->
+          <div class="hidden lg:flex items-center gap-4">
+            <a href="tel:+260572213038" class="bg-gradient-to-r from-red to-red-600 hover:from-red-600 hover:to-red text-white px-6 py-3 rounded-lg font-semibold font-heading transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-2">
+              <i data-lucide="phone" class="w-5 h-5"></i>
+              <span class="hidden xl:inline">Call Now</span>
+              <span class="xl:hidden">Call</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden hidden">
+    <!-- Backdrop -->
+    <div class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+    
+    <!-- Menu Panel -->
+    <div class="fixed right-0 top-0 h-full w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out">
+      <div class="flex flex-col h-full">
+        <!-- Menu Header -->
+        <div class="flex items-center justify-between p-6 border-b border-gray-200">
+          <div class="flex items-center gap-3">
+            <div class="bg-gradient-to-r from-red to-navy p-1 rounded-xl">
+              <img src="logo.png" alt="Zamto Africa" class="w-10 h-10 rounded-lg bg-white">
+            </div>
+            <div>
+              <h3 class="text-lg font-black text-navy font-heading">ZAMTO AFRICA</h3>
+              <p class="text-xs text-gray-600">Japanese Imported Vehicles</p>
+            </div>
+          </div>
+          <button id="close-mobile-menu" class="p-2 rounded-lg hover:bg-gray-100 transition">
+            <i data-lucide="x" class="w-5 h-5 text-gray-600"></i>
+          </button>
+        </div>
+        
+        <!-- Menu Items -->
+        <nav class="flex-1 overflow-y-auto p-6">
+          <div class="space-y-2">
+            <a href="index.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="home" class="w-5 h-5 inline mr-3"></i>Home
+            </a>
+            <a href="about.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="info" class="w-5 h-5 inline mr-3"></i>About
+            </a>
+            <a href="inventory.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="car" class="w-5 h-5 inline mr-3"></i>Inventory
+            </a>
+            <a href="services.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="wrench" class="w-5 h-5 inline mr-3"></i>Services
+            </a>
+            <a href="testimonials.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="star" class="w-5 h-5 inline mr-3"></i>Testimonials
+            </a>
+            <a href="blog.html" class="block px-4 py-3 bg-red text-white rounded-lg font-semibold font-heading">
+              <i data-lucide="blog" class="w-5 h-5 inline mr-3"></i>Blog
+            </a>
+            <a href="contact.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
+              <i data-lucide="phone" class="w-5 h-5 inline mr-3"></i>Contact
+            </a>
+          </div>
+          
+          <!-- Mobile CTA -->
+          <div class="mt-8 p-4 bg-gradient-to-r from-red to-navy rounded-xl">
+            <a href="tel:+260572213038" class="block w-full text-white text-center font-semibold font-heading py-3 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300">
+              <i data-lucide="phone" class="w-5 h-5 inline mr-2"></i>
+              Call Us Now: +260 572 213 038
+            </a>
+          </div>
+        </nav>
+        
+        <!-- Menu Footer -->
+        <div class="p-6 border-t border-gray-200">
+          <div class="text-center text-sm text-gray-600">
+            <p>&copy; 2025 Zamto Africa Company Ltd.</p>
+            <p class="mt-1">All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-screen flex flex-col justify-center items-center text-center bg-navy text-white pt-32">
+    <!-- Background Image -->
+    <div class="absolute inset-0 bg-[url('Back-ground-image.jpg')] bg-cover bg-center opacity-30"></div>
+
+    <div class="relative z-10 px-6 max-w-6xl mx-auto">
+      <!-- Page Title -->
+      <div class="inline-block bg-red text-white px-10 py-6 rounded-2xl text-2xl md:text-3xl font-black tracking-wider shadow-2xl mb-10">
+        <i data-lucide="blog" class="w-12 h-12 inline-block mr-4"></i>
+        BLOG & INSIGHTS
+      </div>
+
+      <!-- Main Title -->
+      <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight">
+        Latest Automotive<br>
+        <span class="text-red text-6xl md:text-8xl">NEWS & TIPS</span>
+      </h1>
+
+      <p class="text-xl md:text-2xl text-gray-200 max-w-4xl mx-auto mb-16">
+        Stay updated with automotive trends, industry news, and expert insights from Zamto Africa
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Grid Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black text-navy mb-4">Recent Articles</h2>
+        <p class="text-xl text-gray-600">Expert insights and automotive updates</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Initial articles (first 3) -->
+        <!-- Article 1 -->
+        <article class="blog-article bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-48 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="newspaper" class="w-20 h-20 text-white"></i>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="bg-red text-white px-3 py-1 rounded-full text-sm font-heading">Industry News</span>
+              <span class="text-gray-500 text-sm">Nov 30, 2025</span>
+            </div>
+            <h3 class="text-2xl font-heading text-navy mb-4">Top Japanese Vehicles Coming to Zambia in 2025</h3>
+            <p class="text-gray-600 mb-6">Discover the latest Japanese vehicle models that will be available in Zambia, including new features and specifications.</p>
+            <a href="blog-japanese-vehicles-2025.html" class="text-red font-heading hover:text-red-700 transition">
+              Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-article bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-48 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="lightbulb" class="w-20 h-20 text-white"></i>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-heading">Tips & Guide</span>
+              <span class="text-gray-500 text-sm">Nov 28, 2025</span>
+            </div>
+            <h3 class="text-2xl font-heading text-navy mb-4">How to Choose the Right Imported Vehicle</h3>
+            <p class="text-gray-600 mb-6">Essential tips for selecting the perfect Japanese imported vehicle that meets your needs and budget.</p>
+            <a href="blog-choose-imported-vehicle.html" class="text-red font-heading hover:text-red-700 transition">
+              Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-article bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-48 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="fuel" class="w-20 h-20 text-white"></i>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-heading">Technology</span>
+              <span class="text-gray-500 text-sm">Nov 25, 2025</span>
+            </div>
+            <h3 class="text-2xl font-heading text-navy mb-4">Hybrid vs Electric: Japanese Innovation</h3>
+            <p class="text-gray-600 mb-6">Explore the latest hybrid and electric vehicle technologies from Japanese manufacturers and their benefits for Zambian drivers.</p>
+            <a href="blog-hybrid-vs-electric.html" class="text-red font-heading hover:text-red-700 transition">
+              Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Hidden articles (shown when Load More is clicked) -->
+        <!-- Article 4 -->
+        <article class="blog-article hidden bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-48 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="wrench" class="w-20 h-20 text-white"></i>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-heading">Maintenance</span>
+              <span class="text-gray-500 text-sm">Nov 22, 2025</span>
+            </div>
+            <h3 class="text-2xl font-heading text-navy mb-4">Vehicle Maintenance Tips for Longevity</h3>
+            <p class="text-gray-600 mb-6">Professional advice on maintaining your Japanese imported vehicle to ensure optimal performance and longevity.</p>
+            <a href="blog-vehicle-maintenance.html" class="text-red font-heading hover:text-red-700 transition">
+              Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="blog-article hidden bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-48 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="trending-up" class="w-20 h-20 text-white"></i>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="bg-red text-white px-3 py-1 rounded-full text-sm font-heading">Market Trends</span>
+              <span class="text-gray-500 text-sm">Nov 20, 2025</span>
+            </div>
+            <h3 class="text-2xl font-heading text-navy mb-4">Japanese Vehicle Market Trends in Zambia</h3>
+            <p class="text-gray-600 mb-6">Analysis of current market trends and future predictions for Japanese imported vehicles in Zambia.</p>
+            <a href="blog-market-trends.html" class="text-red font-heading hover:text-red-700 transition">
+              Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="blog-article hidden bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-48 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="shield-check" class="w-20 h-20 text-white"></i>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-heading">Legal</span>
+              <span class="text-gray-500 text-sm">Nov 18, 2025</span>
+            </div>
+            <h3 class="text-2xl font-heading text-navy mb-4">Understanding Vehicle Import Regulations</h3>
+            <p class="text-gray-600 mb-6">Complete guide to vehicle import regulations in Zambia and how Zamto Africa ensures compliance.</p>
+            <a href="blog-import-regulations.html" class="text-red font-heading hover:text-red-700 transition">
+              Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 7 -->
+        <article class="blog-article hidden bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-48 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="credit-card" class="w-20 h-20 text-white"></i>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-heading">Finance</span>
+              <span class="text-gray-500 text-sm">Dec 1, 2025</span>
+            </div>
+            <h3 class="text-2xl font-heading text-navy mb-4">Financing Options for Japanese Vehicle Imports</h3>
+            <p class="text-gray-600 mb-6">Complete guide to financing options for Japanese imported vehicles in Zambia, including bank loans, dealer financing, and payment plans.</p>
+            <a href="blog-vehicle-financing.html" class="text-red font-heading hover:text-red-700 transition">
+              Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article 8 -->
+        <article class="blog-article hidden bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+          <div class="h-48 bg-gradient-to-r from-navy to-red flex items-center justify-center">
+            <i data-lucide="award" class="w-20 h-20 text-white"></i>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-heading">Reliability</span>
+              <span class="text-gray-500 text-sm">Dec 2, 2025</span>
+            </div>
+            <h3 class="text-2xl font-heading text-navy mb-4">Top 10 Most Reliable Japanese Models for Zambian Roads</h3>
+            <p class="text-gray-600 mb-6">Discover the most reliable Japanese vehicle models perfect for Zambian road conditions, with detailed reliability ratings and performance analysis.</p>
+            <a href="blog-reliable-japanese-models.html" class="text-red font-heading hover:text-red-700 transition">
+              Read More <i data-lucide="arrow-right" class="w-4 h-4 inline"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-12">
+        <button id="load-more-btn" class="bg-navy hover:bg-blue-900 text-white px-8 py-4 rounded-2xl font-heading text-lg transition transform hover:scale-105">
+          Load More Articles
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="bg-navy rounded-3xl p-12 text-center text-white">
+        <h2 class="text-4xl md:text-5xl font-black mb-6">Stay Updated</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">Subscribe to our newsletter for the latest automotive news, tips, and exclusive offers</p>
+        <div class="max-w-md mx-auto flex gap-4">
+          <input type="email" placeholder="Enter your email" class="flex-1 px-6 py-4 rounded-xl text-gray-800">
+          <button class="bg-red hover-red px-8 py-4 rounded-xl font-heading transition">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-navy text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-black mb-6">Have Questions?</h2>
+      <p class="text-xl mb-8 max-w-3xl mx-auto">Our team is ready to help with all your automotive needs</p>
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="inventory.html" class="bg-red hover-red text-white px-8 py-4 rounded-2xl font-heading text-lg transition">
+          <i data-lucide="car" class="w-6 h-6 inline mr-2"></i>
+          Browse Vehicles
+        </a>
+        <a href="contact.html" class="bg-white text-navy hover:bg-gray-100 px-8 py-4 rounded-2xl font-heading text-lg transition">
+          <i data-lucide="phone" class="w-6 h-6 inline mr-2"></i>
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER - Modern Standard Design -->
+  <footer class="bg-navy text-white">
+    <!-- Main Footer Content -->
+    <div class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12">
+          <!-- Company Info -->
+          <div class="col-span-1">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-red to-white rounded-xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                <div class="relative bg-white p-2 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 border-2 border-red">
+                  <img src="logo.png" alt="Zamto Africa" class="w-8 h-8 object-contain">
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-black font-heading">ZAMTO AFRICA</h3>
+                <p class="text-sm text-red font-medium">Japanese Imported Vehicles</p>
+              </div>
+            </div>
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Zambia's premier destination for authentic Japanese imported vehicles. Quality, reliability, and exceptional service guaranteed.
+            </p>
+            
+            <!-- Follow Us Section -->
+            <div class="mt-8">
+              <h4 class="text-lg font-bold mb-4 text-red">Follow Us</h4>
+              <div class="flex flex-wrap gap-4">
+                <a href="https://www.facebook.com/profile.php?id=61581947339658&mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="facebook" class="w-6 h-6"></i>
+                  <span class="text-xs">Car Sales</span>
+                </a>
+                <a href="https://www.facebook.com/share/16yfxxVNUf/?mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="users" class="w-6 h-6"></i>
+                  <span class="text-xs">Car Rentals</span>
+                </a>
+                <a href="https://www.instagram.com/zamtoafrica?igsh=MWN3b3ZxMGk0OXIzaA%3D%3D&utm_source=qr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="instagram" class="w-6 h-6"></i>
+                  <span class="text-xs">Instagram</span>
+                </a>
+                <a href="http://www.tiktok.com/@zamtoafrica" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="video" class="w-6 h-6"></i>
+                  <span class="text-xs">TikTok</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Quick Links</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Home
+              </a></li>
+              <li><a href="about.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> About Us
+              </a></li>
+              <li><a href="inventory.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Vehicle Inventory
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Our Services
+              </a></li>
+              <li><a href="testimonials.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Testimonials
+              </a></li>
+              <li><a href="blog.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Blog
+              </a></li>
+              <li><a href="contact.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Contact
+              </a></li>
+            </ul>
+          </div>
+          
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Our Services</h4>
+            <ul class="space-y-3">
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="car" class="w-4 h-4 text-red"></i> Vehicle Sales
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="key" class="w-4 h-4 text-red"></i> Vehicle Hire
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="wrench" class="w-4 h-4 text-red"></i> Maintenance & Repair
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="ship" class="w-4 h-4 text-red"></i> Vehicle Importation
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-4 h-4 text-red"></i> Insurance Services
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="file-text" class="w-4 h-4 text-red"></i> Vehicle Documentation
+              </a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Get In Touch</h4>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <i data-lucide="map-pin" class="w-5 h-5 text-red mt-1 flex-shrink-0"></i>
+                <div>
+                  <p class="text-gray-300">Handyman's Great East Road</p>
+                  <p class="text-gray-300">Plot 1222, Roma Park</p>
+                  <p class="text-gray-300">Lusaka, Zambia</p>
+                </div>
+              </div>
+              
+              <div class="flex items-center gap-3">
+                <i data-lucide="phone" class="w-5 h-5 text-red flex-shrink-0"></i>
+                <a href="tel:+260572213038" class="text-gray-300 hover:text-white transition">
+                  +260 572 213 038
+                </a>
+              </div>
+              
+              <div class="flex items-center gap-3">
+                <i data-lucide="mail" class="w-5 h-5 text-red flex-shrink-0"></i>
+                <a href="mailto:zamtoafrica@gmail.com" class="text-gray-300 hover:text-white transition">
+                  zamtoafrica@gmail.com
+                </a>
+              </div>
+              
+                            
+              <!-- Business Hours -->
+              <div class="mt-6 p-4 bg-white/5 rounded-lg">
+                <p class="text-red font-semibold mb-2">Business Hours</p>
+                <p class="text-sm text-gray-300">Mon-Fri: 8:00 AM - 6:00 PM</p>
+                <p class="text-sm text-gray-300">Saturday: 9:00 AM - 4:00 PM</p>
+                <p class="text-sm text-gray-300">Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/10 py-6">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div class="text-gray-400 text-sm">
+            &copy; 2025 Zamto Africa Company Ltd. All rights reserved.
+          </div>
+          <div class="flex gap-6 text-sm">
+            <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+            <a href="#" class="text-gray-400 hover:text-white transition">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    
+    // Load More functionality
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const hiddenArticles = document.querySelectorAll('.blog-article.hidden');
+    let articlesShowing = 3;
+    
+    loadMoreBtn.addEventListener('click', function() {
+      // Show next 3 articles
+      const nextArticles = Array.from(hiddenArticles).slice(articlesShowing - 3, articlesShowing);
+      nextArticles.forEach(article => {
+        article.classList.remove('hidden');
+        article.style.opacity = '0';
+        article.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+          article.style.transition = 'all 0.5s ease';
+          article.style.opacity = '1';
+          article.style.transform = 'translateY(0)';
+        }, 100);
+      });
+      
+      articlesShowing += 3;
+      
+      // Hide button if all articles are shown
+      if (articlesShowing >= hiddenArticles.length + 3) {
+        loadMoreBtn.style.display = 'none';
+      }
+      
+      // Reinitialize lucide icons for newly revealed content
+      setTimeout(() => {
+        lucide.createIcons();
+      }, 200);
+    });
+    
+    // Mobile Menu functionality
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const closeMobileMenu = document.getElementById('close-mobile-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuPanel = mobileMenu.querySelector('.transform.translate-x-full');
+    
+    function openMobileMenu() {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => {
+        menuPanel.classList.remove('translate-x-full');
+        menuPanel.classList.add('translate-x-0');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMobileMenuFunc() {
+      menuPanel.classList.remove('translate-x-0');
+      menuPanel.classList.add('translate-x-full');
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+      }, 300);
+      document.body.style.overflow = '';
+    }
+    
+    mobileMenuButton.addEventListener('click', openMobileMenu);
+    closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+    
+    // Close menu when clicking backdrop
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu || e.target.classList.contains('bg-opacity-50')) {
+        closeMobileMenuFunc();
+      }
+    });
+    
+    // Close menu when clicking on links
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', closeMobileMenuFunc);
+    });
+    
+    // Handle escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+        closeMobileMenuFunc();
+      }
+    });
+  </script>
+</body>
+</html>
