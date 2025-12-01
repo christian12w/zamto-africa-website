@@ -1,4 +1,4 @@
-# CarChief Zambia - Car Hire & Sales Website
+# ZamtoAfrica Zambia - Car Hire & Sales Website
 
 A professional, fully responsive car rental and sales website specifically designed for the Zambian market. This website combines modern design principles with practical functionality to serve both car rental and car sales needs.
 
