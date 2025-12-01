@@ -216,8 +216,8 @@ The website automatically adapts its layout and functionality for each breakpoin
 ## 📞 Support
 
 For questions about this website or customization requests:
-- Email: info@carchiefzambia.com
-- Phone: +260 977 123 456
+- Email: zamtoafrica@gmail.com
+- Phone: +260 975 630 010
 
 ## 📄 License
 
