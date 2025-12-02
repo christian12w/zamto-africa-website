@@ -239,10 +239,14 @@
                 <div class="space-y-4">
                     <!-- Main Image with Zoom -->
                     <div class="bg-gray-100 rounded-2xl h-96 overflow-hidden relative group">
-                        <img src="images/vehicles/BMW-X1-1.jpg" 
-                             alt="BMW X1 2011 - Front View" 
-                             class="main-vehicle-image w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                             data-gallery="images/vehicles/BMW-X1-1.jpg,images/vehicles/BMW-X1-2.jpg,images/vehicles/BMW-X1-3.jpg">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="images/vehicles/BMW-X1-1.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/vehicles/BMW-X1-1.jpg">
+                            <img src="images/vehicles/BMW-X1-1.jpg" 
+                                 alt="BMW X1 2011 - Front View" 
+                                 class="main-vehicle-image w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy"
+                                 data-gallery="images/vehicles/BMW-X1-1.jpg,images/vehicles/BMW-X1-2.jpg,images/vehicles/BMW-X1-3.jpg">
+                        </picture>
                         <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
                             <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-3 shadow-lg">
                                 <i data-lucide="search" class="w-6 h-6 text-gray-800"></i>
@@ -259,19 +263,28 @@
                     <!-- Thumbnail Gallery -->
                     <div class="grid grid-cols-4 gap-2">
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg">
-                            <img src="images/vehicles/BMW-X1-1.jpg" 
-                                 alt="BMW X1 2011 - Front View" 
-                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/BMW-X1-1.jpg">
+                                <img src="images/vehicles/BMW-X1-1.jpg" 
+                                     alt="BMW X1 2011 - Front View" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
-                            <img src="images/vehicles/BMW-X1-2.jpg" 
-                                 alt="BMW X1 2011 - Side View" 
-                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/BMW-X1-2.jpg">
+                                <img src="images/vehicles/BMW-X1-2.jpg" 
+                                     alt="BMW X1 2011 - Side View" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
-                            <img src="images/vehicles/BMW-X1-3.jpg" 
-                                 alt="BMW X1 2011 - Rear View" 
-                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/BMW-X1-3.jpg">
+                                <img src="images/vehicles/BMW-X1-3.jpg" 
+                                     alt="BMW X1 2011 - Rear View" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-colors duration-300"
                              onclick="window.openLightbox(['images/vehicles/BMW-X1-1.jpg,images/vehicles/BMW-X1-2.jpg,images/vehicles/BMW-X1-3.jpg'], 0)">
@@ -610,6 +623,59 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Similar Vehicles -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black font-heading text-navy mb-8">Similar Vehicles</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Honda Fit -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/vehicles/Honda-Fit-1.jpg" alt="Honda Fit 2013" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Honda Fit</h3>
+                        <p class="text-gray-600 mb-4">2013 Model • 131,410 km</p>
+                        <div class="text-2xl font-black text-red mb-4">USD 3,358</div>
+                        <a href="vehicle-honda-fit-2013.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Toyota Passo -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/vehicles/Toyota-Passo-1.jpg" alt="Toyota Passo 2012" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Toyota Passo</h3>
+                        <p class="text-gray-600 mb-4">2012 Model • 85,000 km</p>
+                        <div class="text-2xl font-black text-red mb-4">ZMW135,000</div>
+                        <a href="vehicle-toyota-passo-2012.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Nissan Juke -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/vehicles/Nissan-Juke-1.jpg" alt="Nissan Juke 2012" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-2">Nissan Juke</h3>
+                        <p class="text-gray-600 mb-4">2012 Model • Compact SUV</p>
+                        <div class="text-2xl font-black text-red mb-4">ZMW175,000</div>
+                        <a href="inventory.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center">
+                            View Details
+                        </a>
                     </div>
                 </div>
             </div>

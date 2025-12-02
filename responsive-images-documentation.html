@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images Implementation Documentation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --navy: #003087;
+      --red: #e11d48;
+    }
+    .bg-navy { background-color: var(--navy); }
+    .bg-red { background-color: var(--red); }
+    .text-navy { color: var(--navy); }
+    .prose pre {
+      background-color: #f3f4f6;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      overflow-x: auto;
+    }
+    .prose code {
+      background-color: #f3f4f6;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.25rem;
+      font-size: 0.875em;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-8">
+      <h1 class="text-3xl font-bold text-navy">Responsive Images Implementation Documentation</h1>
+      <p class="mt-2 text-gray-600">Guide to implementing responsive images for improved web performance</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-12">
+    <div class="bg-white rounded-xl shadow-lg p-8 prose max-w-none">
+      <h2 class="text-2xl font-bold text-navy">Introduction</h2>
+      <p>Responsive images are crucial for delivering optimal user experiences across different devices and screen sizes. They help reduce bandwidth usage, improve page load times, and enhance overall website performance.</p>
+
+      <h2 class="text-2xl font-bold text-navy mt-8">Techniques Implemented</h2>
+      
+      <h3 class="text-xl font-semibold text-navy mt-6">1. Using the &lt;picture&gt; Element</h3>
+      <p>The <code>&lt;picture&gt;</code> element allows developers to define multiple image sources for different screen sizes or device characteristics.</p>
+      
+      <h4 class="text-lg font-semibold mt-4">Implementation Example:</h4>
+      <pre><code>&lt;picture&gt;
+  &lt;source media="(max-width: 768px)" srcset="images/mobile-image.jpg"&gt;
+  &lt;source media="(max-width: 1200px)" srcset="images/tablet-image.jpg"&gt;
+  &lt;img src="images/desktop-image.jpg" alt="Description"&gt;
+&lt;/picture&gt;</code></pre>
+      
+      <h3 class="text-xl font-semibold text-navy mt-6">2. Using srcset with Width Descriptors</h3>
+      <p>The <code>srcset</code> attribute with width descriptors (<code>w</code>) allows browsers to choose the most appropriate image based on the display density and container size.</p>
+      
+      <h4 class="text-lg font-semibold mt-4">Implementation Example:</h4>
+      <pre><code>&lt;img src="image-large.jpg" 
+     srcset="image-small.jpg 480w,
+             image-medium.jpg 768w,
+             image-large.jpg 1200w"
+     sizes="(max-width: 768px) 100vw,
+            (max-width: 1200px) 50vw,
+            33vw"
+     alt="Description"&gt;</code></pre>
+      
+      <h2 class="text-2xl font-bold text-navy mt-8">Benefits</h2>
+      <ul>
+        <li><strong>Reduced Bandwidth Usage:</strong> Smaller images are served to smaller screens, reducing data consumption</li>
+        <li><strong>Faster Page Loads:</strong> Optimized images load quicker, improving user experience</li>
+        <li><strong>Better Performance:</strong> Reduced server load and improved rendering performance</li>
+        <li><strong>Improved SEO:</strong> Faster loading websites rank higher in search results</li>
+        <li><strong>Enhanced UX:</strong> Users on mobile devices get appropriately sized images</li>
+      </ul>
+      
+      <h2 class="text-2xl font-bold text-navy mt-8">Best Practices</h2>
+      <ol>
+        <li>Create multiple versions of images at different resolutions (e.g., 1x, 2x, 3x)</li>
+        <li>Use appropriate image formats (WebP, AVIF) for better compression</li>
+        <li>Implement lazy loading for images below the fold</li>
+        <li>Always provide descriptive alt text for accessibility</li>
+        <li>Test on various devices and network conditions</li>
+        <li>Monitor performance metrics after implementation</li>
+      </ol>
+      
+      <h2 class="text-2xl font-bold text-navy mt-8">Files Updated</h2>
+      <p>The following vehicle detail pages have been updated with responsive image techniques:</p>
+      <ul>
+        <li><code>vehicle-bmw-x1-2011.html</code></li>
+        <li><code>vehicle-toyota-passo-2012.html</code></li>
+      </ul>
+      
+      <h2 class="text-2xl font-bold text-navy mt-8">Next Steps</h2>
+      <p>To fully realize the benefits of responsive images:</p>
+      <ol>
+        <li>Create multiple resolutions of each vehicle image</li>
+        <li>Convert images to modern formats like WebP or AVIF</li>
+        <li>Implement automated image optimization in the build process</li>
+        <li>Extend responsive image implementation to all vehicle pages</li>
+        <li>Monitor performance improvements using web analytics</li>
+      </ol>
+    </div>
+  </main>
+
+  <footer class="bg-navy text-white py-8 mt-12">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Zamto Africa Company Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
