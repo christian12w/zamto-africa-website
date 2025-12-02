@@ -149,7 +149,7 @@
   </header>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden">
+  <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden hidden">
     <!-- Backdrop -->
     <div class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
     
@@ -242,7 +242,7 @@
                         <img src="images/vehicles/black-landcruiser-1.jpg" 
                              alt="Toyota Land Cruiser Prado 2017 - Front View" 
                              class="main-vehicle-image w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                             data-gallery="images/vehicles/black-landcruiser-1.jpg,images/vehicles/black-landcruiser-2.jpg,images/vehicles/black-landcruiser-3.jpg,images/vehicles/black-landcruiser-4.jpg,images/vehicles/black-landcruiser-5.jpg">
+                             data-gallery="images/vehicles/black-landcruiser-1.jpg,images/vehicles/black-landcruiser-2.jpg,images/vehicles/black-landcruiser-3.jpg,images/vehicles/black-landcruiser-4.jpg,images/vehicles/black-landcruiser-5.jpg" loading="lazy">
                         <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
                             <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-3 shadow-lg">
                                 <i data-lucide="search" class="w-6 h-6 text-gray-800"></i>
@@ -261,22 +261,22 @@
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg">
                             <img src="images/vehicles/black-landcruiser-1.jpg" 
                                  alt="Toyota Land Cruiser Prado 2017 - Front View" 
-                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                         </div>
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
                             <img src="images/vehicles/black-landcruiser-2.jpg" 
                                  alt="Toyota Land Cruiser Prado 2017 - Side View" 
-                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                         </div>
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
                             <img src="images/vehicles/black-landcruiser-3.jpg" 
                                  alt="Toyota Land Cruiser Prado 2017 - Rear View" 
-                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                         </div>
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
                             <img src="images/vehicles/black-landcruiser-4.jpg" 
                                  alt="Toyota Land Cruiser Prado 2017 - Interior" 
-                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                         </div>
                     </div>
                     
@@ -286,7 +286,7 @@
                              onclick="window.openLightbox(['images/vehicles/black-landcruiser-5.jpg'], 0)">
                             <img src="images/vehicles/black-landcruiser-5.jpg" 
                                  alt="Toyota Land Cruiser Prado 2017 - Dashboard" 
-                                 class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                                 class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                                 <i data-lucide="plus" class="w-6 h-6 text-white opacity-0 hover:opacity-100 transition-opacity duration-300"></i>
                             </div>
@@ -508,43 +508,46 @@
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-black font-heading text-navy mb-8">Similar Vehicles</h2>
             <div class="grid md:grid-cols-3 gap-6">
+                <!-- Toyota Prado 2014 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                    <div class="h-48 bg-gradient-to-r from-gray-100 to-gray-200 flex items-center justify-center">
-                        <i data-lucide="truck" class="w-16 h-16 text-gray-600"></i>
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/vehicles/white-landcruiser-1.jpg" alt="Toyota Prado 2014" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-navy mb-2">Toyota Land Cruiser Prado</h3>
-                        <p class="text-gray-600 mb-4">2014 Model • White • 112,004 km</p>
-                        <div class="text-2xl font-black text-red mb-4">USD25,600</div>
+                        <h3 class="text-xl font-bold text-navy mb-2">Toyota Prado</h3>
+                        <p class="text-gray-600 mb-4">2014 Model • 112,004 km</p>
+                        <div class="text-2xl font-black text-red mb-4">ZMW588,000</div>
                         <a href="vehicle-prado-2014.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center">
                             View Details
                         </a>
                     </div>
                 </div>
 
+                <!-- Isuzu MU-X -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                    <div class="h-48 bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center">
-                        <i data-lucide="truck" class="w-16 h-16 text-white"></i>
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/vehicles/Isuzu-MUX-1.jpg" alt="Isuzu MU-X 2018" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-navy mb-2">Land Cruiser Prado TZ-G</h3>
-                        <p class="text-gray-600 mb-4">2023 Model • 59,480 km</p>
-                        <div class="text-2xl font-black text-red mb-4">ZMW1,170,000</div>
-                        <a href="inventory.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center">
+                        <h3 class="text-xl font-bold text-navy mb-2">Isuzu MU-X</h3>
+                        <p class="text-gray-600 mb-4">2018 Model • Automatic</p>
+                        <div class="text-2xl font-black text-red mb-4">ZMW2,500/day</div>
+                        <a href="vehicle-isuzu-mux-2018.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center">
                             View Details
                         </a>
                     </div>
                 </div>
 
+                <!-- Mitsubishi Pajero -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                    <div class="h-48 bg-gradient-to-r from-green-600 to-green-800 flex items-center justify-center">
-                        <i data-lucide="truck" class="w-16 h-16 text-white"></i>
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/vehicles/Mitsubishi Pajero-1.jpg" alt="Mitsubishi Pajero 2012" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-navy mb-2">Land Cruiser Prado</h3>
-                        <p class="text-gray-600 mb-4">2018 Model • 65,874 km</p>
-                        <div class="text-2xl font-black text-red mb-4">ZMW712,000</div>
-                        <a href="inventory.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center">
+                        <h3 class="text-xl font-bold text-navy mb-2">Mitsubishi Pajero</h3>
+                        <p class="text-gray-600 mb-4">2012 Model • 4WD</p>
+                        <div class="text-2xl font-black text-red mb-4">ZMW366,000</div>
+                        <a href="vehicle-mitsubishi-pajero-2012.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center">
                             View Details
                         </a>
                     </div>
@@ -622,7 +625,7 @@
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const closeMobileMenu = document.getElementById('close-mobile-menu');
         const mobileMenu = document.getElementById('mobile-menu');
-        const menuPanel = mobileMenu.querySelector('.transform.translate-x-full');
+        const menuPanel = mobileMenu.querySelector('.transform');
         
         function openMobileMenu() {
             mobileMenu.classList.remove('hidden');

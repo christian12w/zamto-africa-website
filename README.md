@@ -1,4 +1,4 @@
-# CarChief Zambia - Car Hire & Sales Website
+# ZamtoAfrica Zambia - Car Hire & Sales Website
 
 A professional, fully responsive car rental and sales website specifically designed for the Zambian market. This website combines modern design principles with practical functionality to serve both car rental and car sales needs.
 
@@ -216,8 +216,8 @@ The website automatically adapts its layout and functionality for each breakpoin
 ## 📞 Support
 
 For questions about this website or customization requests:
-- Email: info@carchiefzambia.com
-- Phone: +260 977 123 456
+- Email: zamtoafrica@gmail.com
+- Phone: +260 975 630 010
 
 ## 📄 License
 
