@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Optimization Plan - Zamto Africa</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --navy: #003087;
+      --red: #e11d48;
+    }
+    .bg-navy { background-color: var(--navy); }
+    .bg-red { background-color: var(--red); }
+    .text-navy { color: var(--navy); }
+    .prose pre {
+      background-color: #f3f4f6;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      overflow-x: auto;
+    }
+    .prose code {
+      background-color: #f3f4f6;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.25rem;
+      font-size: 0.875em;
+    }
+    .progress-bar {
+      height: 8px;
+      background-color: #e5e7eb;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background-color: var(--red);
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-8">
+      <h1 class="text-3xl font-bold text-navy">Image Optimization Plan</h1>
+      <p class="mt-2 text-gray-600">Comprehensive strategy for optimizing vehicle images on the Zamto Africa website</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-6 py-12">
+    <div class="bg-white rounded-xl shadow-lg p-8 prose max-w-none">
+      <h2 class="text-2xl font-bold text-navy">Project Overview</h2>
+      <p>This document outlines a comprehensive plan for optimizing images across the Zamto Africa website to improve performance, reduce bandwidth usage, and enhance user experience.</p>
+
+      <h2 class="text-2xl font-bold text-navy mt-8">Current Status</h2>
+      
+      <h3 class="text-xl font-semibold text-navy mt-6">Progress Summary</h3>
+      <div class="bg-gray-50 p-4 rounded-lg">
+        <div class="flex justify-between mb-2">
+          <span class="font-medium">Responsive Images Implementation</span>
+          <span class="font-medium">35% Complete</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 35%"></div>
+        </div>
+        <p class="mt-2 text-sm text-gray-600">5 out of 18 vehicle pages have responsive images implemented</p>
+      </div>
+
+      <h3 class="text-xl font-semibold text-navy mt-6">Pages Completed</h3>
+      <ul class="list-disc pl-6">
+        <li>vehicle-bmw-x1-2011.html</li>
+        <li>vehicle-toyota-passo-2012.html</li>
+        <li>vehicle-isuzu-van-2018.html</li>
+        <li>vehicle-mitsubishi-pajero-2012.html</li>
+        <li>vehicle-nissan-juke-2012.html</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold text-navy mt-6">Pages Remaining</h3>
+      <ul class="list-disc pl-6">
+        <li>vehicle-details.html (BMW 320i)</li>
+        <li>vehicle-honda-fit-2013.html</li>
+        <li>vehicle-isuzu-mux-2018.html</li>
+        <li>vehicle-lexus-rx-300t-2020.html</li>
+        <li>vehicle-prado-2014.html</li>
+        <li>vehicle-prado-2017.html</li>
+        <li>vehicle-subaru-forester-2025.html</li>
+        <li>vehicle-toyota-allion-2015.html</li>
+        <li>vehicle-toyota-alphard-2015.html</li>
+        <li>vehicle-toyota-crown-athlete-2006.html</li>
+        <li>vehicle-toyota-hilux-2018.html</li>
+        <li>vehicle-toyota-passo-hire.html</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-navy mt-8">Phase 1: Responsive Images Implementation</h2>
+      
+      <h3 class="text-xl font-semibold text-navy mt-6">Objective</h3>
+      <p>Implement responsive images on all remaining vehicle pages using the &lt;picture&gt; element to serve appropriately sized images based on device characteristics.</p>
+
+      <h3 class="text-xl font-semibold text-navy mt-6">Implementation Strategy</h3>
+      <ol class="list-decimal pl-6">
+        <li><strong>Create Multiple Resolutions:</strong> Generate three sizes for each vehicle image:
+          <ul class="list-disc pl-6 mt-2">
+            <li>Small: 480px wide (for mobile devices)</li>
+            <li>Medium: 768px wide (for tablets)</li>
+            <li>Large: 1200px wide (for desktop)</li>
+          </ul>
+        </li>
+        <li><strong>Update HTML Structure:</strong> Replace simple &lt;img&gt; tags with &lt;picture&gt; elements containing multiple sources</li>
+        <li><strong>Maintain Existing Attributes:</strong> Preserve all existing classes, alt text, and data attributes</li>
+      </ol>
+
+      <h3 class="text-xl font-semibold text-navy mt-6">Example Implementation</h3>
+      <pre><code>&lt;picture&gt;
+  &lt;source media="(max-width: 768px)" srcset="images/vehicles/image-small.jpg"&gt;
+  &lt;source media="(max-width: 1200px)" srcset="images/vehicles/image-medium.jpg"&gt;
+  &lt;img src="images/vehicles/image-large.jpg" 
+       alt="Vehicle Description"
+       class="existing-class-names"
+       loading="lazy"&gt;
+&lt;/picture&gt;</code></pre>
+
+      <h2 class="text-2xl font-bold text-navy mt-8">Phase 2: Modern Image Formats</h2>
+      
+      <h3 class="text-xl font-semibold text-navy mt-6">Objective</h3>
+      <p>Convert all vehicle images to modern formats (WebP or AVIF) for better compression and faster loading times.</p>
+
+      <h3 class="text-xl font-semibold text-navy mt-6">Implementation Strategy</h3>
+      <ol class="list-decimal pl-6">
+        <li><strong>Format Conversion:</strong> Convert all JPEG images to WebP format for 25-35% size reduction</li>
+        <li><strong>Multiple Format Support:</strong> Provide fallbacks for browsers that don't support WebP</li>
+        <li><strong>Update Picture Elements:</strong> Add source elements for WebP formats</li>
+      </ol>
+
+      <h3 class="text-xl font-semibold text-navy mt-6">Example Implementation</h3>
+      <pre><code>&lt;picture&gt;
+  &lt;source type="image/webp" media="(max-width: 768px)" srcset="images/vehicles/image-small.webp"&gt;
+  &lt;source type="image/webp" media="(max-width: 1200px)" srcset="images/vehicles/image-medium.webp"&gt;
+  &lt;source type="image/webp" srcset="images/vehicles/image-large.webp"&gt;
+  &lt;source media="(max-width: 768px)" srcset="images/vehicles/image-small.jpg"&gt;
+  &lt;source media="(max-width: 1200px)" srcset="images/vehicles/image-medium.jpg"&gt;
+  &lt;img src="images/vehicles/image-large.jpg" 
+       alt="Vehicle Description"
+       class="existing-class-names"
+       loading="lazy"&gt;
+&lt;/picture&gt;</code></pre>
+
+      <h2 class="text-2xl font-bold text-navy mt-8">Phase 3: Automated Optimization Pipeline</h2>
+      
+      <h3 class="text-xl font-semibold text-navy mt-6">Objective</h3>
+      <p>Establish an automated build process for image optimization to streamline future updates.</p>
+
+      <h3 class="text-xl font-semibold text-navy mt-6">Recommended Tools</h3>
+      <ul class="list-disc pl-6">
+        <li><strong>ImageOptim/ImageMagick:</strong> For batch compression of existing images</li>
+        <li><strong>Squoosh CLI:</strong> For automated WebP conversion</li>
+        <li><strong>GitHub Actions:</strong> For CI/CD integration</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-navy mt-8">Expected Benefits</h2>
+      <div class="grid md:grid-cols-2 gap-6 mt-6">
+        <div class="bg-blue-50 p-6 rounded-xl">
+          <h3 class="font-bold text-blue-800 text-lg mb-2">Performance Improvements</h3>
+          <ul class="list-disc pl-6 text-blue-700">
+            <li>30-50% reduction in image file sizes</li>
+            <li>20-40% faster page load times</li>
+            <li>Reduced bandwidth usage for mobile users</li>
+          </ul>
+        </div>
+        <div class="bg-green-50 p-6 rounded-xl">
+          <h3 class="font-bold text-green-800 text-lg mb-2">User Experience</h3>
+          <ul class="list-disc pl-6 text-green-700">
+            <li>Improved mobile browsing experience</li>
+            <li>Faster image loading on slower connections</li>
+            <li>Better SEO rankings due to performance improvements</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-navy mt-8">Timeline</h2>
+      <div class="mt-6 space-y-4">
+        <div class="flex items-center">
+          <div class="w-8 h-8 rounded-full bg-red text-white flex items-center justify-center font-bold mr-4">1</div>
+          <div>
+            <h3 class="font-bold">Week 1-2: Responsive Images Implementation</h3>
+            <p class="text-gray-600">Complete responsive images for all remaining vehicle pages</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="w-8 h-8 rounded-full bg-red text-white flex items-center justify-center font-bold mr-4">2</div>
+          <div>
+            <h3 class="font-bold">Week 3-4: Image Format Conversion</h3>
+            <p class="text-gray-600">Convert all images to WebP format and update HTML</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="w-8 h-8 rounded-full bg-red text-white flex items-center justify-center font-bold mr-4">3</div>
+          <div>
+            <h3 class="font-bold">Week 5: Automation Setup</h3>
+            <p class="text-gray-600">Implement automated optimization pipeline</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-navy mt-8">Success Metrics</h2>
+      <ul class="list-disc pl-6">
+        <li>Page load time reduced by 30% or more</li>
+        <li>Google PageSpeed score improvement to 90+</li>
+        <li>Reduced bandwidth usage by 40%</li>
+        <li>Improved mobile user engagement metrics</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="bg-navy text-white py-8 mt-12">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Zamto Africa Company Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
