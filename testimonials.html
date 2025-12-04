@@ -9,11 +9,54 @@
   <meta name="apple-mobile-web-app-title" content="Zamto Africa">
   <meta name="mobile-web-app-capable" content="yes">
   <title>Testimonials - Zamto Africa | Japanese Imported Vehicles Zambia</title>
-  <meta name="description" content="Read what our satisfied customers say about Zamto Africa - authentic testimonials from Zambians who have purchased Japanese imported vehicles." />
+  <meta name="description" content="Read authentic testimonials from satisfied customers of Zamto Africa - Zambians who purchased Japanese imported vehicles. Experience quality service & customer satisfaction. See why we're Zambia's trusted vehicle import specialists!" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
-
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://zamtoafrica.com/testimonials.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zamtoafrica.com/testimonials.html">
+  <meta property="og:title" content="Testimonials - Zamto Africa | Japanese Imported Vehicles Zambia">
+  <meta property="og:description" content="Read what our satisfied customers say about Zamto Africa - authentic testimonials from Zambians who have purchased Japanese imported vehicles.">
+  <meta property="og:image" content="https://zamtoafrica.com/logo.png">
+  <meta property="og:site_name" content="Zamto Africa">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://zamtoafrica.com/testimonials.html">
+  <meta property="twitter:title" content="Testimonials - Zamto Africa | Japanese Imported Vehicles Zambia">
+  <meta property="twitter:description" content="Read what our satisfied customers say about Zamto Africa - authentic testimonials from Zambians who have purchased Japanese imported vehicles.">
+  <meta property="twitter:image" content="https://zamtoafrica.com/logo.png">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "Zamto Africa Company Ltd",
+    "url": "https://zamtoafrica.com/",
+    "logo": "https://zamtoafrica.com/logo.png",
+    "description": "Premier destination for authentic Japanese imported vehicles in Zambia",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Roma Park",
+      "addressLocality": "Lusaka",
+      "addressCountry": "Zambia"
+    },
+    "telephone": "+260 572 213 038",
+    "email": "zamtoafrica@gmail.com",
+    "openingHours": "Mo-Su 08:00-18:00",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61581947339658",
+      "https://www.instagram.com/zamtoafrica"
+    ]
+  }
+  </script>
+  
   <!-- Google Fonts - Professional Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +64,7 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="responsive-framework.css">
 
   <style>
     :root {
@@ -46,10 +90,73 @@
     .font-montserrat {
       font-family: 'Montserrat', sans-serif;
     }
+    
+    /* Testimonials page specific responsive styles */
+    .testimonial-card {
+      transition: all 0.3s ease;
+    }
+    
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    @media (max-width: 768px) {
+      .testimonials-layout {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      
+      .testimonial-card {
+        margin-bottom: 2rem;
+      }
+      
+      .testimonials-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+      }
+      
+      .stats-container {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+      }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      
+      .stats-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+      }
+      
+      .stats-container {
+        grid-template-columns: repeat(4, 1fr) !important;
+      }
+    }
   </style>
 </head>
 
 <body class="bg-white text-gray-800">
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-6">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li>
+          <a href="index.html" class="text-navy hover:text-red font-medium">Home</a>
+        </li>
+        <li class="text-gray-400">/</li>
+        <li class="text-gray-500">Testimonials</li>
+      </ol>
+    </div>
+  </nav>
 
   <!-- WhatsApp -->
   <a href="https://wa.me/260572213038" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white p-5 rounded-full shadow-2xl hover:scale-110 transition">

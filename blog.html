@@ -9,11 +9,46 @@
   <meta name="apple-mobile-web-app-title" content="Zamto Africa">
   <meta name="mobile-web-app-capable" content="yes">
   <title>Blog - Zamto Africa | Japanese Imported Vehicles Zambia</title>
-  <meta name="description" content="Stay updated with the latest automotive news, tips, and insights from Zamto Africa - your trusted Japanese vehicle importer in Zambia." />
+  <meta name="description" content="Stay updated with the latest automotive news, tips & insights from Zamto Africa - your trusted Japanese vehicle importer in Zambia. Get expert advice on vehicle selection, maintenance & industry trends. Read our latest articles today!" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
-
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://zamtoafrica.com/blog.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zamtoafrica.com/blog.html">
+  <meta property="og:title" content="Blog - Zamto Africa | Japanese Imported Vehicles Zambia">
+  <meta property="og:description" content="Stay updated with the latest automotive news, tips, and insights from Zamto Africa - your trusted Japanese vehicle importer in Zambia.">
+  <meta property="og:image" content="https://zamtoafrica.com/logo.png">
+  <meta property="og:site_name" content="Zamto Africa">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://zamtoafrica.com/blog.html">
+  <meta property="twitter:title" content="Blog - Zamto Africa | Japanese Imported Vehicles Zambia">
+  <meta property="twitter:description" content="Stay updated with the latest automotive news, tips, and insights from Zamto Africa - your trusted Japanese vehicle importer in Zambia.">
+  <meta property="twitter:image" content="https://zamtoafrica.com/logo.png">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Zamto Africa Blog",
+    "url": "https://zamtoafrica.com/blog.html",
+    "logo": "https://zamtoafrica.com/logo.png",
+    "description": "Latest automotive news, tips, and insights from Zamto Africa - your trusted Japanese vehicle importer in Zambia",
+    "publisher": {
+      "@type": "AutoDealer",
+      "name": "Zamto Africa Company Ltd",
+      "url": "https://zamtoafrica.com/"
+    }
+  }
+  </script>
+  
   <!-- Google Fonts - Professional Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +56,7 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="responsive-framework.css">
 
   <style>
     :root {
@@ -46,10 +82,64 @@
     .font-montserrat {
       font-family: 'Montserrat', sans-serif;
     }
+    
+    /* Blog page specific responsive styles */
+    .blog-post-card {
+      transition: all 0.3s ease;
+    }
+    
+    .blog-post-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    @media (max-width: 768px) {
+      .blog-layout {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      
+      .blog-sidebar {
+        width: 100% !important;
+      }
+      
+      .blog-post-card {
+        margin-bottom: 2rem;
+      }
+      
+      .blog-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+      }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .blog-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+      }
+    }
   </style>
 </head>
 
 <body class="bg-white text-gray-800">
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-6">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li>
+          <a href="index.html" class="text-navy hover:text-red font-medium">Home</a>
+        </li>
+        <li class="text-gray-400">/</li>
+        <li class="text-gray-500">Blog</li>
+      </ol>
+    </div>
+  </nav>
 
   <!-- WhatsApp -->
   <a href="https://wa.me/260572213038" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white p-5 rounded-full shadow-2xl hover:scale-110 transition">

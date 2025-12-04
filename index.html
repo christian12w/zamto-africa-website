@@ -9,11 +9,54 @@
   <meta name="apple-mobile-web-app-title" content="Zamto Africa">
   <meta name="mobile-web-app-capable" content="yes">
   <title>Zamto Africa | Japanese Imported Vehicles Zambia</title>
-  <meta name="description" content="ZAMTO AFRICA COMPANY LTD - Your Trusted Partner in Automotive Freedom." />
+  <meta name="description" content="Discover premium Japanese imported vehicles at Zamto Africa Company Ltd. Quality assured, competitively priced cars, SUVs & commercial vehicles in Zambia. Browse our inventory today and find your perfect vehicle!" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
-
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://zamtoafrica.com/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zamtoafrica.com/">
+  <meta property="og:title" content="Zamto Africa | Japanese Imported Vehicles Zambia">
+  <meta property="og:description" content="ZAMTO AFRICA COMPANY LTD - Your Trusted Partner in Automotive Freedom. Premium Japanese imported vehicles for sale and hire in Zambia.">
+  <meta property="og:image" content="https://zamtoafrica.com/logo.png">
+  <meta property="og:site_name" content="Zamto Africa">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://zamtoafrica.com/">
+  <meta property="twitter:title" content="Zamto Africa | Japanese Imported Vehicles Zambia">
+  <meta property="twitter:description" content="ZAMTO AFRICA COMPANY LTD - Your Trusted Partner in Automotive Freedom. Premium Japanese imported vehicles for sale and hire in Zambia.">
+  <meta property="twitter:image" content="https://zamtoafrica.com/logo.png">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "Zamto Africa Company Ltd",
+    "url": "https://zamtoafrica.com/",
+    "logo": "https://zamtoafrica.com/logo.png",
+    "description": "Premium Japanese imported vehicles for sale and hire in Zambia",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Roma Park",
+      "addressLocality": "Lusaka",
+      "addressCountry": "Zambia"
+    
+    "telephone": "+260 572 213 038",
+    "email": "zamtoafrica@gmail.com",
+    "openingHours": "Mo-Su 08:00-18:00",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61581947339658",
+      "https://www.instagram.com/zamtoafrica"
+    
+  
+  </script>
+  
   <!-- Google Fonts - Professional Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +65,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="image-gallery.js"></script>
+  <link rel="stylesheet" href="responsive-framework.css">
 
   <style>
     :root {
@@ -48,98 +92,75 @@
       font-family: 'Montserrat', sans-serif;
     }
     
-    /* Mobile-First Responsive Enhancements */
-    @media (max-width: 640px) {
-      .hero-title {
-        font-size: 2.5rem !important;
-        line-height: 1.1 !important;
+    /* Additional responsive enhancements for this page */
+    .hero-section {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    
+    @media (max-width: 768px) {
+      .hero-section {
+        background-size: cover;
+        padding: 2rem 1rem !important;
       }
-      .hero-subtitle {
-        font-size: 1.25rem !important;
+      .hero-content {
+        text-align: center;
       }
-      .mobile-padding {
-        padding: 1rem !important;
+      .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
       }
-      .mobile-button {
-        padding: 0.75rem 1.5rem !important;
-        font-size: 1rem !important;
+      .feature-card {
+        margin-bottom: 1.5rem;
       }
+    }
+    
+    @media (min-width: 1024px) {
+      .hero-section {
+        min-height: 90vh;
+      }
+    }
+    
+    /* Vehicle showcase responsiveness */
+    .vehicle-card {
+      transition: all 0.3s ease;
+    }
+    
+    .vehicle-card:hover {
+      transform: translateY(-5px);
     }
     
     @media (max-width: 768px) {
-      .tablet-hidden {
-        display: none !important;
-      }
-      .tablet-full {
-        width: 100% !important;
+      .vehicle-card {
+        margin-bottom: 2rem;
       }
     }
     
-    /* Touch-friendly interactions */
-    @media (hover: none) and (pointer: coarse) {
-      .card-hover:hover {
-        transform: none;
-      }
-      .card-hover:active {
-        transform: scale(0.98);
-      }
+    /* Testimonial section responsiveness */
+    .testimonial-card {
+      transition: all 0.3s ease;
     }
     
-    /* Smooth scrolling for mobile */
-    html {
-      scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
-    }
-    
-    /* Prevent horizontal scroll */
-    body {
-      overflow-x: hidden;
-      max-width: 100vw;
-    }
-    
-    /* Mobile video optimizations */
-    video {
-      max-width: 100%;
-      height: auto;
-    }
-    
-    /* Mobile menu improvements */
-    .mobile-menu {
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in-out;
-    }
-    
-    .mobile-menu.active {
-      transform: translateX(0);
-    }
-    
-    /* Responsive image galleries */
-    .image-gallery img {
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-    
-    /* Mobile card layouts */
-    @media (max-width: 640px) {
-      .vehicle-grid {
-        grid-template-columns: 1fr !important;
-        gap: 1rem !important;
+    @media (max-width: 768px) {
+      .testimonial-card {
+        margin-bottom: 1.5rem;
       }
     }
     
-    /* Mobile form inputs */
-    input, textarea, select {
-      font-size: 16px !important; /* Prevents zoom on iOS */
+    /* Vehicle card styling */
+    .vehicle-card {
+      transition: all 0.3s ease;
     }
     
-    /* Safe area for notched phones */
-    @supports (padding: max(0px)) {
-      .safe-area-top {
-        padding-top: max(1rem, env(safe-area-inset-top));
-      }
-      .safe-area-bottom {
-        padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    .vehicle-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    @media (max-width: 768px) {
+      .vehicle-card {
+        margin-bottom: 2rem;
       }
     }
   </style>
@@ -487,402 +508,567 @@
       
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
         <!-- Toyota Land Cruiser Prado 2014 -->
-        <div class="bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl overflow-hidden card-hover relative" data-category="sale">
-          <div class="absolute top-4 left-4 z-10">
-            <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-bold shadow-lg flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="sale">
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
           </div>
-          <div class="h-32 sm:h-40 md:h-48 relative overflow-hidden group cursor-pointer"
+          <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/white-landcruiser-1.jpg', 'images/vehicles/white-landcruiser-2.jpg', 'images/vehicles/white-landcruiser-3.jpg', 'images/vehicles/white-landcruiser-4.jpg', 'images/vehicles/white-landcruiser-5.jpg'], 0)">
-            <img src="images/vehicles/white-landcruiser-1.jpg" alt="Toyota Land Cruiser Prado 2014 - White" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
-            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-              <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-2 shadow-lg">
-                <i data-lucide="search" class="w-4 h-4 text-gray-800"></i>
+            <img src="images/vehicles/white-landcruiser-1.jpg" alt="Toyota Land Cruiser Prado 2014 - White" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                View Gallery
               </div>
             </div>
-            <div class="absolute top-2 left-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-bold shadow-lg">FOR SALE</div>
-            <div class="absolute bottom-2 right-2 bg-white px-2 py-1 rounded text-xs font-medium text-gray-700 shadow-lg">White</div>
-            <div class="absolute top-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <i data-lucide="maximize-2" class="w-3 h-3 inline mr-1"></i>
-              Click to view
-            </div>
           </div>
-          <div class="p-4 sm:p-6 lg:p-8">
-            <div class="flex justify-between items-start mb-3 sm:mb-4">
-              <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-navy font-heading">Toyota Land Cruiser Prado</h3>
-              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">4WD</span>
+          <div class="p-4">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Toyota Land Cruiser Prado</h3>
+                <p class="text-xs text-gray-500">2014 Model • 112,004 km</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
             </div>
-            <div class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 space-y-1">
-              <p><strong>Year:</strong> 2014 • <strong>Mileage:</strong> 112,004 km</p>
-              <p><strong>Engine:</strong> 2800cc • <strong>Fuel:</strong> Diesel</p>
-              <p><strong>Location:</strong> Lusaka Great East Road</p>
-              <p class="text-green-600 font-medium text-sm">✓ Duty & Registration Complete</p>
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2800cc Diesel</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
             </div>
-            <div class="mb-4 sm:mb-6">
-              <div class="text-xl sm:text-2xl lg:text-3xl font-black text-red">USD25,600</div>
-              <div class="text-sm sm:text-base text-gray-500 font-medium">ZMW588,000</div>
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Duty & Registration Complete</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">USD25,600</span>
+                <span class="text-xs text-gray-500 block">ZMW588,000</span>
+              </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <a href="vehicle-prado-2014.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base flex-1 text-center">
-                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-prado-2014.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
                 View Details
               </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base">
-                <i data-lucide="message-circle" class="w-4 h-4 inline"></i>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
               </a>
             </div>
           </div>
         </div>
 
         <!-- Toyota Land Cruiser Prado 2017 -->
-        <div class="bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl overflow-hidden card-hover relative" data-category="sale">
-          <div class="absolute top-4 left-4 z-10">
-            <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-bold shadow-lg flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="sale">
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
           </div>
-          <div class="h-32 sm:h-40 md:h-48 relative overflow-hidden group cursor-pointer"
+          <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Black-landcruiser-1.jpg', 'images/vehicles/Black-landcruiser-2.jpg', 'images/vehicles/Black-landcruiser-3.jpg', 'images/vehicles/Black-landcruiser-4.jpg', 'images/vehicles/Black-landcruiser-5.jpg'], 0)">
-            <img src="images/vehicles/Black-landcruiser-1.jpg" alt="Toyota Land Cruiser Prado 2017 - Black" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
-            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-              <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-2 shadow-lg">
-                <i data-lucide="search" class="w-4 h-4 text-gray-800"></i>
+            <img src="images/vehicles/Black-landcruiser-1.jpg" alt="Toyota Land Cruiser Prado 2017 - Black" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                View Gallery
               </div>
             </div>
-            <div class="absolute top-2 left-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-bold shadow-lg">FOR SALE</div>
-            <div class="absolute bottom-2 right-2 bg-white px-2 py-1 rounded text-xs font-medium text-gray-700 shadow-lg">Black</div>
-            <div class="absolute top-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <i data-lucide="maximize-2" class="w-3 h-3 inline mr-1"></i>
-              Click to view
-            </div>
           </div>
-          <div class="p-4 sm:p-6 lg:p-8">
-            <div class="flex justify-between items-start mb-3 sm:mb-4">
-              <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-navy font-heading">Toyota Land Cruiser Prado</h3>
-              <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">4WD</span>
+          <div class="p-4">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Toyota Land Cruiser Prado</h3>
+                <p class="text-xs text-gray-500">2017 Model • 89,120 km</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
             </div>
-            <div class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 space-y-1">
-              <p><strong>Year:</strong> 2017 • <strong>Mileage:</strong> 89,120 km</p>
-              <p><strong>Engine:</strong> 2800cc • <strong>Fuel:</strong> Diesel</p>
-              <p><strong>Location:</strong> Lusaka Great East Road</p>
-              <p class="text-green-600 font-medium text-sm">✓ Duty & Registration Complete</p>
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2800cc Diesel</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
             </div>
-            <div class="mb-4 sm:mb-6">
-              <div class="text-xl sm:text-2xl lg:text-3xl font-black text-red">USD29,500</div>
-              <div class="text-sm sm:text-base text-gray-500 font-medium">ZMW677,000</div>
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Duty & Registration Complete</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">USD29,500</span>
+                <span class="text-xs text-gray-500 block">ZMW677,000</span>
+              </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <a href="vehicle-prado-2017.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base flex-1 text-center">
-                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-prado-2017.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
                 View Details
               </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base">
-                <i data-lucide="message-circle" class="w-4 h-4 inline"></i>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
               </a>
             </div>
           </div>
         </div>
 
         <!-- Isuzu D-MAX for Hire -->
-        <div class="bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl overflow-hidden card-hover relative" data-category="hire">
-          <!-- Availability Badge -->
-          <div class="absolute top-3 left-3 z-10">
-            <span class="bg-blue-600 text-white px-2 py-1 rounded text-xs font-bold shadow-lg flex items-center gap-1">
-              <i data-lucide="users" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="hire">
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="users" class="w-3 h-3"></i>
               FOR HIRE
             </span>
           </div>
-          <div class="h-32 sm:h-40 md:h-48 relative overflow-hidden group cursor-pointer"
+          <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Isuzu-MUX-1.jpg', 'images/vehicles/Isuzu-MUX-2.jpg', 'images/vehicles/Isuzu-MUX-3.jpg'], 0)">
-            <img src="images/vehicles/Isuzu-MUX-1.jpg" alt="Isuzu D-MAX 2018" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
-            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-              <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-2 shadow-lg">
-                <i data-lucide="search" class="w-4 h-4 text-gray-800"></i>
+            <img src="images/vehicles/Isuzu-MUX-1.jpg" alt="Isuzu D-MAX 2018" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                View Gallery
               </div>
             </div>
-            <div class="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs font-bold shadow-lg">FOR HIRE</div>
-            <div class="absolute bottom-2 right-2 bg-white px-2 py-1 rounded text-xs font-medium text-gray-700 shadow-lg">Pickup Truck</div>
-            <div class="absolute top-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <i data-lucide="maximize-2" class="w-3 h-3 inline mr-1"></i>
-              Click to view
-            </div>
           </div>
-          <div class="p-4 sm:p-6 lg:p-8">
-            <div class="flex justify-between items-start mb-3 sm:mb-4">
-              <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-navy font-heading">Isuzu D-MAX</h3>
-              <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-medium">PICKUP TRUCKS</span>
+          <div class="p-4">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Isuzu D-MAX</h3>
+                <p class="text-xs text-gray-500">2018 Model • Automatic</p>
+              </div>
+              <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-heading">Pickup Trucks</span>
             </div>
-            <div class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 space-y-1">
-              <p><strong>Year:</strong> 2018 • <strong>Transmission:</strong> Automatic</p>
-              <p><strong>Engine:</strong> 3000cc • <strong>Fuel:</strong> Petrol</p>
-              <p><strong>Capacity:</strong> 5 Seats • 4 Doors</p>
-              <p class="text-blue-600 font-medium text-sm">✓ Includes driver & insurance</p>
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>4 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>3000cc Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
             </div>
-            <div class="mb-4 sm:mb-6">
-              <div class="text-xl sm:text-2xl lg:text-3xl font-black text-red">ZMW2,500</div>
-              <div class="text-sm sm:text-base text-gray-500 font-medium">Per day hire rate</div>
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Includes driver & insurance</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">ZMW2,500</span>
+                <span class="text-xs text-gray-500 block">Per day hire rate</span>
+              </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <a href="vehicle-isuzu-mux-2018.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base flex-1 text-center">
-                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-isuzu-mux-2018.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
                 View Details
               </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base">
-                <i data-lucide="message-circle" class="w-4 h-4 inline"></i>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
               </a>
             </div>
           </div>
         </div>
 
         <!-- Toyota Alphard for Hire -->
-        <div class="bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl overflow-hidden card-hover relative" data-category="hire">
-          <!-- Availability Badge -->
-          <div class="absolute top-3 left-3 z-10">
-            <span class="bg-blue-600 text-white px-2 py-1 rounded text-xs font-bold shadow-lg flex items-center gap-1">
-              <i data-lucide="users" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="hire">
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="users" class="w-3 h-3"></i>
               FOR HIRE
             </span>
           </div>
-          <div class="h-32 sm:h-40 md:h-48 relative overflow-hidden group cursor-pointer"
-               onclick="window.openLightbox(['images/vehicles/Toyota-Alphard-1.jpg', 'images/vehicles/Toyota-Alphard-2.jpg', 'images/vehicles/Toyota-Alphard-3.jpg', 'images/vehicles/Toyota-Alphard-4.jpg'], 0)">
-            <img src="images/vehicles/Toyota-Alphard-1.jpg" alt="Toyota Alphard 2015" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
-            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-              <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-2 shadow-lg">
-                <i data-lucide="search" class="w-4 h-4 text-gray-800"></i>
+          <div class="relative h-48 overflow-hidden cursor-pointer"
+               onclick="window.openLightbox(['images/vehicles/Toyota-Alphard-White-1.jpg', 'images/vehicles/Toyota-Alphard-White-2.jpg', 'images/vehicles/Toyota-Alphard-White-3.jpg', 'images/vehicles/Toyota-Alphard-White-4.jpg'], 0)">
+            <img src="images/vehicles/Toyota-Alphard-White-1.jpg" alt="Toyota Alphard 2015" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                View Gallery
               </div>
             </div>
-            <div class="absolute top-2 left-2 bg-blue-600 text-white px-2 py-1 rounded text-xs font-bold shadow-lg">FOR HIRE</div>
-            <div class="absolute bottom-2 right-2 bg-white px-2 py-1 rounded text-xs font-medium text-gray-700 shadow-lg">Luxury Van</div>
-            <div class="absolute top-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <i data-lucide="maximize-2" class="w-3 h-3 inline mr-1"></i>
-              Click to view
-            </div>
           </div>
-          <div class="p-4 sm:p-6 lg:p-8">
-            <div class="flex justify-between items-start mb-3 sm:mb-4">
-              <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-navy font-heading">Toyota Alphard</h3>
-              <span class="bg-purple-600 text-white px-2 py-1 rounded-full text-xs font-medium">LUXURY VANS</span>
+          <div class="p-4">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Toyota Alphard</h3>
+                <p class="text-xs text-gray-500">2015 Model • Automatic</p>
+              </div>
+              <span class="bg-indigo-600 text-white px-2 py-1 rounded-full text-xs font-heading">MPV</span>
             </div>
-            <div class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 space-y-1">
-              <p><strong>Year:</strong> 2015 • <strong>Transmission:</strong> Automatic</p>
-              <p><strong>Engine:</strong> 2500cc • <strong>Fuel:</strong> Petrol</p>
-              <p><strong>Capacity:</strong> 7 Seats • 4 Doors</p>
-              <p class="text-blue-600 font-medium text-sm">✓ Premium luxury experience</p>
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>7 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>4 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2500cc Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
             </div>
-            <div class="mb-4 sm:mb-6">
-              <div class="text-xl sm:text-2xl lg:text-3xl font-black text-red">ZMW2,500</div>
-              <div class="text-sm sm:text-base text-gray-500 font-medium">Per day hire rate</div>
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Premium luxury experience</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">ZMW2,500</span>
+                <span class="text-xs text-gray-500 block">Per day hire rate</span>
+              </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <a href="vehicle-toyota-alphard-2015.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base flex-1 text-center">
-                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-toyota-alphard-2015.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
                 View Details
               </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base">
-                <i data-lucide="message-circle" class="w-4 h-4 inline"></i>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
               </a>
             </div>
           </div>
         </div>
 
         <!-- BMW X1 2011 -->
-        <div class="bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl overflow-hidden card-hover relative" data-category="sale">
-          <div class="absolute top-4 left-4 z-10">
-            <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-bold shadow-lg flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="sale">
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
           </div>
-          <div class="h-32 sm:h-40 md:h-48 relative overflow-hidden group cursor-pointer"
+          <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/BMW-X1-1.jpg', 'images/vehicles/BMW-X1-2.jpg', 'images/vehicles/BMW-X1-3.jpg'], 0)">
-            <img src="images/vehicles/BMW-X1-1.jpg" alt="BMW X1 2011" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
-            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-              <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-2 shadow-lg">
-                <i data-lucide="search" class="w-4 h-4 text-gray-800"></i>
+            <img src="images/vehicles/BMW-X1-1.jpg" alt="BMW X1 2011" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                View Gallery
               </div>
             </div>
-            <div class="absolute top-2 left-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-bold shadow-lg">FOR SALE</div>
-            <div class="absolute bottom-2 right-2 bg-white px-2 py-1 rounded text-xs font-medium text-gray-700 shadow-lg">SUV</div>
-            <div class="absolute top-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <i data-lucide="maximize-2" class="w-3 h-3 inline mr-1"></i>
-              Click to view
-            </div>
           </div>
-          <div class="p-4 sm:p-6 lg:p-8">
-            <div class="flex justify-between items-start mb-3 sm:mb-4">
-              <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-navy font-heading">BMW X1</h3>
-              <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs font-medium">SMALL CARS</span>
+          <div class="p-4">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">BMW X1</h3>
+                <p class="text-xs text-gray-500">2011 Model • Automatic</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUV</span>
             </div>
-            <div class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 space-y-1">
-              <p><strong>Year:</strong> 2011 • <strong>Mileage:</strong> Available</p>
-              <p><strong>Engine:</strong> 2000cc • <strong>Fuel:</strong> Petrol</p>
-              <p><strong>Transmission:</strong> Automatic</p>
-              <p class="text-green-600 font-medium text-sm">✓ Premium SUV</p>
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2000cc Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
             </div>
-            <div class="mb-4 sm:mb-6">
-              <div class="text-xl sm:text-2xl lg:text-3xl font-black text-red">ZMW197,000</div>
-              <div class="text-sm sm:text-base text-gray-500 font-medium">Negotiable</div>
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Premium SUV</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">ZMW197,000</span>
+                <span class="text-xs text-gray-500 block">Negotiable</span>
+              </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <a href="vehicle-bmw-x1-2011.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base flex-1 text-center">
-                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-bmw-x1-2011.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
                 View Details
               </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base">
-                <i data-lucide="message-circle" class="w-4 h-4 inline"></i>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
               </a>
             </div>
           </div>
         </div>
 
         <!-- Honda Fit 2013 -->
-        <div class="bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl overflow-hidden card-hover relative" data-category="sale">
-          <div class="absolute top-4 left-4 z-10">
-            <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-bold shadow-lg flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="sale">
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
           </div>
-          <div class="h-32 sm:h-40 md:h-48 relative overflow-hidden group cursor-pointer"
+          <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Honda-Fit-1.jpg'], 0)">
-            <img src="images/vehicles/Honda-Fit-1.jpg" alt="Honda Fit 2013" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
-            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-              <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-2 shadow-lg">
-                <i data-lucide="search" class="w-4 h-4 text-gray-800"></i>
+            <img src="images/vehicles/Honda-Fit-1.jpg" alt="Honda Fit 2013" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                View Gallery
               </div>
             </div>
-            <div class="absolute top-2 left-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-bold shadow-lg">FOR SALE</div>
-            <div class="absolute bottom-2 right-2 bg-white px-2 py-1 rounded text-xs font-medium text-gray-700 shadow-lg">Hatchback</div>
-            <div class="absolute top-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <i data-lucide="maximize-2" class="w-3 h-3 inline mr-1"></i>
-              Click to view
-            </div>
           </div>
-          <div class="p-4 sm:p-6 lg:p-8">
-            <div class="flex justify-between items-start mb-3 sm:mb-4">
-              <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-navy font-heading">Honda Fit</h3>
-              <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs font-medium">SMALL CARS</span>
+          <div class="p-4">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Honda Fit</h3>
+                <p class="text-xs text-gray-500">2013 Model • 131,410 km</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">Hatchbacks</span>
             </div>
-            <div class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 space-y-1">
-              <p><strong>Year:</strong> 2013 • <strong>Mileage:</strong> 131,410 km</p>
-              <p><strong>Engine:</strong> 1500cc • <strong>Fuel:</strong> Petrol</p>
-              <p><strong>Transmission:</strong> Automatic</p>
-              <p class="text-green-600 font-medium text-sm">✓ Fuel Efficient</p>
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>1500cc Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
             </div>
-            <div class="mb-4 sm:mb-6">
-              <div class="text-xl sm:text-2xl lg:text-3xl font-black text-red">USD 3,358</div>
-              <div class="text-sm sm:text-base text-gray-500 font-medium">Great Value</div>
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Fuel Efficient</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">USD 3,358</span>
+                <span class="text-xs text-gray-500 block">Great Value</span>
+              </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <a href="vehicle-honda-fit-2013.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base flex-1 text-center">
-                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-honda-fit-2013.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
                 View Details
               </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base">
-                <i data-lucide="message-circle" class="w-4 h-4 inline"></i>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
               </a>
             </div>
           </div>
         </div>
 
         <!-- Mitsubishi Pajero 2012 -->
-        <div class="bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl overflow-hidden card-hover relative" data-category="sale">
-          <div class="absolute top-4 left-4 z-10">
-            <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-bold shadow-lg flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="sale">
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
           </div>
-          <div class="h-32 sm:h-40 md:h-48 relative overflow-hidden group cursor-pointer"
+          <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Mitsubishi Pajero-1.jpg', 'images/vehicles/Mitsubishi Pajero-2.jpg', 'images/vehicles/Mitsubishi Pajero-3.jpg'], 0)">
-            <img src="images/vehicles/Mitsubishi Pajero-1.jpg" alt="Mitsubishi Pajero 2012" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
-            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-              <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-2 shadow-lg">
-                <i data-lucide="search" class="w-4 h-4 text-gray-800"></i>
+            <img src="images/vehicles/Mitsubishi Pajero-1.jpg" alt="Mitsubishi Pajero 2012" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                View Gallery
               </div>
             </div>
-            <div class="absolute top-2 left-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-bold shadow-lg">FOR SALE</div>
-            <div class="absolute bottom-2 right-2 bg-white px-2 py-1 rounded text-xs font-medium text-gray-700 shadow-lg">SUV</div>
-            <div class="absolute top-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <i data-lucide="maximize-2" class="w-3 h-3 inline mr-1"></i>
-              Click to view
-            </div>
           </div>
-          <div class="p-4 sm:p-6 lg:p-8">
-            <div class="flex justify-between items-start mb-3 sm:mb-4">
-              <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-navy font-heading">Mitsubishi Pajero</h3>
-              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-medium">SUV</span>
+          <div class="p-4">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Mitsubishi Pajero</h3>
+                <p class="text-xs text-gray-500">2012 Model • 95,000 km</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUV</span>
             </div>
-            <div class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 space-y-1">
-              <p><strong>Year:</strong> 2012 • <strong>Mileage:</strong> 95,000 km</p>
-              <p><strong>Engine:</strong> 3200cc • <strong>Fuel:</strong> Diesel</p>
-              <p><strong>Transmission:</strong> Automatic • 4WD</p>
-              <p class="text-green-600 font-medium text-sm">✓ Pearl White • Duty Complete</p>
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>3200cc Diesel</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic • 4WD</span>
+              </div>
             </div>
-            <div class="mb-4 sm:mb-6">
-              <div class="text-xl sm:text-2xl lg:text-3xl font-black text-red">ZMW366,000</div>
-              <div class="text-sm sm:text-base text-gray-500 font-medium">USD16,500 • Excellent Value</div>
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Pearl White • Duty Complete</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">ZMW366,000</span>
+                <span class="text-xs text-gray-500 block">USD16,000 • Excellent Value</span>
+              </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <a href="vehicle-mitsubishi-pajero-2012.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base flex-1 text-center">
-                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-mitsubishi-pajero-2012.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
                 View Details
               </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base">
-                <i data-lucide="message-circle" class="w-4 h-4 inline"></i>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
               </a>
             </div>
           </div>
         </div>
 
         <!-- Toyota Passo 2012 -->
-        <div class="bg-white rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl overflow-hidden card-hover relative" data-category="sale">
-          <div class="absolute top-4 left-4 z-10">
-            <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs sm:text-sm font-bold shadow-lg flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="sale">
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
           </div>
-          <div class="h-32 sm:h-40 md:h-48 relative overflow-hidden group cursor-pointer"
+          <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Toyota-Passo-for-sale-1.jpg', 'images/vehicles/Toyota-Passo-for-sale-2.jpg', 'images/vehicles/Toyota-Passo-for-sale-3.jpg'], 0)">
-            <img src="images/vehicles/Toyota-Passo-for-sale-1.jpg" alt="Toyota Passo 2012" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy">
-            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-              <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-2 shadow-lg">
-                <i data-lucide="search" class="w-4 h-4 text-gray-800"></i>
+            <img src="images/vehicles/Toyota-Passo-for-sale-1.jpg" alt="Toyota Passo 2012" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                View Gallery
               </div>
             </div>
-            <div class="absolute top-2 left-2 bg-green-600 text-white px-2 py-1 rounded text-xs font-bold shadow-lg">FOR SALE</div>
-            <div class="absolute bottom-2 right-2 bg-white px-2 py-1 rounded text-xs font-medium text-gray-700 shadow-lg">Hatchback</div>
-            <div class="absolute top-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <i data-lucide="maximize-2" class="w-3 h-3 inline mr-1"></i>
-              Click to view
-            </div>
           </div>
-          <div class="p-4 sm:p-6 lg:p-8">
-            <div class="flex justify-between items-start mb-3 sm:mb-4">
-              <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-navy font-heading">Toyota Passo</h3>
-              <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs font-medium">SMALL CARS</span>
+          <div class="p-4">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Toyota Passo</h3>
+                <p class="text-xs text-gray-500">2012 Model • 85,000 km</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">Hatchbacks</span>
             </div>
-            <div class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 space-y-1">
-              <p><strong>Year:</strong> 2012 • <strong>Mileage:</strong> 85,000 km</p>
-              <p><strong>Engine:</strong> 1000cc • <strong>Fuel:</strong> Petrol</p>
-              <p><strong>Transmission:</strong> Automatic • 5 Seats</p>
-              <p class="text-green-600 font-medium text-sm">✓ Silver • Fuel Efficient</p>
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>1000cc Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
             </div>
-            <div class="mb-4 sm:mb-6">
-              <div class="text-xl sm:text-2xl lg:text-3xl font-black text-red">ZMW135,000</div>
-              <div class="text-sm sm:text-base text-gray-500 font-medium">USD5,900 • Great Value</div>
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Silver • Fuel Efficient</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">ZMW135,000</span>
+                <span class="text-xs text-gray-500 block">USD5,900 • Great Value</span>
+              </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3">
-              <a href="vehicle-toyota-passo-2012.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base flex-1 text-center">
-                <i data-lucide="eye" class="w-4 h-4 inline mr-2"></i>
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-toyota-passo-2012.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
                 View Details
               </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl font-bold transition font-heading text-sm sm:text-base">
-                <i data-lucide="message-circle" class="w-4 h-4 inline"></i>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Legend 2023 -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" data-category="sale">
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          <div class="relative h-48 overflow-hidden cursor-pointer"
+               onclick="window.openLightbox(['images/vehicles/legend-1.jpg', 'images/vehicles/legend-2.jpg', 'images/vehicles/legend-3.jpg'], 0)">
+            <img src="images/vehicles/legend-1.jpg" alt="Legend 2023" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                View Gallery
+              </div>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Legend</h3>
+                <p class="text-xs text-gray-500">2023 Model • 32,000 km</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
+            </div>
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>Multiple Airbags</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>4x4</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2.8GD-6 Diesel</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">$43,500</span>
+                <span class="text-xs text-gray-500 block">K1,000,000</span>
+              </div>
+            </div>
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-legend-2023.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
               </a>
             </div>
           </div>
@@ -1256,23 +1442,45 @@
           <div>
             <h4 class="text-lg font-bold mb-6 font-heading text-red">Our Services</h4>
             <ul class="space-y-3">
-              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
-                <i data-lucide="car" class="w-4 h-4 text-red"></i> Vehicle Sales
+              <li><a href="services.html#vehicle-sales" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Vehicle Sales
               </a></li>
-              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
-                <i data-lucide="key" class="w-4 h-4 text-red"></i> Vehicle Hire
+              <li><a href="services.html#vehicle-hire" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Vehicle Hire
               </a></li>
-              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
-                <i data-lucide="wrench" class="w-4 h-4 text-red"></i> Maintenance & Repair
+              <li><a href="services.html#maintenance" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Maintenance Services
               </a></li>
-              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
-                <i data-lucide="ship" class="w-4 h-4 text-red"></i> Vehicle Importation
+              <li><a href="services.html#importation" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Importation Process
               </a></li>
-              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
-                <i data-lucide="shield-check" class="w-4 h-4 text-red"></i> Insurance Services
+              <li><a href="services.html#warranty" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Warranty Support
               </a></li>
-              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
-                <i data-lucide="file-text" class="w-4 h-4 text-red"></i> Vehicle Documentation
+            </ul>
+          </div>
+          
+          <!-- Vehicle Categories -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Vehicle Categories</h4>
+            <ul class="space-y-3">
+              <li><a href="inventory.html#hatchbacks" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Hatchbacks
+              </a></li>
+              <li><a href="inventory.html#sedans" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Sedans
+              </a></li>
+              <li><a href="inventory.html#suvs" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> SUVs & Crossovers
+              </a></li>
+              <li><a href="inventory.html#pickups" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Pickups & Trucks
+              </a></li>
+              <li><a href="inventory.html#vans" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Vans & MPVs
+              </a></li>
+              <li><a href="inventory.html#luxury" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Luxury Vehicles
               </a></li>
             </ul>
           </div>
@@ -1347,12 +1555,18 @@
         btn.classList.add('text-gray-600', 'hover:bg-gray-100');
       });
       
-      // Highlight active button
-      event.target.classList.remove('text-gray-600', 'hover:bg-gray-100');
-      event.target.classList.add('bg-red', 'text-white');
+      // Highlight active button (find the button that matches the category)
+      const activeButton = Array.from(tabButtons).find(btn => 
+        btn.getAttribute('onclick').includes(category)
+      );
+      
+      if (activeButton) {
+        activeButton.classList.remove('text-gray-600', 'hover:bg-gray-100');
+        activeButton.classList.add('bg-red', 'text-white');
+      }
       
       // Filter vehicle cards
-      const vehicleCards = document.querySelectorAll('.card-hover');
+      const vehicleCards = document.querySelectorAll('.vehicle-card');
       let visibleCount = 0;
       
       vehicleCards.forEach(card => {
@@ -1388,7 +1602,13 @@
       }
     }
     
-    // Mobile Menu Functionality
+    // Initialize tabs on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set "All Vehicles" as active by default
+      showVehicleCategory('all');
+    });
+  
+  // Mobile Menu Functionality
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const closeMobileMenu = document.getElementById('close-mobile-menu');
     const mobileMenu = document.getElementById('mobile-menu');

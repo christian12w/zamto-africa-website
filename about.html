@@ -9,10 +9,53 @@
   <meta name="apple-mobile-web-app-title" content="Zamto Africa">
   <meta name="mobile-web-app-capable" content="yes">
   <title>About Us - Zamto Africa | Japanese Imported Vehicles Zambia</title>
-  <meta name="description" content="Learn about Zamto Africa Company Ltd - Zambia's premier destination for authentic Japanese imported vehicles. Our story, mission, and commitment to excellence." />
+  <meta name="description" content="Learn about Zamto Africa Company Ltd - Zambia's premier destination for authentic Japanese imported vehicles. Discover our story, mission, values & commitment to excellence in automotive services. Experience quality like never before!" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://zamtoafrica.com/about.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zamtoafrica.com/about.html">
+  <meta property="og:title" content="About Us - Zamto Africa | Japanese Imported Vehicles Zambia">
+  <meta property="og:description" content="Learn about Zamto Africa Company Ltd - Zambia's premier destination for authentic Japanese imported vehicles. Our story, mission, values, and commitment to excellence.">
+  <meta property="og:image" content="https://zamtoafrica.com/logo.png">
+  <meta property="og:site_name" content="Zamto Africa">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://zamtoafrica.com/about.html">
+  <meta property="twitter:title" content="About Us - Zamto Africa | Japanese Imported Vehicles Zambia">
+  <meta property="twitter:description" content="Learn about Zamto Africa Company Ltd - Zambia's premier destination for authentic Japanese imported vehicles. Our story, mission, values, and commitment to excellence.">
+  <meta property="twitter:image" content="https://zamtoafrica.com/logo.png">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "Zamto Africa Company Ltd",
+    "url": "https://zamtoafrica.com/",
+    "logo": "https://zamtoafrica.com/logo.png",
+    "description": "Premier destination for authentic Japanese imported vehicles in Zambia",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Roma Park",
+      "addressLocality": "Lusaka",
+      "addressCountry": "Zambia"
+    },
+    "telephone": "+260 572 213 038",
+    "email": "zamtoafrica@gmail.com",
+    "openingHours": "Mo-Su 08:00-18:00",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61581947339658",
+      "https://www.instagram.com/zamtoafrica"
+    ]
+  }
+  </script>
 
   <!-- Google Fonts - Professional Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +64,7 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="responsive-framework.css">
 
   <style>
     :root {
@@ -46,10 +90,60 @@
     .font-montserrat {
       font-family: 'Montserrat', sans-serif;
     }
+    
+    /* About page specific responsive styles */
+    .team-member-card {
+      transition: all 0.3s ease;
+    }
+    
+    .team-member-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    @media (max-width: 768px) {
+      .mission-vision-section {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      
+      .team-member-card {
+        margin-bottom: 2rem;
+      }
+      
+      .stats-container {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+      }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .stats-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .stats-container {
+        grid-template-columns: repeat(4, 1fr) !important;
+      }
+    }
   </style>
 </head>
 
 <body class="bg-white text-gray-800">
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-6">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li>
+          <a href="index.html" class="text-navy hover:text-red font-medium">Home</a>
+        </li>
+        <li class="text-gray-400">/</li>
+        <li class="text-gray-500">About Us</li>
+      </ol>
+    </div>
+  </nav>
 
   <!-- WhatsApp -->
   <a href="https://wa.me/260572213038" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white p-5 rounded-full shadow-2xl hover:scale-110 transition">

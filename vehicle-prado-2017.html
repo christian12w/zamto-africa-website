@@ -3,11 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#003087">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Zamto Africa">
-  <meta name="mobile-web-app-capable" content="yes">
   <title>Toyota Land Cruiser Prado 2017 - Zamto Africa | Japanese Imported Vehicles Zambia</title>
   <meta name="description" content="Toyota Land Cruiser Prado 2017 - Premium Japanese imported SUV available at Zamto Africa Company Ltd." />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -239,6 +234,16 @@
         </div>
     </div>
 
+    <!-- Vehicle Status Banner -->
+    <div class="bg-gradient-to-r from-green-600 to-green-700 text-white py-3">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-2">
+                <i data-lucide="check-circle" class="w-5 h-5"></i>
+                <span class="font-medium">This vehicle is currently available for purchase</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Vehicle Details -->
     <section class="py-12 bg-white">
         <div class="container mx-auto px-6">
@@ -247,10 +252,14 @@
                 <div class="space-y-4">
                     <!-- Main Image with Zoom -->
                     <div class="bg-gray-100 rounded-2xl h-96 overflow-hidden relative group">
-                        <img src="images/vehicles/black-landcruiser-1.jpg" 
-                             alt="Toyota Land Cruiser Prado 2017 - Front View" 
-                             class="main-vehicle-image w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                             data-gallery="images/vehicles/black-landcruiser-1.jpg,images/vehicles/black-landcruiser-2.jpg,images/vehicles/black-landcruiser-3.jpg,images/vehicles/black-landcruiser-4.jpg,images/vehicles/black-landcruiser-5.jpg" loading="lazy">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="images/vehicles/black-landcruiser-1.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/vehicles/black-landcruiser-1.jpg">
+                            <img src="images/vehicles/black-landcruiser-1.jpg" 
+                                 alt="Toyota Land Cruiser Prado 2017 - Front View" 
+                                 class="main-vehicle-image w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                 data-gallery="images/vehicles/black-landcruiser-1.jpg,images/vehicles/black-landcruiser-2.jpg,images/vehicles/black-landcruiser-3.jpg,images/vehicles/black-landcruiser-4.jpg,images/vehicles/black-landcruiser-5.jpg" loading="lazy">
+                        </picture>
                         <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
                             <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-3 shadow-lg">
                                 <i data-lucide="search" class="w-6 h-6 text-gray-800"></i>
@@ -267,24 +276,40 @@
                     <!-- Thumbnail Gallery -->
                     <div class="grid grid-cols-4 gap-2">
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg">
-                            <img src="images/vehicles/black-landcruiser-1.jpg" 
-                                 alt="Toyota Land Cruiser Prado 2017 - Front View" 
-                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/black-landcruiser-1.jpg">
+                                <source media="(max-width: 1200px)" srcset="images/vehicles/black-landcruiser-1.jpg">
+                                <img src="images/vehicles/black-landcruiser-1.jpg" 
+                                     alt="Toyota Land Cruiser Prado 2017 - Front View" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
-                            <img src="images/vehicles/black-landcruiser-2.jpg" 
-                                 alt="Toyota Land Cruiser Prado 2017 - Side View" 
-                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/black-landcruiser-2.jpg">
+                                <source media="(max-width: 1200px)" srcset="images/vehicles/black-landcruiser-2.jpg">
+                                <img src="images/vehicles/black-landcruiser-2.jpg" 
+                                     alt="Toyota Land Cruiser Prado 2017 - Side View" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
-                            <img src="images/vehicles/black-landcruiser-3.jpg" 
-                                 alt="Toyota Land Cruiser Prado 2017 - Rear View" 
-                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/black-landcruiser-3.jpg">
+                                <source media="(max-width: 1200px)" srcset="images/vehicles/black-landcruiser-3.jpg">
+                                <img src="images/vehicles/black-landcruiser-3.jpg" 
+                                     alt="Toyota Land Cruiser Prado 2017 - Rear View" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
-                            <img src="images/vehicles/black-landcruiser-4.jpg" 
-                                 alt="Toyota Land Cruiser Prado 2017 - Interior" 
-                                 class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/black-landcruiser-4.jpg">
+                                <source media="(max-width: 1200px)" srcset="images/vehicles/black-landcruiser-4.jpg">
+                                <img src="images/vehicles/black-landcruiser-4.jpg" 
+                                     alt="Toyota Land Cruiser Prado 2017 - Interior" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
                     </div>
                     
@@ -292,9 +317,13 @@
                     <div class="grid grid-cols-2 gap-2">
                         <div class="bg-gray-100 rounded-lg h-32 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer"
                              onclick="window.openLightbox(['images/vehicles/black-landcruiser-5.jpg'], 0)">
-                            <img src="images/vehicles/black-landcruiser-5.jpg" 
-                                 alt="Toyota Land Cruiser Prado 2017 - Dashboard" 
-                                 class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/black-landcruiser-5.jpg">
+                                <source media="(max-width: 1200px)" srcset="images/vehicles/black-landcruiser-5.jpg">
+                                <img src="images/vehicles/black-landcruiser-5.jpg" 
+                                     alt="Toyota Land Cruiser Prado 2017 - Dashboard" 
+                                     class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                             <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
                                 <i data-lucide="plus" class="w-6 h-6 text-white opacity-0 hover:opacity-100 transition-opacity duration-300"></i>
                             </div>
@@ -317,11 +346,11 @@
                             <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">4WD</span>
                         </div>
                         <h1 class="text-4xl font-black font-heading text-navy mb-2">Toyota Land Cruiser Prado</h1>
-                        <p class="text-xl text-gray-600 mb-4">2017 Model • 89,120 km • Diesel</p>
+                        <p class="text-xl text-gray-600 mb-4">2017 Model • Automatic • Diesel</p>
                         
                         <div class="flex items-baseline gap-4 mb-6">
-                            <div class="text-4xl font-black text-red">USD29,500</div>
-                            <div class="text-xl text-gray-500 font-medium">ZMW677,000</div>
+                            <div class="text-3xl font-black text-red">$29,500 - ZMW677,000</div>
+                            <div class="text-xl text-gray-500 font-medium">Price Range</div>
                         </div>
 
                         <div class="bg-green-50 border border-green-200 rounded-xl p-4 mb-6">
@@ -344,21 +373,60 @@
                         </div>
                     </div>
 
+                    <!-- Toyota Prado Specific Features -->
+                    <div>
+                        <h3 class="text-xl font-bold text-navy mb-3 font-heading">Toyota Prado Specific Features</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">Toyota 2.8L D-4D Diesel Engine</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">6-Speed Automatic Transmission</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">Toyota Touch 2 Infotainment System</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">Semi-Aniline Leather Interior</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">Dual Zone Climate Control</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">JBL Premium Sound System</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">Panoramic Sunroof</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                <span class="text-gray-700">360-degree Panoramic Camera</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Key Specifications -->
                     <div class="bg-gray-50 rounded-2xl p-6">
-                        <h3 class="text-xl font-bold font-heading text-navy mb-4">Key Specifications</h3>
+                        <h3 class="text-xl font-bold font-heading text-navy mb-4">Toyota Prado Key Specifications</h3>
                         <div class="grid grid-cols-2 gap-4">
                             <div>
                                 <p class="text-sm text-gray-500">Year</p>
                                 <p class="font-semibold">2017</p>
                             </div>
                             <div>
-                                <p class="text-sm text-gray-500">Mileage</p>
-                                <p class="font-semibold">89,120 km</p>
+                                <p class="text-sm text-gray-500">Seats</p>
+                                <p class="font-semibold">7 Seats</p>
                             </div>
                             <div>
-                                <p class="text-sm text-gray-500">Engine Capacity</p>
-                                <p class="font-semibold">2800cc</p>
+                                <p class="text-sm text-gray-500">Doors</p>
+                                <p class="font-semibold">5 Doors</p>
                             </div>
                             <div>
                                 <p class="text-sm text-gray-500">Fuel Type</p>
@@ -369,16 +437,8 @@
                                 <p class="font-semibold">Automatic</p>
                             </div>
                             <div>
-                                <p class="text-sm text-gray-500">Drive Train</p>
-                                <p class="font-semibold">4WD</p>
-                            </div>
-                            <div>
-                                <p class="text-sm text-gray-500">Color</p>
-                                <p class="font-semibold">Black</p>
-                            </div>
-                            <div>
-                                <p class="text-sm text-gray-500">Location</p>
-                                <p class="font-semibold">Lusaka Great East Road</p>
+                                <p class="text-sm text-gray-500">Engine Size</p>
+                                <p class="font-semibold">2800cc</p>
                             </div>
                         </div>
                     </div>
@@ -399,111 +459,213 @@
         </div>
     </section>
 
-    <!-- Detailed Information Tabs -->
+    <!-- Technical Specifications Section -->
     <section class="py-12 bg-gray-50">
         <div class="container mx-auto px-6">
-            <div class="bg-white rounded-2xl shadow-xl p-8">
-                <!-- Tab Headers -->
-                <div class="flex flex-wrap gap-4 mb-8 border-b">
-                    <button class="tab-btn px-4 py-2 font-heading font-bold text-navy border-b-2 border-navy" data-tab="overview">Overview</button>
-                    <button class="tab-btn px-4 py-2 font-heading font-bold text-gray-500 hover:text-navy transition" data-tab="specifications">Specifications</button>
-                    <button class="tab-btn px-4 py-2 font-heading font-bold text-gray-500 hover:text-navy transition" data-tab="features">Features</button>
-                    <button class="tab-btn px-4 py-2 font-heading font-bold text-gray-500 hover:text-navy transition" data-tab="location">Location</button>
+            <h2 class="text-3xl font-bold text-navy mb-8 font-heading text-center">Toyota Prado Technical Specifications</h2>
+            
+            <!-- Tab Navigation -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <button onclick="showTab('engine')" class="tab-btn bg-navy text-white px-6 py-3 rounded-xl font-semibold transition" data-tab="engine">Engine & Performance</button>
+                <button onclick="showTab('dimensions')" class="tab-btn bg-white text-navy border border-navy px-6 py-3 rounded-xl font-semibold transition hover:bg-navy hover:text-white" data-tab="dimensions">Dimensions</button>
+                <button onclick="showTab('features')" class="tab-btn bg-white text-navy border border-navy px-6 py-3 rounded-xl font-semibold transition hover:bg-navy hover:text-white" data-tab="features">Features</button>
+                <button onclick="showTab('safety')" class="tab-btn bg-white text-navy border border-navy px-6 py-3 rounded-xl font-semibold transition hover:bg-navy hover:text-white" data-tab="safety">Safety</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
+                <!-- Engine Tab -->
+                <div id="engine-tab" class="tab-content">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Toyota Engine Type</p>
+                                <p class="font-bold text-navy">2.8L D-4D Diesel I4</p>
+                            </div>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Horsepower</p>
+                                <p class="font-bold text-navy">177 HP @ 3,400 RPM</p>
+                            </div>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Torque</p>
+                                <p class="font-bold text-navy">450 Nm @ 1,600-2,400 RPM</p>
+                            </div>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Toyota Transmission</p>
+                                <p class="font-bold text-navy">6-Speed Automatic</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Toyota Drive System</p>
+                                <p class="font-bold text-navy">Full-time 4WD with Center Lock</p>
+                            </div>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Toyota Fuel System</p>
+                                <p class="font-bold text-navy">Common Rail Direct Injection</p>
+                            </div>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Fuel Consumption</p>
+                                <p class="font-bold text-navy">7.2L/100km (Combined)</p>
+                            </div>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Emissions Standard</p>
+                                <p class="font-bold text-navy">Euro 5</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Tab Content -->
-                <div id="tab-content">
-                    <div class="tab-pane" id="overview">
-                        <h3 class="text-2xl font-bold font-heading text-navy mb-4">Vehicle Overview</h3>
-                        <p class="text-gray-600 mb-4">
-                            This 2017 Toyota Land Cruiser Prado represents the pinnacle of luxury SUV engineering. With only 89,120 km on the odometer, this vehicle has been meticulously maintained and is in excellent condition.
-                        </p>
-                        <p class="text-gray-600 mb-4">
-                            The sleek black exterior exudes sophistication while the powerful 2800cc diesel engine provides exceptional performance and fuel efficiency. This vehicle comes with complete duty and registration documentation, ensuring a smooth transfer process.
-                        </p>
-                        <p class="text-gray-600">
-                            Located on Lusaka's Great East Road, this premium SUV is ready for immediate viewing and test drives. The 2017 model features enhanced technology and comfort features compared to earlier models, making it an excellent choice for discerning buyers.
-                        </p>
-                    </div>
-
-                    <div class="tab-pane hidden" id="specifications">
-                        <h3 class="text-2xl font-bold font-heading text-navy mb-4">Technical Specifications</h3>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <h4 class="font-bold mb-3">Engine & Performance</h4>
-                                <ul class="space-y-2 text-gray-600">
-                                    <li><strong>Engine:</strong> 2.8L D-4D Diesel</li>
-                                    <li><strong>Capacity:</strong> 2800cc</li>
-                                    <li><strong>Power:</strong> 177 HP @ 3400 rpm</li>
-                                    <li><strong>Torque:</strong> 450 Nm @ 1600-2400 rpm</li>
-                                    <li><strong>Transmission:</strong> 6-Speed Automatic</li>
-                                    <li><strong>Drive Train:</strong> Full-time 4WD</li>
-                                </ul>
+                <!-- Dimensions Tab -->
+                <div id="dimensions-tab" class="tab-content hidden">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Toyota Prado Length</p>
+                                <p class="font-bold text-navy">4,780 mm</p>
                             </div>
-                            <div>
-                                <h4 class="font-bold mb-3">Dimensions & Weight</h4>
-                                <ul class="space-y-2 text-gray-600">
-                                    <li><strong>Length:</strong> 4,780 mm</li>
-                                    <li><strong>Width:</strong> 1,885 mm</li>
-                                    <li><strong>Height:</strong> 1,840 mm</li>
-                                    <li><strong>Wheelbase:</strong> 2,790 mm</li>
-                                    <li><strong>Ground Clearance:</strong> 220 mm</li>
-                                    <li><strong>Curb Weight:</strong> 2,210 kg</li>
-                                </ul>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Toyota Prado Width</p>
+                                <p class="font-bold text-navy">1,885 mm</p>
+                            </div>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Toyota Prado Height</p>
+                                <p class="font-bold text-navy">1,840 mm</p>
+                            </div>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Toyota Prado Wheelbase</p>
+                                <p class="font-bold text-navy">2,790 mm</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Toyota Prado Curb Weight</p>
+                                <p class="font-bold text-navy">2,210 kg</p>
+                            </div>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Ground Clearance</p>
+                                <p class="font-bold text-navy">220 mm</p>
+                            </div>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Toyota Trunk Capacity</p>
+                                <p class="font-bold text-navy">150 liters (3rd row folded)</p>
+                            </div>
+                            <div class="spec-row p-4 rounded-lg transition">
+                                <p class="text-sm text-gray-600 mb-1">Toyota Fuel Tank</p>
+                                <p class="font-bold text-navy">87 liters</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="tab-pane hidden" id="features">
-                        <h3 class="text-2xl font-bold font-heading text-navy mb-4">Toyota Prado 2017 Advanced Features</h3>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <h4 class="font-bold mb-3">2017 Premium Interior Features</h4>
-                                <ul class="space-y-2 text-gray-600">
-                                    <li>✓ Semi-Aniline Leather Seats</li>
-                                    <li>✓ Toyota Dual Zone Climate Control</li>
-                                    <li>✓ 8-inch Toyota Touch 2 Display</li>
-                                    <li>✓ Apple CarPlay & Android Auto</li>
-                                    <li>✓ JBL Premium Audio (9 Speakers)</li>
-                                    <li>✓ Dynamic Radar Cruise Control</li>
-                                    <li>✓ Panoramic Sunroof</li>
-                                    <li>✓ Heated & Ventilated Front Seats</li>
-                                </ul>
+                <!-- Features Tab -->
+                <div id="features-tab" class="tab-content hidden">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-navy text-lg mb-3">Toyota Prado Interior Features</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Semi-Aniline Leather Upholstery</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Toyota Dual Zone Climate Control</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">8-inch Toyota Touch 2 Display</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">JBL Premium Audio System</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Panoramic Glass Sunroof</span>
+                                </div>
                             </div>
-                            <div>
-                                <h4 class="font-bold mb-3">2017 Advanced Safety & 4WD</h4>
-                                <ul class="space-y-2 text-gray-600">
-                                    <li>✓ Toyota Safety Sense P</li>
-                                    <li>✓ 8 Airbags System</li>
-                                    <li>✓ Toyota Vehicle Stability Control+</li>
-                                    <li>✓ Hill Start Assist Control</li>
-                                    <li>✓ 360-degree Panoramic Camera</li>
-                                    <li>✓ Blind Spot Monitor & RCTA</li>
-                                    <li>✓ Full-time 4WD with Center Lock</li>
-                                    <li>✓ Multi-Terrain Select System</li>
-                                </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-navy text-lg mb-3">Toyota Prado Exterior Features</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">LED Headlights with DRL</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">LED Daytime Running Lights</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">18" Toyota Alloy Wheels</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Toyota Park Distance Control</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Rain Sensing Wipers</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="tab-pane hidden" id="location">
-                        <h3 class="text-2xl font-bold font-heading text-navy mb-4">Location & Viewing</h3>
-                        <div class="bg-gray-50 rounded-xl p-6 mb-6">
-                            <h4 class="font-bold mb-3">Showroom Location</h4>
-                            <p class="text-gray-600 mb-2">
-                                <strong>Address:</strong> Great East Road, Lusaka, Zambia<br>
-                                <strong>Hours:</strong> Monday - Friday: 8:00 AM - 6:00 PM<br>
-                                <strong>Saturday:</strong> 9:00 AM - 4:00 PM<br>
-                                <strong>Sunday:</strong> Closed
-                            </p>
+                <!-- Safety Tab -->
+                <div id="safety-tab" class="tab-content hidden">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-navy text-lg mb-3">Toyota Prado Safety Features</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="shield" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">8 Airbags System</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="shield" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Toyota Radar Cruise Control</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="shield" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Toyota Lane Departure Warning</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="shield" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Toyota Blind Spot Monitoring</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="shield" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Cornering Brake Control</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="bg-blue-50 border border-blue-200 rounded-xl p-6">
-                            <h4 class="font-bold mb-3">Contact Information</h4>
-                            <p class="text-gray-600">
-                                <strong>Phone:</strong> +260 572 213 038<br>
-                                <strong>WhatsApp:</strong> +260 572 213 038<br>
-                                <strong>Email:</strong> zamtoafrica@gmail.com
-                            </p>
+                        <div class="space-y-4">
+                            <h4 class="font-bold text-navy text-lg mb-3">Toyota Prado Driver Assistance</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="camera" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Toyota Park Distance Control (Rear)</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="camera" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Rain Sensing Automatic Wipers</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="camera" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Auto-Dimming Rear View Mirror</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="camera" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Toyota Smart City Brake Support</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="camera" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Tyre Pressure Monitoring</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -582,49 +744,153 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-navy text-white">
-        <div class="py-12">
-            <div class="container mx-auto px-6">
-                <div class="grid md:grid-cols-4 gap-8">
-                    <div>
-                        <h3 class="text-xl font-bold mb-4 font-heading">ZAMTO AFRICA</h3>
-                        <p class="text-gray-300">Zambia's premier destination for authentic Japanese imported vehicles.</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold mb-4">Quick Links</h4>
-                        <ul class="space-y-2">
-                            <li><a href="index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
-                            <li><a href="inventory.html" class="text-gray-300 hover:text-white transition">Inventory</a></li>
-                            <li><a href="contact.html" class="text-gray-300 hover:text-white transition">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-bold mb-4">Contact</h4>
-                        <p class="text-gray-300">+260 572 213 038</p>
-                        <p class="text-gray-300">zamtoafrica@gmail.com</p>
-                        <p class="text-gray-300">Great East Road, Lusaka</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold mb-4">Follow Us</h4>
-                        <div class="flex gap-4">
-                            <a href="#" class="text-gray-300 hover:text-white transition">
-                                <i data-lucide="facebook" class="w-5 h-5"></i>
-                            </a>
-                            <a href="#" class="text-gray-300 hover:text-white transition">
-                                <i data-lucide="instagram" class="w-5 h-5"></i>
-                            </a>
-                        </div>
-                    </div>
+  <!-- FOOTER - Modern Standard Design -->
+  <footer class="bg-navy text-white">
+    <!-- Main Footer Content -->
+    <div class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12">
+          <!-- Company Info -->
+          <div class="col-span-1">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-red to-white rounded-xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                <div class="relative bg-white p-2 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 border-2 border-red">
+                  <img src="logo.png" alt="Zamto Africa" class="w-8 h-8 object-contain">
                 </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-black font-heading">ZAMTO AFRICA</h3>
+                <p class="text-sm text-red font-medium">Japanese Imported Vehicles</p>
+              </div>
             </div>
-        </div>
-        <div class="border-t border-white/10 py-6">
-            <div class="container mx-auto px-6 text-center text-gray-400">
-                &copy; 2025 Zamto Africa Company Ltd. All rights reserved.
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Zambia's premier destination for authentic Japanese imported vehicles. Quality, reliability, and exceptional service guaranteed.
+            </p>
+            
+            
+            <!-- Follow Us Section -->
+            <div class="mt-8">
+              <h4 class="text-lg font-bold mb-4 text-red">Follow Us</h4>
+              <div class="flex flex-wrap gap-4">
+                <a href="https://www.facebook.com/profile.php?id=61581947339658&mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="facebook" class="w-6 h-6"></i>
+                  <span class="text-xs">Car Sales</span>
+                </a>
+                <a href="https://www.facebook.com/share/16yfxxVNUf/?mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="users" class="w-6 h-6"></i>
+                  <span class="text-xs">Car Rentals</span>
+                </a>
+                <a href="https://www.instagram.com/zamtoafrica?igsh=MWN3b3ZxMGk0OXIzaA%3D%3D&utm_source=qr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="instagram" class="w-6 h-6"></i>
+                  <span class="text-xs">Instagram</span>
+                </a>
+                <a href="http://www.tiktok.com/@zamtoafrica" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="video" class="w-6 h-6"></i>
+                  <span class="text-xs">TikTok</span>
+                </a>
+              </div>
             </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Quick Links</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Home
+              </a></li>
+              <li><a href="about.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> About Us
+              </a></li>
+              <li><a href="inventory.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Vehicle Inventory
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Our Services
+              </a></li>
+              <li><a href="testimonials.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Testimonials
+              </a></li>
+              <li><a href="blog.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Blog
+              </a></li>
+              <li><a href="contact.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Contact
+              </a></li>
+            </ul>
+          </div>
+          
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Our Services</h4>
+            <ul class="space-y-3">
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="car" class="w-4 h-4 text-red"></i> Vehicle Sales
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="key" class="w-4 h-4 text-red"></i> Vehicle Hire
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="wrench" class="w-4 h-4 text-red"></i> Maintenance & Repair
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="ship" class="w-4 h-4 text-red"></i> Vehicle Importation
+              </a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Contact Info</h4>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <i data-lucide="phone" class="w-5 h-5 text-red mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <p class="text-white font-medium">Phone Numbers</p>
+                  <p class="text-gray-300 text-sm">+260 572 213 038<br>+260 963 344 470</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="mail" class="w-5 h-5 text-red mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <p class="text-white font-medium">Email Address</p>
+                  <p class="text-gray-300 text-sm">zamtoafrica@gmail.com</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="map-pin" class="w-5 h-5 text-red mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <p class="text-white font-medium">Office Location</p>
+                  <p class="text-gray-300 text-sm">Roma Park, Great East Road<br>Lusaka, Zambia</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="clock" class="w-5 h-5 text-red mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <p class="text-white font-medium">Working Hours</p>
+                  <p class="text-gray-300 text-sm">Mon-Sat: 8:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+    
+    <!-- Copyright Bar -->
+    <div class="border-t border-white/10 py-8">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-gray-400 text-sm">&copy; 2025 Zamto Africa Company Ltd. All rights reserved.</p>
+          <div class="flex items-center gap-6 text-sm">
+            <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     <script>
         lucide.createIcons();
@@ -633,50 +899,84 @@
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const closeMobileMenu = document.getElementById('close-mobile-menu');
         const mobileMenu = document.getElementById('mobile-menu');
-        const menuPanel = mobileMenu.querySelector('.transform');
         
-        function openMobileMenu() {
-            mobileMenu.classList.remove('hidden');
-            setTimeout(() => {
-                menuPanel.classList.remove('translate-x-full');
-                menuPanel.classList.add('translate-x-0');
-            }, 10);
-            document.body.style.overflow = 'hidden';
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+        
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+        
+        // Tab functionality
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.add('hidden');
+            });
+            
+            // Remove active state from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-navy', 'text-white');
+                btn.classList.add('bg-white', 'text-navy', 'border', 'border-navy');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName + '-tab').classList.remove('hidden');
+            
+            // Add active state to clicked button
+            const activeBtn = document.querySelector(`[data-tab="${tabName}"]`);
+            activeBtn.classList.remove('bg-white', 'text-navy', 'border', 'border-navy');
+            activeBtn.classList.add('bg-navy', 'text-white');
         }
         
-        function closeMobileMenuFunc() {
-            menuPanel.classList.remove('translate-x-0');
-            menuPanel.classList.add('translate-x-full');
-            setTimeout(() => {
-                mobileMenu.classList.add('hidden');
-            }, 300);
-            document.body.style.overflow = '';
-        }
-        
-        mobileMenuButton.addEventListener('click', openMobileMenu);
-        closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
-        
-        // Tab Functionality
-        const tabButtons = document.querySelectorAll('.tab-btn');
-        const tabPanes = document.querySelectorAll('.tab-pane');
-        
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const targetTab = button.getAttribute('data-tab');
+        // Image Gallery functionality
+        document.querySelectorAll('.thumbnail-image').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                const mainImg = document.querySelector('.main-vehicle-image');
+                const gallery = mainImg.dataset.gallery.split(',');
+                const clickedSrc = this.src;
+                const index = gallery.findIndex(img => img.includes(clickedSrc.split('/').pop()));
                 
-                // Remove active classes
-                tabButtons.forEach(btn => {
-                    btn.classList.remove('text-navy', 'border-b-2', 'border-navy');
-                    btn.classList.add('text-gray-500');
-                });
-                tabPanes.forEach(pane => pane.classList.add('hidden'));
-                
-                // Add active classes
-                button.classList.remove('text-gray-500');
-                button.classList.add('text-navy', 'border-b-2', 'border-navy');
-                document.getElementById(targetTab).classList.remove('hidden');
+                if (index !== -1) {
+                    mainImg.src = gallery[index];
+                    
+                    // Update ring states
+                    document.querySelectorAll('.thumbnail-image').forEach(t => {
+                        t.parentElement.classList.remove('ring-2', 'ring-blue-500');
+                    });
+                    this.parentElement.classList.add('ring-2', 'ring-blue-500');
+                }
             });
         });
+        
+        // Lightbox functionality
+        window.openLightbox = function(images, startIndex = 0) {
+            // Simple lightbox implementation
+            const lightbox = document.createElement('div');
+            lightbox.className = 'fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center';
+            lightbox.innerHTML = `
+                <div class="relative max-w-4xl max-h-screen">
+                    <img src="${images[startIndex]}" class="max-w-full max-h-full object-contain">
+                    <button class="absolute top-4 right-4 bg-white text-black p-2 rounded-full" onclick="this.parentElement.parentElement.remove()">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(lightbox);
+            lucide.createIcons();
+            
+            // Close on background click
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.remove();
+                }
+            });
+        };
     </script>
+  
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

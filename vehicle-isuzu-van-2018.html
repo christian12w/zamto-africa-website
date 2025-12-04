@@ -234,6 +234,16 @@
         </div>
     </div>
 
+    <!-- Vehicle Status Banner -->
+    <div class="bg-gradient-to-r from-green-600 to-green-700 text-white py-3">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-2">
+                <i data-lucide="check-circle" class="w-5 h-5"></i>
+                <span class="font-medium">This vehicle is currently available for purchase</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Vehicle Details -->
     <section class="py-12 bg-white">
         <div class="container mx-auto px-6">
@@ -290,7 +300,7 @@
                             </picture>
                         </div>
                         <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-colors duration-300"
-                             onclick="window.openLightbox(['images/vehicles/isuzu-van-1.jpg,images/vehicles/isuzu-van-2.jpg,images/vehicles/isuzu-van-3.jpg'], 0)">
+                             onclick="window.openLightbox(['images/vehicles/isuzu-van-1.jpg','images/vehicles/isuzu-van-2.jpg','images/vehicles/isuzu-van-3.jpg'], 0)">
                             <div class="text-center">
                                 <i data-lucide="grid" class="w-6 h-6 text-gray-400 mx-auto mb-1"></i>
                                 <span class="text-xs text-gray-500 font-medium">View All 3</span>
@@ -304,18 +314,18 @@
                     <div>
                         <div class="flex items-center gap-4 mb-4">
                             <span class="bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold">FOR SALE</span>
-                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">SUV</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">SUV</span>
                         </div>
                         <h1 class="text-4xl font-black font-heading text-navy mb-2">Isuzu Van</h1>
                         <p class="text-xl text-gray-600 mb-4">2018 Model • 321,866 km • Manual • Diesel</p>
                         
                         <div class="flex items-baseline gap-4 mb-6">
-                            <div class="text-4xl font-black text-red">ZMW350,000</div>
-                            <div class="text-xl text-gray-500 font-medium">USD 15,800</div>
+                            <div class="text-3xl font-black text-red">$15,800 - ZMW350,000</div>
+                            <div class="text-xl text-gray-500 font-medium">Price Range</div>
                         </div>
 
                         <div class="bg-green-50 border border-green-200 rounded-xl p-4 mb-6">
-                            <p class="text-green-800 font-medium">✓ Good Condition • Inclusive of documentation</p>
+                            <p class="text-green-800 font-medium">✓ Good Condition Verified</p>
                         </div>
                     </div>
 
@@ -643,47 +653,151 @@
 
   <!-- FOOTER - Modern Standard Design -->
   <footer class="bg-navy text-white">
-        <div class="py-12">
-            <div class="container mx-auto px-6">
-                <div class="grid md:grid-cols-4 gap-8">
-                    <div>
-                        <h3 class="text-xl font-bold mb-4 font-heading">ZAMTO AFRICA</h3>
-                        <p class="text-gray-300">Zambia's premier destination for authentic Japanese imported vehicles.</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold mb-4">Quick Links</h4>
-                        <ul class="space-y-2">
-                            <li><a href="index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
-                            <li><a href="inventory.html" class="text-gray-300 hover:text-white transition">Inventory</a></li>
-                            <li><a href="contact.html" class="text-gray-300 hover:text-white transition">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-bold mb-4">Contact</h4>
-                        <p class="text-gray-300">+260 572 213 038</p>
-                        <p class="text-gray-300">zamtoafrica@gmail.com</p>
-                        <p class="text-gray-300">Great East Road, Lusaka</p>
-                    </div>
-                    <div>
-                        <h4 class="font-bold mb-4">Follow Us</h4>
-                        <div class="flex gap-4">
-                            <a href="#" class="text-gray-300 hover:text-white transition">
-                                <i data-lucide="facebook" class="w-5 h-5"></i>
-                            </a>
-                            <a href="#" class="text-gray-300 hover:text-white transition">
-                                <i data-lucide="instagram" class="w-5 h-5"></i>
-                            </a>
-                        </div>
-                    </div>
+    <!-- Main Footer Content -->
+    <div class="py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12">
+          <!-- Company Info -->
+          <div class="col-span-1">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-red to-white rounded-xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+                <div class="relative bg-white p-2 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-300 border-2 border-red">
+                  <img src="logo.png" alt="Zamto Africa" class="w-8 h-8 object-contain">
                 </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-black font-heading">ZAMTO AFRICA</h3>
+                <p class="text-sm text-red font-medium">Japanese Imported Vehicles</p>
+              </div>
             </div>
-        </div>
-        <div class="border-t border-white/10 py-6">
-            <div class="container mx-auto px-6 text-center text-gray-400">
-                &copy; 2025 Zamto Africa Company Ltd. All rights reserved.
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              Zambia's premier destination for authentic Japanese imported vehicles. Quality, reliability, and exceptional service guaranteed.
+            </p>
+            
+            
+            <!-- Follow Us Section -->
+            <div class="mt-8">
+              <h4 class="text-lg font-bold mb-4 text-red">Follow Us</h4>
+              <div class="flex flex-wrap gap-4">
+                <a href="https://www.facebook.com/profile.php?id=61581947339658&mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="facebook" class="w-6 h-6"></i>
+                  <span class="text-xs">Car Sales</span>
+                </a>
+                <a href="https://www.facebook.com/share/16yfxxVNUf/?mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="users" class="w-6 h-6"></i>
+                  <span class="text-xs">Car Rentals</span>
+                </a>
+                <a href="https://www.instagram.com/zamtoafrica?igsh=MWN3b3ZxMGk0OXIzaA%3D%3D&utm_source=qr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="instagram" class="w-6 h-6"></i>
+                  <span class="text-xs">Instagram</span>
+                </a>
+                <a href="http://www.tiktok.com/@zamtoafrica" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
+                  <i data-lucide="video" class="w-6 h-6"></i>
+                  <span class="text-xs">TikTok</span>
+                </a>
+              </div>
             </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Quick Links</h4>
+            <ul class="space-y-3">
+              <li><a href="index.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Home
+              </a></li>
+              <li><a href="about.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> About Us
+              </a></li>
+              <li><a href="inventory.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Vehicle Inventory
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Our Services
+              </a></li>
+              <li><a href="testimonials.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Testimonials
+              </a></li>
+              <li><a href="blog.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Blog
+              </a></li>
+              <li><a href="contact.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-red"></i> Contact
+              </a></li>
+            </ul>
+          </div>
+          
+          <!-- Services -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Our Services</h4>
+            <ul class="space-y-3">
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="car" class="w-4 h-4 text-red"></i> Vehicle Sales
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="key" class="w-4 h-4 text-red"></i> Vehicle Hire
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="wrench" class="w-4 h-4 text-red"></i> Maintenance & Repair
+              </a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition flex items-center gap-2">
+                <i data-lucide="ship" class="w-4 h-4 text-red"></i> Vehicle Importation
+              </a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-lg font-bold mb-6 font-heading text-red">Contact Info</h4>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <i data-lucide="phone" class="w-5 h-5 text-red mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <p class="text-white font-medium">Phone Numbers</p>
+                  <p class="text-gray-300 text-sm">+260 572 213 038<br>+260 963 344 470</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="mail" class="w-5 h-5 text-red mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <p class="text-white font-medium">Email Address</p>
+                  <p class="text-gray-300 text-sm">zamtoafrica@gmail.com</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="map-pin" class="w-5 h-5 text-red mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <p class="text-white font-medium">Office Location</p>
+                  <p class="text-gray-300 text-sm">Roma Park, Great East Road<br>Lusaka, Zambia</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="clock" class="w-5 h-5 text-red mt-0.5 flex-shrink-0"></i>
+                <div>
+                  <p class="text-white font-medium">Working Hours</p>
+                  <p class="text-gray-300 text-sm">Mon-Sat: 8:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+    
+    <!-- Copyright Bar -->
+    <div class="border-t border-white/10 py-8">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-gray-400 text-sm">&copy; 2025 Zamto Africa Company Ltd. All rights reserved.</p>
+          <div class="flex items-center gap-6 text-sm">
+            <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     <script>
         lucide.createIcons();

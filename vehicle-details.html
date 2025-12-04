@@ -4,10 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMW 320i 2011 - Zamto Africa | Japanese Imported Vehicles Zambia</title>
-  <meta name="description" content="BMW 320i 2011 - Premium Japanese imported vehicle available at Zamto Africa Company Ltd." />
+  <meta name="description" content="Premium BMW 320i 2011 imported from Japan now available at Zamto Africa. Quality assured, competitively priced, and ready for delivery in Zambia. Contact us today to schedule a test drive!" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://zamtoafrica.com/vehicle-details.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://zamtoafrica.com/vehicle-details.html">
+  <meta property="og:title" content="BMW 320i 2011 - Zamto Africa | Japanese Imported Vehicles Zambia">
+  <meta property="og:description" content="BMW 320i 2011 - Premium Japanese imported vehicle available at Zamto Africa Company Ltd. Quality assured, competitively priced, and ready for delivery in Zambia.">
+  <meta property="og:image" content="https://zamtoafrica.com/images/vehicles/BMW-320i-1.jpg">
+  <meta property="og:site_name" content="Zamto Africa">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://zamtoafrica.com/vehicle-details.html">
+  <meta property="twitter:title" content="BMW 320i 2011 - Zamto Africa | Japanese Imported Vehicles Zambia">
+  <meta property="twitter:description" content="BMW 320i 2011 - Premium Japanese imported vehicle available at Zamto Africa Company Ltd. Quality assured, competitively priced, and ready for delivery in Zambia.">
+  <meta property="twitter:image" content="https://zamtoafrica.com/images/vehicles/BMW-320i-1.jpg">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Car",
+    "name": "BMW 320i 2011",
+    "brand": "BMW",
+    "model": "320i",
+    "vehicleModelDate": "2011",
+    "url": "https://zamtoafrica.com/vehicle-details.html",
+    "image": "https://zamtoafrica.com/images/vehicles/BMW-320i-1.jpg",
+    "description": "Premium Japanese imported BMW 320i 2011 available at Zamto Africa Company Ltd.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "ZMW",
+      "price": "275000",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "AutoDealer",
+        "name": "Zamto Africa Company Ltd",
+        "url": "https://zamtoafrica.com/"
+      }
+    }
+  }
+  </script>
 
   <!-- Google Fonts - Professional Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +60,7 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="image-gallery.js"></script>
+  <link rel="stylesheet" href="responsive-framework.css">
 
   <style>
     :root {
@@ -68,10 +112,90 @@
     .spec-row:hover {
       background-color: #f8fafc;
     }
+    
+    /* Vehicle details page specific responsive styles */
+    .vehicle-image-container {
+      transition: all 0.3s ease;
+    }
+    
+    .thumbnail-container {
+      transition: all 0.3s ease;
+    }
+    
+    .thumbnail-container:hover {
+      transform: scale(1.05);
+    }
+    
+    @media (max-width: 768px) {
+      .vehicle-details-layout {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      
+      .vehicle-image-container {
+        margin-bottom: 1.5rem;
+      }
+      
+      .specifications-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+      }
+      
+      .features-grid {
+        grid-template-columns: 1fr !important;
+      }
+      
+      .tab-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .similar-vehicles-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+      }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .specifications-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      
+      .similar-vehicles-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .specifications-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      
+      .similar-vehicles-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+      }
+    }
   </style>
 </head>
 
 <body class="bg-white text-gray-800 pt-32">
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="bg-gray-100 py-3">
+    <div class="container mx-auto px-6">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li>
+          <a href="index.html" class="text-navy hover:text-red font-medium">Home</a>
+        </li>
+        <li class="text-gray-400">/</li>
+        <li>
+          <a href="inventory.html" class="text-navy hover:text-red font-medium">Inventory</a>
+        </li>
+        <li class="text-gray-400">/</li>
+        <li class="text-gray-500">BMW 320i 2011</li>
+      </ol>
+    </div>
+  </nav>
 
   <!-- WhatsApp -->
   <a href="https://wa.me/260572213038" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white p-5 rounded-full shadow-2xl hover:scale-110 transition">
@@ -172,7 +296,7 @@
   </header>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden">
+  <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden hidden">
     <!-- Backdrop -->
     <div class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
     
@@ -262,7 +386,11 @@
                 <div class="space-y-4">
                     <!-- Main Image -->
                     <div class="relative overflow-hidden rounded-2xl shadow-2xl">
-                        <img src="images/vehicles/BMW-320i-1.jpg" alt="BMW 320i 2011" class="w-full h-96 sm:h-[500px] object-cover opacity-70" loading="lazy">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="images/vehicles/BMW-320i-1.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/vehicles/BMW-320i-1.jpg">
+                            <img src="images/vehicles/BMW-320i-1.jpg" alt="BMW 320i 2011" class="w-full h-96 sm:h-[500px] object-cover opacity-70" loading="lazy">
+                        </picture>
                         <div class="absolute top-4 left-4">
                             <span class="bg-red-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-lg flex items-center gap-1.5">
                                 <i data-lucide="x-circle" class="w-4 h-4"></i>
@@ -280,16 +408,32 @@
                     <!-- Thumbnail Gallery -->
                     <div class="grid grid-cols-4 gap-2">
                         <div class="overflow-hidden rounded-lg shadow-md cursor-pointer image-gallery">
-                            <img src="images/vehicles/BMW-320i-1.jpg" alt="BMW 320i View 1" class="w-full h-20 object-cover" loading="lazy">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/BMW-320i-1.jpg">
+                                <source media="(max-width: 1200px)" srcset="images/vehicles/BMW-320i-1.jpg">
+                                <img src="images/vehicles/BMW-320i-1.jpg" alt="BMW 320i View 1" class="w-full h-20 object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="overflow-hidden rounded-lg shadow-md cursor-pointer image-gallery">
-                            <img src="images/vehicles/BMW-320i-2.jpg" alt="BMW 320i View 2" class="w-full h-20 object-cover" loading="lazy">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/BMW-320i-2.jpg">
+                                <source media="(max-width: 1200px)" srcset="images/vehicles/BMW-320i-2.jpg">
+                                <img src="images/vehicles/BMW-320i-2.jpg" alt="BMW 320i View 2" class="w-full h-20 object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="overflow-hidden rounded-lg shadow-md cursor-pointer image-gallery">
-                            <img src="images/vehicles/BMW-320i-1.jpg" alt="BMW 320i View 1" class="w-full h-20 object-cover" loading="lazy">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/BMW-320i-1.jpg">
+                                <source media="(max-width: 1200px)" srcset="images/vehicles/BMW-320i-1.jpg">
+                                <img src="images/vehicles/BMW-320i-1.jpg" alt="BMW 320i View 1" class="w-full h-20 object-cover" loading="lazy">
+                            </picture>
                         </div>
                         <div class="overflow-hidden rounded-lg shadow-md cursor-pointer image-gallery">
-                            <img src="images/vehicles/BMW-320i-2.jpg" alt="BMW 320i View 2" class="w-full h-20 object-cover" loading="lazy">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/BMW-320i-2.jpg">
+                                <source media="(max-width: 1200px)" srcset="images/vehicles/BMW-320i-2.jpg">
+                                <img src="images/vehicles/BMW-320i-2.jpg" alt="BMW 320i View 2" class="w-full h-20 object-cover" loading="lazy">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -636,6 +780,85 @@
         </div>
     </section>
 
+    <!-- Similar Vehicles Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-black text-navy mb-4 font-heading">Similar Vehicles</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">Explore other premium Japanese imported vehicles that might interest you</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Similar Vehicle 1 -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+            <div class="relative h-48 overflow-hidden">
+              <img src="images/vehicles/BMW-X1-1.jpg" alt="BMW X1 2011" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute top-4 right-4 bg-red text-white px-3 py-1 rounded-full text-sm font-bold">
+                ZMW 185,000
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-navy mb-2">BMW X1 2011</h3>
+              <div class="flex items-center text-gray-600 mb-4">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                <span>2011</span>
+                <i data-lucide="gauge" class="w-4 h-4 ml-4 mr-2"></i>
+                <span>85,000 km</span>
+              </div>
+              <a href="vehicle-bmw-x1-2011.html" class="block w-full bg-navy text-white text-center py-3 rounded-lg font-bold hover:bg-red transition">View Details</a>
+            </div>
+          </div>
+          
+          <!-- Similar Vehicle 2 -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+            <div class="relative h-48 overflow-hidden">
+              <img src="images/vehicles/Toyota-Alphard-1.jpg" alt="Toyota Alphard 2015" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute top-4 right-4 bg-red text-white px-3 py-1 rounded-full text-sm font-bold">
+                ZMW 295,000
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-navy mb-2">Toyota Alphard 2015</h3>
+              <div class="flex items-center text-gray-600 mb-4">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                <span>2015</span>
+                <i data-lucide="gauge" class="w-4 h-4 ml-4 mr-2"></i>
+                <span>72,000 km</span>
+              </div>
+              <a href="vehicle-toyota-alphard-2015.html" class="block w-full bg-navy text-white text-center py-3 rounded-lg font-bold hover:bg-red transition">View Details</a>
+            </div>
+          </div>
+          
+          <!-- Similar Vehicle 3 -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+            <div class="relative h-48 overflow-hidden">
+              <img src="images/vehicles/Honda-Fit-1.jpg" alt="Honda Fit 2013" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute top-4 right-4 bg-red text-white px-3 py-1 rounded-full text-sm font-bold">
+                ZMW 95,000
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-navy mb-2">Honda Fit 2013</h3>
+              <div class="flex items-center text-gray-600 mb-4">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                <span>2013</span>
+                <i data-lucide="gauge" class="w-4 h-4 ml-4 mr-2"></i>
+                <span>98,000 km</span>
+              </div>
+              <a href="vehicle-honda-fit-2013.html" class="block w-full bg-navy text-white text-center py-3 rounded-lg font-bold hover:bg-red transition">View Details</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-12">
+          <a href="inventory.html" class="inline-block bg-red text-white px-8 py-4 rounded-lg font-bold hover:bg-navy transition transform hover:scale-105">
+            View All Vehicles
+            <i data-lucide="arrow-right" class="w-5 h-5 inline ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
   <!-- FOOTER - Modern Standard Design -->
   <footer class="bg-navy text-white">
     <!-- Main Footer Content -->
@@ -652,7 +875,7 @@
                 </div>
               </div>
               <div>
-                <h3 class="text-2xl font-black font-heading">ZAMTO AFRICA</h3>
+                <h3 class="text-2xl font-black text-navy font-heading">ZAMTO AFRICA</h3>
                 <p class="text-sm text-red font-medium">Japanese Imported Vehicles</p>
               </div>
             </div>
@@ -794,75 +1017,74 @@
   </footer>
 
   <script>
-    lucide.createIcons();
-    
-    // Mobile Menu Functionality
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const closeMobileMenu = document.getElementById('close-mobile-menu');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const menuPanel = mobileMenu.querySelector('.transform.translate-x-full');
-    
-    function openMobileMenu() {
-      mobileMenu.classList.remove('hidden');
-      setTimeout(() => {
-        menuPanel.classList.remove('translate-x-full');
-        menuPanel.classList.add('translate-x-0');
-      }, 10);
-      document.body.style.overflow = 'hidden';
-    }
-    
-    function closeMobileMenuFunc() {
-      menuPanel.classList.remove('translate-x-0');
-      menuPanel.classList.add('translate-x-full');
-      setTimeout(() => {
-        mobileMenu.classList.add('hidden');
-      }, 300);
-      document.body.style.overflow = 'auto';
-    }
-    
-    mobileMenuButton.addEventListener('click', openMobileMenu);
-    closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
-    
-    // Close menu when clicking backdrop
-    mobileMenu.addEventListener('click', (e) => {
-      if (e.target === mobileMenu || e.target.classList.contains('bg-black')) {
-        closeMobileMenuFunc();
+    // Initialize Lucide icons after DOM content is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      lucide.createIcons();
+      
+      // Mobile Menu Functionality
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const closeMobileMenu = document.getElementById('close-mobile-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuPanel = mobileMenu.querySelector('.transform');
+      
+      function openMobileMenu() {
+        mobileMenu.classList.remove('hidden');
+        setTimeout(() => {
+          menuPanel.classList.remove('translate-x-full');
+          menuPanel.classList.add('translate-x-0');
+        }, 10);
+        document.body.style.overflow = 'hidden';
       }
-    });
+      
+      function closeMobileMenuFunc() {
+        menuPanel.classList.remove('translate-x-0');
+        menuPanel.classList.add('translate-x-full');
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300);
+        document.body.style.overflow = 'auto';
+      }
+      
+      if (mobileMenuButton && closeMobileMenu && mobileMenu && menuPanel) {
+        mobileMenuButton.addEventListener('click', openMobileMenu);
+        closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+        
+        // Close menu when clicking backdrop
+        mobileMenu.addEventListener('click', (e) => {
+          if (e.target === mobileMenu || e.target.classList.contains('bg-black')) {
+            closeMobileMenuFunc();
+          }
+        });
+      }
 
-    // Tab Switching Function
-    function switchTab(tabName) {
-      // Hide all tabs
-      const allTabs = document.querySelectorAll('.tab-content');
-      allTabs.forEach(tab => tab.classList.add('hidden'));
-      
-      // Remove active class from all buttons
-      const allButtons = document.querySelectorAll('button[onclick^="switchTab"]');
-      allButtons.forEach(button => {
-        button.classList.remove('tab-active');
-        button.classList.add('text-gray-600');
-        button.classList.remove('text-navy');
-      });
-      
-      // Show selected tab
-      document.getElementById(tabName + '-tab').classList.remove('hidden');
-      
-      // Add active class to clicked button
-      event.target.classList.add('tab-active');
-      event.target.classList.remove('text-gray-600');
-      event.target.classList.add('text-navy');
-    }
-    
-    // Image Gallery Functionality
-    const mainImage = document.querySelector('.relative.overflow-hidden img');
-    const thumbnails = document.querySelectorAll('.image-gallery img');
-    
-    thumbnails.forEach((thumbnail, index) => {
-      thumbnail.addEventListener('click', () => {
-        if (mainImage) {
-          mainImage.src = thumbnail.src;
+      // Tab Switching Function
+      window.switchTab = function(tabName) {
+        // Hide all tabs
+        const allTabs = document.querySelectorAll('.tab-content');
+        allTabs.forEach(tab => tab.classList.add('hidden'));
+        
+        // Remove active class from all buttons
+        const allButtons = document.querySelectorAll('button[onclick^="switchTab"]');
+        allButtons.forEach(button => {
+          button.classList.remove('tab-active');
+          button.classList.add('text-gray-600');
+          button.classList.remove('text-navy');
+        });
+        
+        // Show selected tab
+        const tabElement = document.getElementById(tabName + '-tab');
+        if (tabElement) {
+          tabElement.classList.remove('hidden');
         }
-      });
+        
+        // Add active class to clicked button
+        if (event && event.target) {
+          event.target.classList.add('tab-active');
+          event.target.classList.remove('text-gray-600');
+          event.target.classList.add('text-navy');
+        }
+      };
+
     });
   </script>
 </body>

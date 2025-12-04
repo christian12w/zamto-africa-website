@@ -16,6 +16,7 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="responsive-framework.css">
 
   <style>
     :root {
@@ -36,6 +37,65 @@
     }
     .font-serif {
       font-family: 'Playfair Display', serif;
+    }
+    
+    /* Blog post specific responsive styles */
+    .blog-content {
+      transition: all 0.3s ease;
+    }
+    
+    @media (max-width: 768px) {
+      .blog-hero {
+        padding: 2rem 1rem !important;
+      }
+      
+      .blog-hero h1 {
+        font-size: 2rem !important;
+        line-height: 1.2 !important;
+      }
+      
+      .blog-hero p {
+        font-size: 1.125rem !important;
+      }
+      
+      .content-section {
+        padding: 2rem 1rem !important;
+      }
+      
+      .technology-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+      }
+      
+      .innovation-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+      }
+      
+      .stats-container {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+      }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .technology-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      
+      .innovation-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      
+      .stats-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .stats-container {
+        grid-template-columns: repeat(4, 1fr) !important;
+      }
     }
   </style>
 </head>
