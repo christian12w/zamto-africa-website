@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Honda Fit 2009 - Zamto Africa | Japanese Imported Vehicles Zambia</title>
-  <meta name="description" content="Honda Fit 2009 - Efficient compact hatchback available at Zamto Africa Company Ltd." />
+  <title>Toyota Passo Blue 2012 - Zamto Africa | Japanese Imported Vehicles Zambia</title>
+  <meta name="description" content="Toyota Passo Blue 2012 - Compact and efficient hatchback available at Zamto Africa Company Ltd." />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
@@ -42,6 +42,104 @@
           font-family: 'Montserrat', sans-serif;
         }
         
+        /* Mobile-First Responsive Enhancements */
+        @media (max-width: 640px) {
+          .hero-title {
+            font-size: 2.5rem !important;
+            line-height: 1.1 !important;
+          }
+          .hero-subtitle {
+            font-size: 1.25rem !important;
+          }
+          .mobile-padding {
+            padding: 1rem !important;
+          }
+          .mobile-button {
+            padding: 0.75rem 1.5rem !important;
+            font-size: 1rem !important;
+          }
+          .vehicle-gallery {
+            grid-template-columns: 1fr !important;
+          }
+        }
+        
+        @media (max-width: 768px) {
+          .tablet-hidden {
+            display: none !important;
+          }
+          .tablet-full {
+            width: 100% !important;
+          }
+        }
+        
+        /* Touch-friendly interactions */
+        @media (hover: none) and (pointer: coarse) {
+          .card-hover:hover {
+            transform: none;
+          }
+          .card-hover:active {
+            transform: scale(0.98);
+          }
+        }
+        
+        /* Smooth scrolling for mobile */
+        html {
+          scroll-behavior: smooth;
+          -webkit-overflow-scrolling: touch;
+        }
+        
+        /* Prevent horizontal scroll */
+        body {
+          overflow-x: hidden;
+          max-width: 100vw;
+        }
+        
+        /* Mobile video optimizations */
+        video {
+          max-width: 100%;
+          height: auto;
+        }
+        
+        /* Mobile menu improvements */
+        .mobile-menu {
+          transform: translateX(100%);
+          transition: transform 0.3s ease-in-out;
+        }
+        
+        .mobile-menu.active {
+          transform: translateX(0);
+        }
+        
+        /* Responsive image galleries */
+        .image-gallery img {
+          max-width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+        
+        /* Mobile card layouts */
+        @media (max-width: 640px) {
+          .vehicle-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1rem !important;
+          }
+        }
+        
+        /* Mobile form inputs */
+        input, textarea, select {
+          font-size: 16px !important; /* Prevents zoom on iOS */
+        }
+        
+        /* Safe area for notched phones */
+        @supports (padding: max(0px)) {
+          .safe-area-top {
+            padding-top: max(1rem, env(safe-area-inset-top));
+          }
+          .safe-area-bottom {
+            padding-bottom: max(1rem, env(safe-area-inset-bottom));
+          }
+        }
+        
         .image-gallery img {
             transition: all 0.3s ease;
         }
@@ -51,198 +149,81 @@
         }
     </style>
 </head>
-<body class="bg-white text-gray-800 pt-32">
-
-  <!-- WhatsApp -->
-  <a href="https://wa.me/260572213038" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white p-5 rounded-full shadow-2xl hover:scale-110 transition">
-    <i data-lucide="message-circle" class="w-9 h-9"></i>
-  </a>
-
-  <!-- HEADER - Modern Standard Design -->
-  <header class="fixed top-0 w-full z-50 bg-white shadow-lg border-b border-gray-200">
-    <!-- Top Bar -->
-    <div class="bg-navy text-white py-2">
-      <div class="container mx-auto px-6 flex justify-between items-center text-sm">
-        <div class="flex items-center gap-4">
-          <span class="flex items-center gap-2">
-            <i data-lucide="mail" class="w-4 h-4"></i>
-            zamtoafrica@gmail.com
-          </span>
-          <span class="hidden md:flex items-center gap-2">
-            <i data-lucide="map-pin" class="w-4 h-4"></i>
-            Roma Park, Lusaka
-          </span>
+<body class="bg-gray-50">
+  <!-- HEADER - Modern Professional Design -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div class="bg-gradient-to-r from-red to-navy p-1 rounded-xl">
+            <img src="logo.png" alt="Zamto Africa" class="w-10 h-10 rounded-lg bg-white">
+          </div>
+          <div>
+            <h1 class="text-xl font-black text-navy font-heading">ZAMTO AFRICA</h1>
+            <p class="text-xs text-gray-600">Japanese Imported Vehicles</p>
+          </div>
         </div>
-        <div class="flex items-center gap-4">
-          <a href="tel:+260572213038" class="flex items-center gap-2 hover:text-red-300 transition">
-            <i data-lucide="phone" class="w-4 h-4"></i>
-            +260 572 213 038
+
+        <!-- Navigation -->
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Home
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
           </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Main Navigation -->
-    <div class="bg-white py-4">
-      <div class="container mx-auto px-6">
-        <div class="flex items-center justify-between">
-          <!-- Logo Section -->
-          <div class="flex items-center gap-3 lg:gap-4">
-            <!-- Enhanced Logo -->
-            <div class="relative group">
-              <div class="absolute -inset-1 bg-gradient-to-r from-red to-navy rounded-2xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
-              <div class="relative bg-white p-2 rounded-2xl shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 border-2 border-red">
-                <img src="logo.png" alt="Zamto Africa" class="w-10 h-10 lg:w-14 lg:h-14 object-contain">
-              </div>
-            </div>
-            <div class="hidden sm:block">
-              <h1 class="text-xl lg:text-2xl font-black text-navy font-heading">ZAMTO AFRICA</h1>
-              <p class="text-xs lg:text-sm text-red font-medium hidden lg:block">Japanese Imported Vehicles</p>
-            </div>
-          </div>
+          <a href="about.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            About
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="inventory.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Inventory
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="services.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Services
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="testimonials.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Testimonials
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="blog.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Blog
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          <a href="contact.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
+            Contact
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </nav>
 
-          <!-- Mobile Menu Button -->
-          <button id="mobile-menu-button" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition">
-            <i data-lucide="menu" class="w-6 h-6 text-navy"></i>
-          </button>
-
-          <!-- Desktop Navigation Menu -->
-          <nav class="hidden lg:flex items-center gap-6 lg:gap-8">
-            <a href="index.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
-              Home
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="about.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
-              About
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="inventory.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
-              Inventory
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="services.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
-              Services
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="testimonials.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
-              Testimonials
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="blog.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
-              Blog
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a href="contact.html" class="text-navy hover:text-red font-semibold font-heading transition relative group">
-              Contact
-              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
-            </a>
-          </nav>
-
-          <!-- CTA Button -->
-          <div class="hidden lg:flex items-center gap-4">
-            <a href="tel:+260572213038" class="bg-gradient-to-r from-red to-red-600 hover:from-red-600 hover:to-red text-white px-6 py-3 rounded-lg font-semibold font-heading transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-2">
-              <i data-lucide="phone" class="w-5 h-5"></i>
-              <span class="hidden xl:inline">Call Now</span>
-              <span class="xl:hidden">Call</span>
-            </a>
-          </div>
+        <!-- CTA Button -->
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="tel:+260572213038" class="bg-gradient-to-r from-red to-red-600 hover:from-red-600 hover:to-red text-white px-6 py-3 rounded-lg font-semibold font-heading transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-2">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+            <span class="hidden xl:inline">Call Now</span>
+            <span class="xl:hidden">Call</span>
+          </a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden">
-    <!-- Backdrop -->
-    <div class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
-    
-    <!-- Menu Panel -->
-    <div class="fixed right-0 top-0 h-full w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out">
-      <div class="flex flex-col h-full">
-        <!-- Menu Header -->
-        <div class="flex items-center justify-between p-6 border-b border-gray-200">
-          <div class="flex items-center gap-3">
-            <div class="bg-gradient-to-r from-red to-navy p-1 rounded-xl">
-              <img src="logo.png" alt="Zamto Africa" class="w-10 h-10 rounded-lg bg-white">
-            </div>
-            <div>
-              <h3 class="text-lg font-black text-navy font-heading">ZAMTO AFRICA</h3>
-              <p class="text-xs text-gray-600">Japanese Imported Vehicles</p>
-            </div>
-          </div>
-          <button id="close-mobile-menu" class="p-2 rounded-lg hover:bg-gray-100 transition">
-            <i data-lucide="x" class="w-5 h-5 text-gray-600"></i>
-          </button>
-        </div>
-        
-        <!-- Menu Items -->
-        <nav class="flex-1 overflow-y-auto p-6">
-          <div class="space-y-2">
-            <a href="index.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
-              <i data-lucide="home" class="w-5 h-5 inline mr-3"></i>Home
-            </a>
-            <a href="about.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
-              <i data-lucide="info" class="w-5 h-5 inline mr-3"></i>About
-            </a>
-            <a href="inventory.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
-              <i data-lucide="car" class="w-5 h-5 inline mr-3"></i>Inventory
-            </a>
-            <a href="services.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
-              <i data-lucide="wrench" class="w-5 h-5 inline mr-3"></i>Services
-            </a>
-            <a href="testimonials.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
-              <i data-lucide="star" class="w-5 h-5 inline mr-3"></i>Testimonials
-            </a>
-            <a href="blog.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
-              <i data-lucide="blog" class="w-5 h-5 inline mr-3"></i>Blog
-            </a>
-            <a href="contact.html" class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300">
-              <i data-lucide="phone" class="w-5 h-5 inline mr-3"></i>Contact
-            </a>
-          </div>
-          
-          <!-- Mobile CTA -->
-          <div class="mt-8 p-4 bg-gradient-to-r from-red to-navy rounded-xl">
-            <a href="tel:+260572213038" class="block w-full text-white text-center font-semibold font-heading py-3 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300">
-              <i data-lucide="phone" class="w-5 h-5 inline mr-2"></i>
-              Call Us Now: +260 572 213 038
-            </a>
-          </div>
-        </nav>
-        
-        <!-- Menu Footer -->
-        <div class="p-6 border-t border-gray-200">
-          <div class="text-center text-sm text-gray-600">
-            <p>&copy; 2025 Zamto Africa Company Ltd.</p>
-            <p class="mt-1">All rights reserved</p>
-          </div>
-        </div>
+  <!-- Add spacing for fixed header -->
+  <div class="pt-32"></div>
+
+  <!-- Breadcrumbs -->
+  <div class="bg-gray-50 py-4">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center gap-2 text-sm text-gray-600">
+        <a href="index.html" class="hover:text-navy transition">Home</a>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        <a href="inventory.html" class="hover:text-navy transition">Inventory</a>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+        <span class="text-navy font-medium">Toyota Passo Blue 2012</span>
       </div>
     </div>
   </div>
-
-    <!-- Breadcrumbs -->
-    <div class="bg-gray-50 py-4">
-        <div class="container mx-auto px-6">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-                <a href="index.html" class="hover:text-navy transition">Home</a>
-                <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                <a href="inventory.html" class="hover:text-navy transition">Inventory</a>
-                <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                <span class="text-navy font-medium">Honda Fit 2009</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Vehicle Status Banner -->
-    <div class="bg-gradient-to-r from-green-600 to-green-700 text-white py-3">
-        <div class="container mx-auto px-6 text-center">
-            <div class="flex items-center justify-center gap-2">
-                <i data-lucide="check-circle" class="w-5 h-5"></i>
-                <span class="font-medium">This vehicle is currently available for purchase</span>
-            </div>
-        </div>
-    </div>
 
     <!-- Vehicle Details -->
     <section class="py-12 bg-white">
@@ -253,12 +234,12 @@
                     <!-- Main Image with Zoom -->
                     <div class="bg-gray-100 rounded-2xl h-96 overflow-hidden relative group">
                         <picture>
-                            <source media="(max-width: 768px)" srcset="images/vehicles/Honda-Fit-1.jpg">
-                            <source media="(max-width: 1200px)" srcset="images/vehicles/Honda-Fit-1.jpg">
-                            <img src="images/vehicles/Honda-Fit-1.jpg" 
-                                 alt="Honda Fit 2009 - Front View" 
+                            <source media="(max-width: 768px)" srcset="images/vehicles/blue-passo-2012-1.jpg">
+                            <source media="(max-width: 1200px)" srcset="images/vehicles/blue-passo-2012-1.jpg">
+                            <img src="images/vehicles/blue-passo-2012-1.jpg" 
+                                 alt="Toyota Passo Blue 2012 - Front View" 
                                  class="main-vehicle-image w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                 data-gallery="images/vehicles/Honda-Fit-1.jpg" loading="lazy">
+                                 data-gallery="images/vehicles/blue-passo-2012-1.jpg,images/vehicles/blue-passo-2012-2.jpg,images/vehicles/blue-passo-2012-3.jpg" loading="lazy">
                         </picture>
                         <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
                             <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-3 shadow-lg">
@@ -272,40 +253,40 @@
                             <span class="text-sm font-bold">FOR SALE</span>
                         </div>
                     </div>
-                                        
+                    
                     <!-- Thumbnail Gallery -->
-                    <div class="grid grid-cols-5 gap-2">
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg cursor-pointer" 
-                             onclick="updateMainImage('images/vehicles/Honda-Fit-1.jpg'); updateActiveThumbnail(this)">
+                    <div class="grid grid-cols-4 gap-2">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg">
                             <picture>
-                                <source media="(max-width: 768px)" srcset="images/vehicles/Honda-Fit-1.jpg">
-                                <source media="(max-width: 1200px)" srcset="images/vehicles/Honda-Fit-1.jpg">
-                                <img src="images/vehicles/Honda-Fit-1.jpg" 
-                                     alt="Honda Fit 2009 - Front View" 
+                                <source media="(max-width: 768px)" srcset="images/vehicles/blue-passo-2012-1.jpg">
+                                <img src="images/vehicles/blue-passo-2012-1.jpg" 
+                                     alt="Toyota Passo Blue 2012 - Front View" 
                                      class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center text-gray-400">
-                            <span class="text-xs">More images<br>coming soon</span>
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/blue-passo-2012-2.jpg">
+                                <img src="images/vehicles/blue-passo-2012-2.jpg" 
+                                     alt="Toyota Passo Blue 2012 - Side View" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center text-gray-400">
-                            <span class="text-xs">More images<br>coming soon</span>
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/blue-passo-2012-3.jpg">
+                                <img src="images/vehicles/blue-passo-2012-3.jpg" 
+                                     alt="Toyota Passo Blue 2012 - Interior" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center text-gray-400">
-                            <span class="text-xs">More images<br>coming soon</span>
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-colors duration-300"
+                             onclick="window.openLightbox(['images/vehicles/blue-passo-2012-1.jpg','images/vehicles/blue-passo-2012-2.jpg','images/vehicles/blue-passo-2012-3.jpg'], 0)">
+                            <div class="text-center">
+                                <i data-lucide="grid" class="w-6 h-6 text-gray-400 mx-auto mb-1"></i>
+                                <span class="text-xs text-gray-500 font-medium">View All 3</span>
+                            </div>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center text-gray-400">
-                            <span class="text-xs">More images<br>coming soon</span>
-                        </div>
-                    </div>
-                                        
-                    <!-- View All Photos Button -->
-                    <div class="text-center mt-2">
-                        <button onclick="window.openLightbox(['images/vehicles/Honda-Fit-1.jpg'], 0)" 
-                                class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium text-sm transition">
-                            <i data-lucide="grid" class="w-4 h-4"></i>
-                            View Photo
-                        </button>
                     </div>
                 </div>
 
@@ -314,109 +295,104 @@
                     <div>
                         <div class="flex items-center gap-4 mb-4">
                             <span class="bg-green-600 text-white px-4 py-2 rounded-full text-sm font-bold">FOR SALE</span>
-                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">COMPACT HATCHBACK</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Hatchback</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Compact</span>
                         </div>
-                        <h1 class="text-4xl font-black font-heading text-navy mb-2">Honda Fit</h1>
-                        <p class="text-xl text-gray-600 mb-4">2009 Model • 131,410 km • Automatic • Petrol</p>
+                        <h1 class="text-4xl font-black font-heading text-navy mb-2">Toyota Passo Blue</h1>
+                        <p class="text-xl text-gray-600 mb-4">2012 Model • 85,000 km • Petrol</p>
                         
                         <div class="flex items-baseline gap-4 mb-6">
-                            <div class="text-3xl font-black text-red">ZMW 127,000</div>
-                            <div class="text-xl text-gray-500 font-medium">Price</div>
+                            <div class="text-3xl font-black text-red">$5,840 - ZMW135,000</div>
+                            <div class="text-xl text-gray-500 font-medium">Price Range</div>
                         </div>
 
                         <div class="bg-green-50 border border-green-200 rounded-xl p-4 mb-6">
-                            <p class="text-green-800 font-medium">✓ Excellent Condition Verified</p>
+                            <p class="text-green-800 font-medium">✓ Excellent Condition</p>
+                            <p class="text-green-800 font-medium">✓ Fuel Efficient</p>
+                            <p class="text-green-800 font-medium">✓ Low Maintenance</p>
                         </div>
                     </div>
 
                     <!-- Key Specifications -->
                     <div class="bg-gray-50 rounded-2xl p-6">
-                        <h3 class="text-xl font-bold font-heading text-navy mb-4">Honda Fit Key Specifications</h3>
+                        <h3 class="text-xl font-bold font-heading text-navy mb-4">Toyota Passo Key Specifications</h3>
                         <div class="grid grid-cols-2 gap-4">
                             <div>
                                 <p class="text-sm text-gray-500">Year</p>
-                                <p class="font-semibold">2009</p>
+                                <p class="font-semibold">2012</p>
                             </div>
                             <div>
                                 <p class="text-sm text-gray-500">Mileage</p>
-                                <p class="font-semibold">131,410 km</p>
+                                <p class="font-semibold">85,000 km</p>
                             </div>
                             <div>
-                                <p class="text-sm text-gray-500">Engine Capacity</p>
-                                <p class="font-semibold">1.3cc</p>
+                                <p class="text-sm text-gray-500">Engine</p>
+                                <p class="font-semibold">1000cc</p>
                             </div>
                             <div>
-                                <p class="text-sm text-gray-500">Fuel Type</p>
-                                <p class="font-semibold">Petrol</p>
+                                <p class="text-sm text-gray-500">Power</p>
+                                <p class="font-semibold">69 hp</p>
                             </div>
                             <div>
                                 <p class="text-sm text-gray-500">Transmission</p>
                                 <p class="font-semibold">Automatic</p>
                             </div>
                             <div>
+                                <p class="text-sm text-gray-500">Drive Train</p>
+                                <p class="font-semibold">2WD</p>
+                            </div>
+                            <div>
                                 <p class="text-sm text-gray-500">Seats</p>
                                 <p class="font-semibold">5 Seats</p>
                             </div>
                             <div>
-                                <p class="text-sm text-gray-500">Doors</p>
-                                <p class="font-semibold">5 Doors</p>
-                            </div>
-                            <div>
-                                <p class="text-sm text-gray-500">Condition</p>
-                                <p class="font-semibold">Excellent</p>
+                                <p class="text-sm text-gray-500">Color</p>
+                                <p class="font-semibold">Blue</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Description -->
                     <div>
-                        <h3 class="text-xl font-bold text-navy mb-3 font-heading">Honda Fit Description</h3>
+                        <h3 class="text-xl font-bold text-navy mb-3 font-heading">Toyota Passo Description</h3>
                         <p class="text-gray-700 leading-relaxed">
-                            Discover exceptional fuel efficiency and practical design with the Honda Fit 2009. This compact hatchback embodies Honda's reputation for reliability and innovation. With its versatile "Magic Seat" configuration, efficient 1.3L i-VTEC engine, and excellent condition verified, this vehicle offers the perfect combination of economy, practicality, and Japanese engineering excellence. Ideal for city driving and daily commuting.
+                            Discover the perfect city car with the Toyota Passo Blue 2012. This compact hatchback offers exceptional fuel efficiency and easy maneuverability, making it ideal for urban driving. With only 85,000 km, this Passo has been well-maintained and provides reliable performance. The 1000cc engine delivers excellent fuel economy while providing adequate power for daily commuting.
                         </p>
                         <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mt-4">
-                            <p class="text-blue-800 font-medium mb-2">✓ Excellent Condition Verified</p>
-                            <p class="text-blue-800 font-medium">✓ Honda Reliability & Quality</p>
-                            <p class="text-blue-800 font-medium">✓ Exceptional Fuel Efficiency</p>
-                            <p class="text-blue-800 font-medium">✓ Versatile Magic Seat System</p>
+                            <p class="text-blue-800 font-medium mb-2">✓ Excellent Condition • Blue Color</p>
+                            <p class="text-blue-800 font-medium">✓ Outstanding Fuel Economy</p>
+                            <p class="text-blue-800 font-medium">✓ Easy to Drive & Park</p>
+                            <p class="text-blue-800 font-medium">✓ Low Running Costs</p>
                         </div>
                     </div>
 
-                    <!-- Honda Fit Specific Features -->
+                    <!-- Toyota Passo Specific Features -->
                     <div>
-                        <h3 class="text-xl font-bold text-navy mb-3 font-heading">Honda Fit 2009 Specific Features</h3>
+                        <h3 class="text-xl font-bold text-navy mb-3 font-heading">Toyota Passo Features</h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                             <div class="flex items-center gap-2">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                <span class="text-gray-700">Honda 1.3L i-VTEC Engine</span>
+                                <span class="text-gray-700">Compact Design</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                <span class="text-gray-700">Honda Automatic Transmission</span>
+                                <span class="text-gray-700">Excellent Fuel Economy</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                <span class="text-gray-700">Honda Magic Seat System</span>
+                                <span class="text-gray-700">Easy Parking</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                <span class="text-gray-700">Eco Assist System</span>
+                                <span class="text-gray-700">Reliable Toyota Engine</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                <span class="text-gray-700">Multi-Function Display</span>
+                                <span class="text-gray-700">Low Maintenance</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                <span class="text-gray-700">Honda Audio System</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                <span class="text-gray-700">Climate Control</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                <span class="text-gray-700">Power Windows & Locks</span>
+                                <span class="text-gray-700">Air Conditioning</span>
                             </div>
                         </div>
                     </div>
@@ -440,7 +416,7 @@
     <!-- Technical Specifications Section -->
     <section class="py-12 bg-gray-50">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-navy mb-8 font-heading text-center">Honda Fit Technical Specifications</h2>
+            <h2 class="text-3xl font-bold text-navy mb-8 font-heading text-center">Toyota Passo Technical Specifications</h2>
             
             <!-- Tab Navigation -->
             <div class="flex flex-wrap justify-center gap-2 mb-8">
@@ -457,38 +433,38 @@
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="space-y-4">
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Honda Engine Type</p>
-                                <p class="font-bold text-navy">1.3L i-VTEC 4-Cylinder</p>
+                                <p class="text-sm text-gray-600 mb-1">Toyota Engine Type</p>
+                                <p class="font-bold text-navy">1.0L Inline-3 Petrol</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
                                 <p class="text-sm text-gray-600 mb-1">Horsepower</p>
-                                <p class="font-bold text-navy">98 HP @ 6,000 RPM</p>
+                                <p class="font-bold text-navy">69 HP @ 6,000 RPM</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
                                 <p class="text-sm text-gray-600 mb-1">Torque</p>
-                                <p class="font-bold text-navy">119 Nm @ 4,800 RPM</p>
+                                <p class="font-bold text-navy">91 Nm @ 4,400 RPM</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Honda Transmission</p>
-                                <p class="font-bold text-navy">5-Speed Automatic</p>
+                                <p class="text-sm text-gray-600 mb-1">Toyota Transmission</p>
+                                <p class="font-bold text-navy">4-Speed Automatic</p>
                             </div>
                         </div>
                         <div class="space-y-4">
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Honda Drive System</p>
-                                <p class="font-bold text-navy">Front Wheel Drive (FWD)</p>
+                                <p class="text-sm text-gray-600 mb-1">Toyota Drive System</p>
+                                <p class="font-bold text-navy">Front Wheel Drive (2WD)</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Honda Fuel System</p>
-                                <p class="font-bold text-navy">Programmed Fuel Injection (PGM-FI)</p>
+                                <p class="text-sm text-gray-600 mb-1">Fuel System</p>
+                                <p class="font-bold text-navy">Multi-Point Fuel Injection</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
                                 <p class="text-sm text-gray-600 mb-1">Fuel Consumption</p>
-                                <p class="font-bold text-navy">5.6L/100km (Combined)</p>
+                                <p class="font-bold text-navy">5.1L/100km (Combined)</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Emissions Standard</p>
-                                <p class="font-bold text-navy">Euro 4</p>
+                                <p class="text-sm text-gray-600 mb-1">Fuel Tank Capacity</p>
+                                <p class="font-bold text-navy">36 liters</p>
                             </div>
                         </div>
                     </div>
@@ -499,38 +475,38 @@
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="space-y-4">
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Honda GK Length</p>
-                                <p class="font-bold text-navy">4,000 mm</p>
+                                <p class="text-sm text-gray-600 mb-1">Toyota Passo Length</p>
+                                <p class="font-bold text-navy">3,640 mm</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Honda GK Width</p>
-                                <p class="font-bold text-navy">1,695 mm</p>
+                                <p class="text-sm text-gray-600 mb-1">Toyota Passo Width</p>
+                                <p class="font-bold text-navy">1,660 mm</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Honda GK Height</p>
-                                <p class="font-bold text-navy">1,525 mm</p>
+                                <p class="text-sm text-gray-600 mb-1">Toyota Passo Height</p>
+                                <p class="font-bold text-navy">1,535 mm</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Honda GK Wheelbase</p>
-                                <p class="font-bold text-navy">2,500 mm</p>
+                                <p class="text-sm text-gray-600 mb-1">Toyota Passo Wheelbase</p>
+                                <p class="font-bold text-navy">2,450 mm</p>
                             </div>
                         </div>
                         <div class="space-y-4">
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Honda GK Curb Weight</p>
-                                <p class="font-bold text-navy">1,080 kg</p>
+                                <p class="text-sm text-gray-600 mb-1">Toyota Passo Curb Weight</p>
+                                <p class="font-bold text-navy">940 kg</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
                                 <p class="text-sm text-gray-600 mb-1">Ground Clearance</p>
-                                <p class="font-bold text-navy">150 mm</p>
+                                <p class="font-bold text-navy">155 mm</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Honda Cargo Capacity</p>
-                                <p class="font-bold text-navy">363 liters (Magic Seat Down)</p>
+                                <p class="text-sm text-gray-600 mb-1">Toyota Trunk Capacity</p>
+                                <p class="font-bold text-navy">225 liters</p>
                             </div>
                             <div class="spec-row p-4 rounded-lg transition">
-                                <p class="text-sm text-gray-600 mb-1">Honda Fuel Tank</p>
-                                <p class="font-bold text-navy">40 liters</p>
+                                <p class="text-sm text-gray-600 mb-1">Turning Radius</p>
+                                <p class="font-bold text-navy">4.6 m</p>
                             </div>
                         </div>
                     </div>
@@ -540,36 +516,36 @@
                 <div id="features-tab" class="tab-content hidden">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="space-y-4">
-                            <h4 class="font-bold text-navy text-lg mb-3">Honda Fit Interior Features</h4>
+                            <h4 class="font-bold text-navy text-lg mb-3">Toyota Passo Interior Features</h4>
                             <div class="space-y-3">
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Honda Magic Seat System</span>
+                                    <span class="text-gray-700">Air Conditioning</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Honda Eco Assist System</span>
+                                    <span class="text-gray-700">Power Windows</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Multi-Function Information Display</span>
+                                    <span class="text-gray-700">Power Steering</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Honda Audio System with CD/MP3</span>
+                                    <span class="text-gray-700">CD Player with Radio</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Manual Air Conditioning</span>
+                                    <span class="text-gray-700">Digital Clock</span>
                                 </div>
                             </div>
                         </div>
                         <div class="space-y-4">
-                            <h4 class="font-bold text-navy text-lg mb-3">Honda Fit Exterior Features</h4>
+                            <h4 class="font-bold text-navy text-lg mb-3">Toyota Passo Exterior Features</h4>
                             <div class="space-y-3">
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">15-inch Steel Wheels</span>
+                                    <span class="text-gray-700">Compact Design</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
@@ -577,15 +553,15 @@
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">LED Daytime Running Lights</span>
+                                    <span class="text-gray-700">Color-Coded Bumpers</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Power Adjustable Mirrors</span>
+                                    <span class="text-gray-700">Electric Side Mirrors</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="check-circle" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Rear Window Wiper</span>
+                                    <span class="text-gray-700">Rear Wiper</span>
                                 </div>
                             </div>
                         </div>
@@ -596,52 +572,52 @@
                 <div id="safety-tab" class="tab-content hidden">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="space-y-4">
-                            <h4 class="font-bold text-navy text-lg mb-3">Honda Fit Safety Features</h4>
+                            <h4 class="font-bold text-navy text-lg mb-3">Toyota Safety Systems</h4>
                             <div class="space-y-3">
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="shield" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Dual Front Airbags</span>
+                                    <span class="text-gray-700">Driver Airbag</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="shield" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Honda ABS with EBD</span>
+                                    <span class="text-gray-700">Passenger Airbag</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="shield" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Honda Vehicle Stability Assist (VSA)</span>
+                                    <span class="text-gray-700">ABS with EBD</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="shield" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Traction Control System</span>
+                                    <span class="text-gray-700">Seatbelts with Pretensioners</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="shield" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Hill Start Assist</span>
+                                    <span class="text-gray-700">Child Safety Locks</span>
                                 </div>
                             </div>
                         </div>
                         <div class="space-y-4">
-                            <h4 class="font-bold text-navy text-lg mb-3">Honda Fit Driver Assistance</h4>
+                            <h4 class="font-bold text-navy text-lg mb-3">Toyota Security Features</h4>
                             <div class="space-y-3">
                                 <div class="flex items-center gap-2">
-                                    <i data-lucide="camera" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Rear Parking Sensors</span>
+                                    <i data-lucide="lock" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Central Locking</span>
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <i data-lucide="camera" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Multi-Angle Rearview Camera</span>
+                                    <i data-lucide="lock" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Immobilizer</span>
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <i data-lucide="camera" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Speed-Sensitive Volume Control</span>
+                                    <i data-lucide="lock" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Remote Keyless Entry</span>
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <i data-lucide="camera" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Auto Door Locks</span>
+                                    <i data-lucide="lock" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Security Alarm</span>
                                 </div>
                                 <div class="flex items-center gap-2">
-                                    <i data-lucide="camera" class="w-5 h-5 text-green-500"></i>
-                                    <span class="text-gray-700">Immobilizer System</span>
+                                    <i data-lucide="lock" class="w-5 h-5 text-green-500"></i>
+                                    <span class="text-gray-700">Parking Sensors</span>
                                 </div>
                             </div>
                         </div>
@@ -671,16 +647,16 @@
                     </div>
                 </div>
 
-                <!-- Toyota Passo -->
+                <!-- Honda Fit -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/vehicles/Toyota-Passo-1.jpg" alt="Toyota Passo 2012" class="w-full h-full object-cover" loading="lazy">
+                        <img src="images/vehicles/Honda-Fit-1.jpg" alt="Honda Fit 2013" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-navy mb-2">Toyota Passo</h3>
-                        <p class="text-gray-600 mb-4">2012 Model • 85,000 km</p>
-                        <div class="text-2xl font-black text-red mb-4">ZMW135,000</div>
-                        <a href="vehicle-toyota-passo-2012.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center">
+                        <h3 class="text-xl font-bold text-navy mb-2">Honda Fit</h3>
+                        <p class="text-gray-600 mb-4">2013 Model • 131,410 km</p>
+                        <div class="text-2xl font-black text-red mb-4">USD 3,358</div>
+                        <a href="vehicle-honda-fit-2009.html" class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center">
                             View Details
                         </a>
                     </div>
@@ -854,6 +830,44 @@
 
     <script>
         lucide.createIcons();
+        
+        // Image gallery functions
+        function updateMainImage(imageSrc) {
+          const mainImage = document.getElementById('mainImage');
+          if (mainImage) {
+            mainImage.src = imageSrc;
+          }
+        }
+        
+        function updateActiveThumbnail(activeElement) {
+          // Remove active class from all thumbnails
+          document.querySelectorAll('.grid.grid-cols-5 > div').forEach(thumb => {
+            thumb.classList.remove('ring-2', 'ring-blue-500');
+          });
+          
+          // Add active class to clicked thumbnail
+          activeElement.classList.add('ring-2', 'ring-blue-500');
+        }
+        
+        function openLightbox(imageSrc) {
+          const lightbox = document.getElementById('lightbox');
+          const lightboxImage = document.getElementById('lightboxImage');
+          
+          if (lightbox && lightboxImage) {
+            lightboxImage.src = imageSrc;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+          }
+        }
+        
+        function closeLightbox(event) {
+          const lightbox = document.getElementById('lightbox');
+          
+          if (lightbox && (!event || event.target === lightbox)) {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = '';
+          }
+        }
         
         // Mobile Menu
         const mobileMenuButton = document.getElementById('mobile-menu-button');

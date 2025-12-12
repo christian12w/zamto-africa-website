@@ -478,7 +478,7 @@
             <div class="bg-gray-50 p-4 rounded-xl text-center">
               <i data-lucide="zap" class="w-8 h-8 text-red mx-auto mb-2 feature-icon"></i>
               <p class="text-sm text-gray-600">Fuel</p>
-              <p class="font-bold text-navy">Diesel</p>
+              <p class="font-bold text-navy">Petrol</p>
             </div>
           </div>
 
@@ -566,7 +566,7 @@
               </div>
               <div class="flex justify-between spec-row p-3 rounded-lg">
                 <span class="text-gray-600">Color</span>
-                <span class="font-semibold text-navy">Silver</span>
+                <span class="font-semibold text-navy">Blue</span>
               </div>
               <div class="flex justify-between spec-row p-3 rounded-lg">
                 <span class="text-gray-600">Doors</span>
@@ -925,6 +925,44 @@
     // Initialize Lucide icons
     lucide.createIcons();
     
+    // Image gallery functions
+    function updateMainImage(imageSrc) {
+      const mainImage = document.getElementById('mainImage');
+      if (mainImage) {
+        mainImage.src = imageSrc;
+      }
+    }
+    
+    function updateActiveThumbnail(activeElement) {
+      // Remove active class from all thumbnails
+      document.querySelectorAll('.grid.grid-cols-5 > div').forEach(thumb => {
+        thumb.classList.remove('ring-2', 'ring-blue-500');
+      });
+      
+      // Add active class to clicked thumbnail
+      activeElement.classList.add('ring-2', 'ring-blue-500');
+    }
+    
+    function openLightbox(imageSrc) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightboxImage');
+      
+      if (lightbox && lightboxImage) {
+        lightboxImage.src = imageSrc;
+        lightbox.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+    
+    function closeLightbox(event) {
+      const lightbox = document.getElementById('lightbox');
+      
+      if (lightbox && (!event || event.target === lightbox)) {
+        lightbox.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+    
     // Mobile menu toggle
     document.addEventListener('DOMContentLoaded', function() {
       const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -984,6 +1022,31 @@
           ImageGallery.openLightbox(images, startIndex);
         } else {
           // Fallback to simple lightbox
+          const lightbox = document.createElement('div');
+          lightbox.className = 'fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center';
+          lightbox.innerHTML = `
+            <div class="relative max-w-4xl max-h-screen">
+              <img src="${images[startIndex]}" class="max-w-full max-h-full object-contain">
+              <button class="absolute top-4 right-4 bg-white text-black p-2 rounded-full" onclick="this.parentElement.parentElement.remove()">
+                <i data-lucide="x" class="w-6 h-6"></i>
+              </button>
+            </div>
+          `;
+          document.body.appendChild(lightbox);
+          lucide.createIcons();
+          
+          // Close on background click
+          lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+              lightbox.remove();
+            }
+          });
+        }
+      };
+    });
+  </script>
+</body>
+</html>
           const lightbox = document.createElement('div');
           lightbox.className = 'fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center';
           lightbox.innerHTML = `

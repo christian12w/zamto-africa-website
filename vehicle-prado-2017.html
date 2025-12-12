@@ -17,6 +17,33 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="image-gallery.js"></script>
+  <script>
+    // Function to update the main image
+    function updateMainImage(imageSrc) {
+      const mainImage = document.querySelector('.main-vehicle-image');
+      if (mainImage) {
+        mainImage.src = imageSrc;
+      }
+    }
+    
+    // Function to update active thumbnail styling
+    function updateActiveThumbnail(clickedThumb) {
+      // Remove active class from all thumbnails
+      const thumbnails = document.querySelectorAll('.thumbnail-image');
+      thumbnails.forEach(thumb => {
+        const parent = thumb.closest('div');
+        if (parent) {
+          parent.classList.remove('ring-2', 'ring-blue-500');
+        }
+      });
+      
+      // Add active class to clicked thumbnail
+      const parent = clickedThumb.closest('div');
+      if (parent) {
+        parent.classList.add('ring-2', 'ring-blue-500');
+      }
+    }
+  </script>
     <style>
         :root {
           --navy: #003087;
@@ -273,9 +300,10 @@
                         </div>
                     </div>
                     
-                    <!-- Thumbnail Gallery -->
-                    <div class="grid grid-cols-4 gap-2">
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg">
+                    <!-- Unified Thumbnail Gallery -->
+                    <div class="grid grid-cols-5 gap-2">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/black-landcruiser-1.jpg'); updateActiveThumbnail(this)">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="images/vehicles/black-landcruiser-1.jpg">
                                 <source media="(max-width: 1200px)" srcset="images/vehicles/black-landcruiser-1.jpg">
@@ -284,7 +312,8 @@
                                      class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/black-landcruiser-2.jpg'); updateActiveThumbnail(this)">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="images/vehicles/black-landcruiser-2.jpg">
                                 <source media="(max-width: 1200px)" srcset="images/vehicles/black-landcruiser-2.jpg">
@@ -293,7 +322,8 @@
                                      class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/black-landcruiser-3.jpg'); updateActiveThumbnail(this)">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="images/vehicles/black-landcruiser-3.jpg">
                                 <source media="(max-width: 1200px)" srcset="images/vehicles/black-landcruiser-3.jpg">
@@ -302,7 +332,8 @@
                                      class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/black-landcruiser-4.jpg'); updateActiveThumbnail(this)">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="images/vehicles/black-landcruiser-4.jpg">
                                 <source media="(max-width: 1200px)" srcset="images/vehicles/black-landcruiser-4.jpg">
@@ -311,30 +342,25 @@
                                      class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             </picture>
                         </div>
-                    </div>
-                    
-                    <!-- Additional Images Row -->
-                    <div class="grid grid-cols-2 gap-2">
-                        <div class="bg-gray-100 rounded-lg h-32 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer"
-                             onclick="window.openLightbox(['images/vehicles/black-landcruiser-5.jpg'], 0)">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/black-landcruiser-5.jpg'); updateActiveThumbnail(this)">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="images/vehicles/black-landcruiser-5.jpg">
                                 <source media="(max-width: 1200px)" srcset="images/vehicles/black-landcruiser-5.jpg">
                                 <img src="images/vehicles/black-landcruiser-5.jpg" 
                                      alt="Toyota Land Cruiser Prado 2017 - Dashboard" 
-                                     class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             </picture>
-                            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-                                <i data-lucide="plus" class="w-6 h-6 text-white opacity-0 hover:opacity-100 transition-opacity duration-300"></i>
-                            </div>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-32 overflow-hidden flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-colors duration-300"
-                             onclick="window.openLightbox(['images/vehicles/black-landcruiser-1.jpg,images/vehicles/black-landcruiser-2.jpg,images/vehicles/black-landcruiser-3.jpg,images/vehicles/black-landcruiser-4.jpg,images/vehicles/black-landcruiser-5.jpg'], 0)">
-                            <div class="text-center">
-                                <i data-lucide="grid" class="w-8 h-8 text-gray-400 mx-auto mb-2"></i>
-                                <span class="text-sm text-gray-500 font-medium">View All 5 Photos</span>
-                            </div>
-                        </div>
+                    </div>
+                    
+                    <!-- View All Photos Button -->
+                    <div class="text-center mt-2">
+                        <button onclick="window.openLightbox(['images/vehicles/black-landcruiser-1.jpg','images/vehicles/black-landcruiser-2.jpg','images/vehicles/black-landcruiser-3.jpg','images/vehicles/black-landcruiser-4.jpg','images/vehicles/black-landcruiser-5.jpg'], 0)" 
+                                class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium text-sm transition">
+                            <i data-lucide="grid" class="w-4 h-4"></i>
+                            View All 5 Photos
+                        </button>
                     </div>
                 </div>
 

@@ -391,9 +391,10 @@
                         </div>
                     </div>
                     
-                    <!-- Thumbnail Gallery -->
-                    <div class="grid grid-cols-4 gap-2">
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg cursor-pointer" onclick="changeMainImage('images/vehicles/mazda-CX-5-1.jpg')">
+                    <!-- Unified Thumbnail Gallery -->
+                    <div class="grid grid-cols-5 gap-2">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/mazda-CX-5-1.jpg'); updateActiveThumbnail(this)">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="images/vehicles/mazda-CX-5-1.jpg">
                                 <img src="images/vehicles/mazda-CX-5-1.jpg" 
@@ -401,7 +402,8 @@
                                      class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" onclick="changeMainImage('images/vehicles/mazda-CX-5-2.jpg')">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/mazda-CX-5-2.jpg'); updateActiveThumbnail(this)">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="images/vehicles/mazda-CX-5-2.jpg">
                                 <img src="images/vehicles/mazda-CX-5-2.jpg" 
@@ -409,7 +411,8 @@
                                      class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" onclick="changeMainImage('images/vehicles/mazda-CX-5-3.jpg')">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/mazda-CX-5-3.jpg'); updateActiveThumbnail(this)">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="images/vehicles/mazda-CX-5-3.jpg">
                                 <img src="images/vehicles/mazda-CX-5-3.jpg" 
@@ -417,13 +420,33 @@
                                      class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-colors duration-300"
-                             onclick="window.openLightbox(['images/vehicles/mazda-CX-5-1.jpg','images/vehicles/mazda-CX-5-2.jpg','images/vehicles/mazda-CX-5-3.jpg','images/vehicles/mazda-CX-5-4.jpg','images/vehicles/mazda-CX-5-5.jpg'], 0)">
-                            <div class="text-center">
-                                <i data-lucide="grid" class="w-6 h-6 text-gray-400 mx-auto mb-1"></i>
-                                <span class="text-xs text-gray-500 font-medium">View All 5</span>
-                            </div>
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/mazda-CX-5-4.jpg'); updateActiveThumbnail(this)">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/mazda-CX-5-4.jpg">
+                                <img src="images/vehicles/mazda-CX-5-4.jpg" 
+                                     alt="Mazda CX-5 2012 - Dashboard" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/mazda-CX-5-5.jpg'); updateActiveThumbnail(this)">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/mazda-CX-5-5.jpg">
+                                <img src="images/vehicles/mazda-CX-5-5.jpg" 
+                                     alt="Mazda CX-5 2012 - Rear View" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
+                    
+                    <!-- View All Photos Button -->
+                    <div class="text-center mt-2">
+                        <button onclick="window.openLightbox(['images/vehicles/mazda-CX-5-1.jpg','images/vehicles/mazda-CX-5-2.jpg','images/vehicles/mazda-CX-5-3.jpg','images/vehicles/mazda-CX-5-4.jpg','images/vehicles/mazda-CX-5-5.jpg'], 0)" 
+                                class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium text-sm transition">
+                            <i data-lucide="grid" class="w-4 h-4"></i>
+                            View All 5 Photos
+                        </button>
                     </div>
         </div>
 
@@ -1108,6 +1131,32 @@
           event.target.classList.add('text-navy');
         }
       };
+      
+      // Function to update the main image
+      function updateMainImage(imageSrc) {
+        const mainImage = document.querySelector('.main-vehicle-image');
+        if (mainImage) {
+          mainImage.src = imageSrc;
+        }
+      }
+      
+      // Function to update active thumbnail styling
+      function updateActiveThumbnail(clickedThumb) {
+        // Remove active class from all thumbnails
+        const thumbnails = document.querySelectorAll('.thumbnail-image');
+        thumbnails.forEach(thumb => {
+          const parent = thumb.closest('div');
+          if (parent) {
+            parent.classList.remove('ring-2', 'ring-blue-500');
+          }
+        });
+        
+        // Add active class to clicked thumbnail
+        const parent = clickedThumb.closest('div');
+        if (parent) {
+          parent.classList.add('ring-2', 'ring-blue-500');
+        }
+      }
       
       // Image gallery functionality
       window.changeMainImage = function(imageSrc) {

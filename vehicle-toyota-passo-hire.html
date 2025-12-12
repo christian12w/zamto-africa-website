@@ -239,7 +239,7 @@
                             <img src="images/vehicles/Toyota-Passo-for-hire-1.jpg" 
                                  alt="Toyota Passo - Hire Vehicle" 
                                  class="main-vehicle-image w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                 data-gallery="images/vehicles/Toyota-Passo-for-hire-1.jpg,images/vehicles/Toyota-Passo-for-hire-2.jpg" loading="lazy">
+                                 data-gallery="images/vehicles/Toyota-Passo-for-hire-1.jpg,images/vehicles/Toyota-Passo-for-hire-2.jpg,images/vehicles/Toyota-Passo-for-hire-3.jpg,images/vehicles/Toyota-Passo-for-hire-4.jpg" loading="lazy">
                         </picture>
                         <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
                             <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-3 shadow-lg">
@@ -254,9 +254,10 @@
                         </div>
                     </div>
                     
-                    <!-- Thumbnail Gallery -->
-                    <div class="grid grid-cols-4 gap-2">
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg">
+                    <!-- Unified Thumbnail Gallery -->
+                    <div class="grid grid-cols-5 gap-2">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden ring-2 ring-blue-500 transition-all duration-300 hover:ring-blue-600 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/Toyota-Passo-for-hire-1.jpg'); updateActiveThumbnail(this)">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="images/vehicles/Toyota-Passo-for-hire-1.jpg">
                                 <source media="(max-width: 1200px)" srcset="images/vehicles/Toyota-Passo-for-hire-1.jpg">
@@ -265,7 +266,8 @@
                                      class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg">
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/Toyota-Passo-for-hire-2.jpg'); updateActiveThumbnail(this)">
                             <picture>
                                 <source media="(max-width: 768px)" srcset="images/vehicles/Toyota-Passo-for-hire-2.jpg">
                                 <source media="(max-width: 1200px)" srcset="images/vehicles/Toyota-Passo-for-hire-2.jpg">
@@ -274,19 +276,38 @@
                                      class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
                             </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center bg-gray-200">
-                            <div class="text-center">
-                                <i data-lucide="image" class="w-6 h-6 text-gray-400 mx-auto mb-1"></i>
-                                <span class="text-xs text-gray-500 font-medium">2 Images</span>
-                            </div>
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/Toyota-Passo-for-hire-3.jpg'); updateActiveThumbnail(this)">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/Toyota-Passo-for-hire-3.jpg">
+                                <source media="(max-width: 1200px)" srcset="images/vehicles/Toyota-Passo-for-hire-3.jpg">
+                                <img src="images/vehicles/Toyota-Passo-for-hire-3.jpg" 
+                                     alt="Toyota Passo - Rear View" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
-                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-colors duration-300"
-                             onclick="window.openLightbox(['images/vehicles/Toyota-Passo-for-hire-1.jpg','images/vehicles/Toyota-Passo-for-hire-2.jpg'], 0)">
-                            <div class="text-center">
-                                <i data-lucide="grid" class="w-6 h-6 text-gray-400 mx-auto mb-1"></i>
-                                <span class="text-xs text-gray-500 font-medium">View All</span>
-                            </div>
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden transition-all duration-300 hover:ring-2 hover:ring-blue-500 hover:shadow-lg cursor-pointer" 
+                             onclick="updateMainImage('images/vehicles/Toyota-Passo-for-hire-4.jpg'); updateActiveThumbnail(this)">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="images/vehicles/Toyota-Passo-for-hire-4.jpg">
+                                <source media="(max-width: 1200px)" srcset="images/vehicles/Toyota-Passo-for-hire-4.jpg">
+                                <img src="images/vehicles/Toyota-Passo-for-hire-4.jpg" 
+                                     alt="Toyota Passo - Interior" 
+                                     class="thumbnail-image w-full h-full object-cover transition-transform duration-300 hover:scale-110" loading="lazy">
+                            </picture>
                         </div>
+                        <div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center text-gray-400">
+                            <span class="text-xs">More images<br>coming soon</span>
+                        </div>
+                    </div>
+                    
+                    <!-- View All Photos Button -->
+                    <div class="text-center mt-2">
+                        <button onclick="window.openLightbox(['images/vehicles/Toyota-Passo-for-hire-1.jpg','images/vehicles/Toyota-Passo-for-hire-2.jpg','images/vehicles/Toyota-Passo-for-hire-3.jpg','images/vehicles/Toyota-Passo-for-hire-4.jpg'], 0)" 
+                                class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium text-sm transition">
+                            <i data-lucide="grid" class="w-4 h-4"></i>
+                            View All 4 Photos
+                        </button>
                     </div>
                 </div>
 
@@ -631,6 +652,32 @@
         closeMobileMenu.addEventListener('click', () => {
             mobileMenu.classList.add('translate-x-full');
         });
+        
+        // Function to update the main image
+        function updateMainImage(imageSrc) {
+            const mainImage = document.querySelector('.main-vehicle-image');
+            if (mainImage) {
+                mainImage.src = imageSrc;
+            }
+        }
+        
+        // Function to update active thumbnail styling
+        function updateActiveThumbnail(clickedThumb) {
+            // Remove active class from all thumbnails
+            const thumbnails = document.querySelectorAll('.thumbnail-image');
+            thumbnails.forEach(thumb => {
+                const parent = thumb.closest('div');
+                if (parent) {
+                    parent.classList.remove('ring-2', 'ring-blue-500');
+                }
+            });
+            
+            // Add active class to clicked thumbnail
+            const parent = clickedThumb.closest('div');
+            if (parent) {
+                parent.classList.add('ring-2', 'ring-blue-500');
+            }
+        }
         
         // Image Gallery functionality
         document.querySelectorAll('.thumbnail-image').forEach(thumb => {
