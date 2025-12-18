@@ -1,4 +1,6 @@
 // Enhanced Image Gallery with Zoom and Lightbox functionality
+// Optimized for performance with lazy loading and efficient rendering
+
 class ImageGallery {
     constructor() {
         this.init();
@@ -12,26 +14,26 @@ class ImageGallery {
     }
 
     setupLightbox() {
-        // Create lightbox HTML
+        // Create lightbox HTML with performance optimizations
         const lightboxHTML = `
-            <div id="image-lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
+            <div id="image-lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center" style="will-change: transform;">
                 <div class="relative max-w-6xl max-h-screen p-4">
-                    <button id="close-lightbox" class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75 transition z-50">
+                    <button id="close-lightbox" class="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75 transition z-50" aria-label="Close lightbox">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
-                    <button id="prev-image" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75 transition">
+                    <button id="prev-image" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75 transition" aria-label="Previous image">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                         </svg>
                     </button>
-                    <button id="next-image" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75 transition">
+                    <button id="next-image" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75 transition" aria-label="Next image">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                     </button>
-                    <img id="lightbox-image" src="" alt="" class="max-w-full max-h-full object-contain">
+                    <img id="lightbox-image" src="" alt="" class="max-w-full max-h-full object-contain" loading="lazy" decoding="async">
                     <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                         <span id="image-counter">1 / 5</span>
                     </div>

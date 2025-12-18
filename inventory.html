@@ -8,8 +8,58 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Zamto Africa">
   <meta name="mobile-web-app-capable" content="yes">
-  <title>Vehicle Inventory - Zamto Africa | Japanese Imported Vehicles Zambia</title>
-  <meta name="description" content="Browse our premium inventory of Japanese imported vehicles at Zamto Africa - quality cars, SUVs, and commercial vehicles available in Zambia." />
+  <link rel="preload" href="logo.png" as="image">
+  <link rel="prefetch" href="index.html">
+  <link rel="prefetch" href="about.html">
+  <link rel="prefetch" href="services.html">
+  <link rel="prefetch" href="contact.html">
+  <title>Vehicle Inventory - Zamto Africa | Japanese Imported Cars Zambia</title>
+  <meta name="description" content="Browse our premium inventory of Japanese imported vehicles at Zamto Africa. Quality cars, SUVs, and commercial vehicles available in Zambia. Search zamtoafrica for the best deals!" />
+  <link rel="canonical" href="https://zamtoafrica.com/inventory.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zamtoafrica.com/inventory.html">
+  <meta property="og:title" content="Vehicle Inventory - Zamto Africa | Japanese Imported Cars Zambia">
+  <meta property="og:description" content="Browse our premium inventory of Japanese imported vehicles at Zamto Africa. Quality cars, SUVs, and commercial vehicles available in Zambia.">
+  <meta property="og:image" content="https://zamtoafrica.com/logo.png">
+  <meta property="og:site_name" content="Zamto Africa">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://zamtoafrica.com/inventory.html">
+  <meta property="twitter:title" content="Vehicle Inventory - Zamto Africa | Japanese Imported Cars Zambia">
+  <meta property="twitter:description" content="Browse our premium inventory of Japanese imported vehicles at Zamto Africa. Quality cars, SUVs, and commercial vehicles available in Zambia.">
+  <meta property="twitter:image" content="https://zamtoafrica.com/logo.png">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Vehicle Inventory - Zamto Africa",
+    "url": "https://zamtoafrica.com/inventory.html",
+    "description": "Browse our premium inventory of Japanese imported vehicles at Zamto Africa. Quality cars, SUVs, and commercial vehicles available in Zambia.",
+    "publisher": {
+      "@type": "AutoDealer",
+      "name": "Zamto Africa Company Ltd",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://zamtoafrica.com/logo.png"
+      }
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "name": "Japanese Imported Vehicles",
+          "description": "Quality cars, SUVs, and commercial vehicles available in Zambia"
+        }
+      ]
+    }
+  }
+  </script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="logo.png">
   <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
@@ -17,11 +67,27 @@
   <!-- Google Fonts - Professional Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-  <script src="image-gallery.js"></script>
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <script src="image-gallery.js" defer></script>
+  <script>
+    // Register service worker for performance optimization
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('SW registered: ', registration);
+          })
+          .catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
+  </script>
 
   <style>
     :root {
@@ -95,6 +161,21 @@
     body {
       overflow-x: hidden;
       max-width: 100vw;
+    }
+    
+    /* Performance optimizations */
+    .vehicle-card {
+      will-change: transform;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+    }
+    
+    .transition-transform {
+      will-change: transform;
+    }
+    
+    .group-hover\:scale-105 {
+      transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     
     /* Mobile video optimizations */
@@ -412,11 +493,11 @@
             <div class="space-y-3">
               <div class="flex justify-between items-center">
                 <span class="text-white/80">Total Vehicles</span>
-                <span class="font-bold text-xl">16</span>
+                <span class="font-bold text-xl">25</span>
               </div>
               <div class="flex justify-between items-center">
                 <span class="text-white/80">For Sale</span>
-                <span class="font-bold text-xl">13</span>
+                <span class="font-bold text-xl">22</span>
               </div>
               <div class="flex justify-between items-center">
                 <span class="text-white/80">For Hire</span>
@@ -424,7 +505,7 @@
               </div>
               <div class="flex justify-between items-center">
                 <span class="text-white/80">Available Now</span>
-                <span class="font-bold text-xl">15</span>
+                <span class="font-bold text-xl">24</span>
               </div>
             </div>
           </div>
@@ -434,7 +515,7 @@
         <div class="text-center">
           <span id="resultsCounter" class="inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded-full text-lg font-medium">
             <i data-lucide="eye" class="w-5 h-5"></i>
-            Showing <span class="font-bold text-xl">16</span> vehicles
+            Showing <span class="font-bold text-xl">25</span> vehicles
           </span>
         </div>
       </div>
@@ -552,7 +633,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/BMW-X1-1.jpg', 'images/vehicles/BMW-X1-2.jpg', 'images/vehicles/BMW-X1-3.jpg'], 0)">
             <img src="images/vehicles/BMW-X1-1.jpg" alt="BMW X1 2011" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
               <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
                 <i data-lucide="maximize-2" class="w-3 h-3"></i>
@@ -611,6 +691,85 @@
           </div>
         </div>
 
+        <!-- Vehicle 2B - BMW 5 Series (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+             data-category="sale" 
+             data-name="BMW 5 Series" 
+             data-type="SEDANS"
+             data-fuel="Petrol" 
+             data-transmission="Automatic" 
+             data-year="2014">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-48 overflow-hidden cursor-pointer"
+               onclick="window.openLightbox(['images/vehicles/BMW-5-series-1.jpeg', 'images/vehicles/BMW-5-series-2.jpeg', 'images/vehicles/BMW-5-series-3.jpeg', 'images/vehicles/BMW-5-series-4.jpeg'], 0)">
+            <img src="images/vehicles/BMW-5-series-1.jpeg" alt="BMW 5 Series 2014" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                View Gallery
+              </div>
+            </div>
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">BMW 5 Series</h3>
+                <p class="text-xs text-gray-500">2014 Model • 68,000 km</p>
+              </div>
+              <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-medium">Sedans</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>1997cc Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">ZMW 312,400</span>
+                <span class="text-xs text-gray-500 block">$13,500</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-bmw-5-series-2014.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
         <!-- Vehicle 3 - Honda Fit (For Sale) -->
         <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
              data-category="sale" 
@@ -618,7 +777,7 @@
              data-type="HATCHBACKS"
              data-fuel="Petrol" 
              data-transmission="Automatic" 
-             data-year="2013">
+             data-year="2009">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
             <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -630,8 +789,7 @@
           <!-- Vehicle Image -->
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Honda-Fit-1.jpg', 'images/vehicles/Honda-Fit-1.jpg', 'images/vehicles/Honda-Fit-1.jpg'], 0)">
-            <img src="images/vehicles/Honda-Fit-1.jpg" alt="Honda Fit 2013" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <img src="images/vehicles/Honda-Fit-1.jpg" alt="Honda Fit 2009" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" decoding="async">
             <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
               <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
                 <i data-lucide="maximize-2" class="w-3 h-3"></i>
@@ -709,8 +867,7 @@
           <!-- Vehicle Image -->
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/blue-passo-2012-1.jpg', 'images/vehicles/blue-passo-2012-2.jpg', 'images/vehicles/blue-passo-2012-3.jpg'], 0)">
-            <img src="images/vehicles/blue-passo-2012-1.jpg" alt="Toyota Passo Blue 2012" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <img src="images/vehicles/blue-passo-2012-1.jpg" alt="Toyota Passo Blue 2012" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" decoding="async">
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -796,8 +953,7 @@
           <!-- Vehicle Image -->
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Yellow-passo-2013-1.jpg', 'images/vehicles/Yellow-passo-2013-2.jpg', 'images/vehicles/Yellow-passo-2013-3.jpg', 'images/vehicles/Yellow-passo-2013-4.jpg', 'images/vehicles/Yellow-passo-2013-5.jpg'], 0)">
-            <img src="images/vehicles/Yellow-passo-2013-1.jpg" alt="Toyota Passo Yellow 2013" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <img src="images/vehicles/Yellow-passo-2013-1.jpg" alt="Toyota Passo Yellow 2013" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" decoding="async">
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -884,7 +1040,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Brown-Passo-2014-1.jpg', 'images/vehicles/Brown-Passo-2014-2.jpg', 'images/vehicles/Brown-Passo-2014-3.jpg'], 0)">
             <img src="images/vehicles/Brown-Passo-2014-1.jpg" alt="Toyota Passo Brown 2014" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -971,7 +1126,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Isuzu-MUX-1.jpg', 'images/vehicles/Isuzu-MUX-2.jpg', 'images/vehicles/Isuzu-MUX-3.jpg'], 0)">
             <img src="images/vehicles/Isuzu-MUX-1.jpg" alt="Isuzu MUX 2018" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -1004,7 +1158,7 @@
                 <span>5 Seats</span>
                 <span class="text-gray-300">•</span>
                 <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
-                <span>4 Doors</span>
+                <span>5 Doors</span>
               </div>
               <div class="flex items-center gap-2 text-xs text-gray-600">
                 <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
@@ -1058,7 +1212,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Toyota-Passo-for-hire-1.jpg', 'images/vehicles/Toyota-Passo-for-hire-2.jpg', 'images/vehicles/Toyota-Passo-for-hire-3.jpg', 'images/vehicles/Toyota-Passo-for-hire-4.jpg'], 0)">
             <img src="images/vehicles/Toyota-Passo-for-hire-1.jpg" alt="Toyota Passo - Hire Vehicle" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -1145,7 +1298,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Isuzu-Van-1.jpg', 'images/vehicles/Isuzu-Van-2.jpg', 'images/vehicles/Isuzu-Van-3.jpg'], 0)">
             <img src="images/vehicles/Isuzu-Van-1.jpg" alt="Isuzu Van 2015" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -1232,7 +1384,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Lexus-RX 300t-F-Sport-1.jpg', 'images/vehicles/Lexus-RX 300t-F-Sport-2.jpg'], 0)">
             <img src="images/vehicles/Lexus-RX 300t-F-Sport-1.jpg" alt="Lexus RX 300t F-Sport 2018" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -1318,7 +1469,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Nissan-Juke-1.jpg', 'images/vehicles/Nissan-Juke-2.jpg', 'images/vehicles/Nissan-Juke-2.jpg'], 0)">
             <img src="images/vehicles/Nissan-Juke-1.jpg" alt="Nissan Juke 2012" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -1405,7 +1555,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Mitsubishi Pajero-1.jpg', 'images/vehicles/Mitsubishi Pajero-2.jpg', 'images/vehicles/Mitsubishi Pajero-3.jpg'], 0)">
             <img src="images/vehicles/Mitsubishi Pajero-1.jpg" alt="Mitsubishi Pajero 2012" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -1492,7 +1641,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Subaru-Forester-1.jpg', 'images/vehicles/Subaru-Forester-2.jpg', 'images/vehicles/Subaru-Forester-3.jpg'], 0)">
             <img src="images/vehicles/Subaru-Forester-1.jpg" alt="Subaru Forester 2019" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -1579,7 +1727,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Toyota-Allion-1.jpg', 'images/vehicles/Toyota-Allion-A18-G-1.jpg', 'images/vehicles/Toyota-Belta-1.jpg'], 0)">
             <img src="images/vehicles/Toyota-Allion-1.jpg" alt="Toyota Allion A18 G 2015" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -1666,7 +1813,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Toyota-Hilux-1.jpg', 'images/vehicles/Toyota-Hilux-2.jpg', 'images/vehicles/Toyota-Hilux-3.jpg'], 0)">
             <img src="images/vehicles/Toyota-Hilux-1.jpg" alt="Toyota Hilux 2021" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -1699,7 +1845,7 @@
                 <span>5 Seats</span>
                 <span class="text-gray-300">•</span>
                 <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
-                <span>4 Doors</span>
+                <span>5 Doors</span>
               </div>
               <div class="flex items-center gap-2 text-xs text-gray-600">
                 <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
@@ -1753,7 +1899,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Toyota-Crown-Athlete-1.jpg', 'images/vehicles/Toyota-Crown-Athlete-2.jpg'], 0)">
             <img src="images/vehicles/Toyota-Crown-Athlete-1.jpg" alt="Toyota Crown Athlete 2006" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -1840,7 +1985,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/velfire-for-hire-1.jpg', 'images/vehicles/velfire-for-hire-2.jpg', 'images/vehicles/velfire-for-hire-3.jpg', 'images/vehicles/velfire-for-hire-4.jpg'], 0)">
             <img src="images/vehicles/velfire-for-hire-1.jpg" alt="Toyota Velfire 2011" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -1927,7 +2071,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Toyota-Alphard-1.jpg', 'images/vehicles/Toyota-Alphard-2.jpg', 'images/vehicles/Toyota-Alphard-3.jpg', 'images/vehicles/Toyota-Alphard-4.jpg'], 0)">
             <img src="images/vehicles/Toyota-Alphard-1.jpg" alt="Toyota Alphard 2020" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -2014,7 +2157,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Black-landcruiser-1.jpg', 'images/vehicles/Black-landcruiser-2.jpg', 'images/vehicles/Black-landcruiser-3.jpg', 'images/vehicles/Black-landcruiser-4.jpg', 'images/vehicles/Black-landcruiser-5.jpg'], 0)">
             <img src="images/vehicles/Black-landcruiser-1.jpg" alt="Toyota Land Cruiser Prado 2017 - Black" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -2100,7 +2242,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/white-prado-2017-1.jpg', 'images/vehicles/white-prado-2017-2.jpg', 'images/vehicles/white-prado-2017-3.jpg', 'images/vehicles/white-prado-2017-4.jpg', 'images/vehicles/white-prado-2017-5.jpg'], 0)">
             <img src="images/vehicles/white-prado-2017-1.jpg" alt="Toyota Land Cruiser Prado 2017 - White" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -2186,7 +2327,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/mazda-1.jpg', 'images/vehicles/mazda-2.jpg', 'images/vehicles/mazda-3.jpg'], 0)">
             <img src="images/vehicles/mazda-1.jpg" alt="Mazda CX-8 2020" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -2273,7 +2413,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/Legend-1.jpg', 'images/vehicles/Legend-2.jpg', 'images/vehicles/Legend-3.jpg'], 0)">
             <img src="images/vehicles/Legend-1.jpg" alt="Legend 2023" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -2360,7 +2499,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/mazda-CX-5-1.jpg', 'images/vehicles/mazda-CX-5-2.jpg', 'images/vehicles/mazda-CX-5-3.jpg'], 0)">
             <img src="images/vehicles/mazda-CX-5-1.jpg" alt="Mazda CX-5 2012" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -2446,7 +2584,6 @@
           <div class="relative h-48 overflow-hidden cursor-pointer"
                onclick="window.openLightbox(['images/vehicles/velfire-1.jpg', 'images/vehicles/velfire-2.jpg', 'images/vehicles/velfire-3.jpg'], 0)">
             <img src="images/vehicles/velfire-1.jpg" alt="Toyota Velfire 2010" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <!-- Banner on Image -->
             <div class="absolute top-3 left-3 z-20">
               <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
@@ -2511,9 +2648,167 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Load More Button -->
+        <!-- Vehicle 26 - Mitsubishi Pajero (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+             data-category="sale" 
+             data-name="Mitsubishi Pajero" 
+             data-type="SUV"
+             data-fuel="Diesel" 
+             data-transmission="Automatic" 
+             data-year="2014">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-48 overflow-hidden cursor-pointer"
+               onclick="window.openLightbox(['images/vehicles/Mitsubishi  pajero-2014_1.jpeg', 'images/vehicles/Mitsubishi  pajero-2014_2.jpeg', 'images/vehicles/Mitsubishi  pajero-2014_3.jpeg', 'images/vehicles/Mitsubishi  pajero-2014_4.jpeg', 'images/vehicles/Mitsubishi  pajero-2014_5.jpeg'], 0)">
+            <img src="images/vehicles/Mitsubishi  pajero-2014_1.jpeg" alt="Mitsubishi Pajero 2014" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+                <i data-lucide="maximize-2" class="w-3 h-3"></i>
+                View Gallery
+              </div>
+            </div>
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Mitsubishi Pajero</h3>
+                <p class="text-xs text-gray-500">2014 Model • 238,445 km</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>7 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>3.2L V6 Diesel</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">USD 18,800</span>
+                <span class="text-xs text-gray-500 block">ZMW 435,000</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-mitsubishi-pajero-2014.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle 25 - Lexus RX270 (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+             data-category="sale" 
+             data-name="Lexus RX270" 
+             data-type="SUV"
+             data-fuel="Petrol" 
+             data-transmission="Automatic" 
+             data-year="2015">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+        
+        <!-- Vehicle Image -->
+        <div class="relative h-48 overflow-hidden cursor-pointer"
+             onclick="window.openLightbox(['images/vehicles/Lexus-RX 270-1.jpeg', 'images/vehicles/Lexus-RX 270-2.jpeg', 'images/vehicles/Lexus-RX 270-3.jpeg', 'images/vehicles/Lexus-RX 270-4.jpeg', 'images/vehicles/Lexus-RX 270-5.jpeg', 'images/vehicles/Lexus-RX 270-6.jpeg', 'images/vehicles/Lexus-RX 270-7.jpeg', 'images/vehicles/Lexus-RX 270-8.jpeg'], 0)">
+          <img src="images/vehicles/Lexus-RX 270-1.jpeg" alt="Lexus RX270 2015" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          <div class="absolute bottom-3 left-3 right-3 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            <div class="bg-white/90 backdrop-blur-sm rounded px-2 py-1 flex items-center gap-2 text-xs font-medium">
+              <i data-lucide="maximize-2" class="w-3 h-3"></i>
+              View Gallery
+            </div>
+          </div>
+        </div>
+        
+        <div class="p-4">
+          <!-- Vehicle Header -->
+          <div class="flex items-start justify-between mb-3">
+            <div>
+              <h3 class="text-lg font-bold text-navy mb-1">Lexus RX270</h3>
+              <p class="text-xs text-gray-500">2015 Model • 64,706 km</p>
+            </div>
+            <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
+          </div>
+          
+          <!-- Specifications -->
+          <div class="space-y-1 mb-3">
+            <div class="flex items-center gap-2 text-xs text-gray-600">
+              <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+              <span>5 Seats</span>
+              <span class="text-gray-300">•</span>
+              <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+              <span>5 Doors</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-gray-600">
+              <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+              <span>2.7L V6 Petrol</span>
+              <span class="text-gray-300">•</span>
+              <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+              <span>Automatic</span>
+            </div>
+          </div>
+          
+          <!-- Condition & Price -->
+          <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+            <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+            <div class="text-right">
+              <span class="text-lg font-black text-red">USD 18,000</span>
+              <span class="text-xs text-gray-500 block">ZMW 415,000</span>
+            </div>
+          </div>
+          
+          <!-- Action Buttons -->
+          <div class="flex gap-2 mt-3">
+            <a href="vehicle-lexus-rx270-2015.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+              <i data-lucide="eye" class="w-3 h-3"></i>
+              View Details
+            </a>
+            <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+              <i data-lucide="message-circle" class="w-3 h-3"></i>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Load More Button -->
       <div class="text-center mt-12">
         <button id="loadMoreBtn" class="bg-navy hover:bg-blue-900 text-white px-8 py-4 rounded-2xl font-heading text-lg transition">
           Load More Vehicles
@@ -2571,19 +2866,19 @@
                 <a href="https://www.facebook.com/profile.php?id=61581947339658&mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
                   <i data-lucide="facebook" class="w-6 h-6"></i>
                   <span class="text-xs">Car Sales</span>
-   
+                </a>
                 <a href="https://www.facebook.com/share/16yfxxVNUf/?mibextid=wwXIfr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
                   <i data-lucide="users" class="w-6 h-6"></i>
                   <span class="text-xs">Car Rentals</span>
-   
+                </a>
                 <a href="https://www.instagram.com/zamtoafrica?igsh=MWN3b3ZxMGk0OXIzaA%3D%3D&utm_source=qr" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
                   <i data-lucide="instagram" class="w-6 h-6"></i>
                   <span class="text-xs">Instagram</span>
-   
+                </a>
                 <a href="http://www.tiktok.com/@zamtoafrica" target="_blank" class="flex flex-col items-center gap-2 hover:text-red transition">
                   <i data-lucide="video" class="w-6 h-6"></i>
                   <span class="text-xs">TikTok</span>
-   
+                </a>
               </div>
             </div>
           </div>
@@ -2658,14 +2953,14 @@
                 <i data-lucide="phone" class="w-5 h-5 text-red flex-shrink-0"></i>
                 <a href="tel:+260572213038" class="text-gray-300 hover:text-white transition">
                   +260 572 213 038
-   
+                </a>
               </div>
               
               <div class="flex items-center gap-3">
                 <i data-lucide="mail" class="w-5 h-5 text-red flex-shrink-0"></i>
                 <a href="mailto:zamtoafrica@gmail.com" class="text-gray-300 hover:text-white transition">
                   zamtoafrica@gmail.com
-   
+                </a>
               </div>
               
                             
@@ -2985,21 +3280,24 @@
         }
       });
       
-      // Update results counter
-      if (resultsCounter) {
-        resultsCounter.innerHTML = '<i data-lucide="eye" class="w-5 h-5"></i>Showing <span class="font-bold text-xl">' + visibleCount + '</span> vehicles';
-        lucide.createIcons();
-      }
-      
-      // Update load more button
-      updateLoadMoreButton();
-      
-      // Update Load More visibility
-      if (typeof updateLoadMoreVisibility === 'function') {
-        // Reset vehicles shown count when filters change
-        vehiclesShown = 12;
-        updateLoadMoreVisibility();
-      }
+      // Batch DOM updates for better performance
+      requestAnimationFrame(() => {
+        // Update results counter
+        if (resultsCounter) {
+          resultsCounter.innerHTML = '<i data-lucide="eye" class="w-5 h-5"></i>Showing <span class="font-bold text-xl">' + visibleCount + '</span> vehicles';
+          lucide.createIcons();
+        }
+        
+        // Update load more button
+        updateLoadMoreButton();
+        
+        // Update Load More visibility
+        if (typeof updateLoadMoreVisibility === 'function') {
+          // Reset vehicles shown count when filters change
+          vehiclesShown = 12;
+          updateLoadMoreVisibility();
+        }
+      });
     }
     
     // Update load more button
@@ -3069,7 +3367,7 @@
         clearTimeout(searchTimeout);
         searchTimeout = setTimeout(() => {
           applyFilters();
-        }, 300); // Debounce for better performance
+        }, 500); // Increased debounce for better performance
       });
     }
     
@@ -3132,8 +3430,8 @@
       
       // Load More functionality
       const loadMoreBtn = document.getElementById('loadMoreBtn');
-      let vehiclesShown = 12; // Initially show 12 vehicles
-      const vehiclesPerLoad = 6; // Load 6 more vehicles each time
+      let vehiclesShown = 20; // Initially show 20 vehicles
+      const vehiclesPerLoad = 4; // Load 4 more vehicles each time (reduced for better performance)
       
       // Function to update Load More button based on visible vehicles
       function updateLoadMoreVisibility() {
@@ -3167,12 +3465,16 @@
           vehiclesShown += vehiclesPerLoad;
           updateLoadMoreVisibility();
           
-          // Scroll to newly loaded vehicles
+          // Scroll to newly loaded vehicles with smooth behavior
           const visibleVehicles = document.querySelectorAll('.vehicle-card:not(.hidden)');
           if (visibleVehicles.length > vehiclesShown - vehiclesPerLoad) {
             const scrollIndex = Math.max(0, vehiclesShown - vehiclesPerLoad);
             if (visibleVehicles[scrollIndex]) {
-              visibleVehicles[scrollIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+              visibleVehicles[scrollIndex].scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'center',
+                inline: 'nearest'
+              });
             }
           }
         });

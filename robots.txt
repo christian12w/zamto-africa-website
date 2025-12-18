@@ -1,13 +1,12 @@
 User-agent: *
-Disallow: 
-
-Sitemap: https://zamtoafrica.com/sitemap.xml
-
-User-agent: Googlebot
 Allow: /
 
-User-agent: Bingbot
-Allow: /
+Sitemap: https://www.zamtoafrica.com/sitemap.xml
 
-User-agent: Slurp
-Allow: /
+# Performance optimization - allow crawling of important pages
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Crawl-delay for better server performance
+Crawl-delay: 10
