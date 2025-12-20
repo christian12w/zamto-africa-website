@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Vehicle Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .image-test {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .image-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .image-card h3 {
+            margin: 10px 0 5px 0;
+            color: #333;
+        }
+        .image-card p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vehicle Image Test</h1>
+    <p>This page tests all vehicle image paths to ensure they work correctly on GitHub hosting.</p>
+    
+    <h2>Motorcycle Images</h2>
+    <div class="image-test">
+        <div class="image-card">
+            <h3>Haojue EG 150</h3>
+            <p>Path: images/vehicles/eg-150-1.jpeg</p>
+            <img src="images/vehicles/eg-150-1.jpeg" alt="Haojue EG 150" onerror="this.parentElement.querySelector('.status').className='status error'; this.parentElement.querySelector('.status').textContent='IMAGE NOT FOUND';" onload="this.parentElement.querySelector('.status').className='status success'; this.parentElement.querySelector('.status').textContent='IMAGE LOADED SUCCESSFULLY';">
+            <div class="status">Loading...</div>
+        </div>
+        
+        <div class="image-card">
+            <h3>Haojue Express 125</h3>
+            <p>Path: images/vehicles/eg-150-2.jpeg</p>
+            <img src="images/vehicles/eg-150-2.jpeg" alt="Haojue Express 125" onerror="this.parentElement.querySelector('.status').className='status error'; this.parentElement.querySelector('.status').textContent='IMAGE NOT FOUND';" onload="this.parentElement.querySelector('.status').className='status success'; this.parentElement.querySelector('.status').textContent='IMAGE LOADED SUCCESSFULLY';">
+            <div class="status">Loading...</div>
+        </div>
+        
+        <div class="image-card">
+            <h3>T21 Electric Motorcycle</h3>
+            <p>Path: images/vehicles/T21-Electric-Motorcycle-1.jpeg</p>
+            <img src="images/vehicles/T21-Electric-Motorcycle-1.jpeg" alt="T21 Electric Motorcycle" onerror="this.parentElement.querySelector('.status').className='status error'; this.parentElement.querySelector('.status').textContent='IMAGE NOT FOUND';" onload="this.parentElement.querySelector('.status').className='status success'; this.parentElement.querySelector('.status').textContent='IMAGE LOADED SUCCESSFULLY';">
+            <div class="status">Loading...</div>
+        </div>
+    </div>
+    
+    <h2>Sample Other Vehicle Images</h2>
+    <div class="image-test">
+        <div class="image-card">
+            <h3>Toyota Crown Athlete</h3>
+            <p>Path: images/vehicles/Toyota-Crown-Athlete-1.jpg</p>
+            <img src="images/vehicles/Toyota-Crown-Athlete-1.jpg" alt="Toyota Crown Athlete" onerror="this.parentElement.querySelector('.status').className='status error'; this.parentElement.querySelector('.status').textContent='IMAGE NOT FOUND';" onload="this.parentElement.querySelector('.status').className='status success'; this.parentElement.querySelector('.status').textContent='IMAGE LOADED SUCCESSFULLY';">
+            <div class="status">Loading...</div>
+        </div>
+        
+        <div class="image-card">
+            <h3>BMW 320i</h3>
+            <p>Path: images/vehicles/BMW-320i-1.jpg</p>
+            <img src="images/vehicles/BMW-320i-1.jpg" alt="BMW 320i" onerror="this.parentElement.querySelector('.status').className='status error'; this.parentElement.querySelector('.status').textContent='IMAGE NOT FOUND';" onload="this.parentElement.querySelector('.status').className='status success'; this.parentElement.querySelector('.status').textContent='IMAGE LOADED SUCCESSFULLY';">
+            <div class="status">Loading...</div>
+        </div>
+        
+        <div class="image-card">
+            <h3>Toyota Passo Blue</h3>
+            <p>Path: images/vehicles/blue-passo-2012-1.jpg</p>
+            <img src="images/vehicles/blue-passo-2012-1.jpg" alt="Toyota Passo Blue" onerror="this.parentElement.querySelector('.status').className='status error'; this.parentElement.querySelector('.status').textContent='IMAGE NOT FOUND';" onload="this.parentElement.querySelector('.status').className='status success'; this.parentElement.querySelector('.status').textContent='IMAGE LOADED SUCCESSFULLY';">
+            <div class="status">Loading...</div>
+        </div>
+    </div>
+    
+    <script>
+        // Auto-refresh status after 3 seconds
+        setTimeout(() => {
+            document.querySelectorAll('.status').forEach(status => {
+                if (status.textContent === 'Loading...') {
+                    status.className = 'status error';
+                    status.textContent = 'IMAGE NOT FOUND';
+                }
+            });
+        }, 3000);
+    </script>
+</body>
+</html>

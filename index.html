@@ -376,7 +376,7 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden hidden">
     <!-- Backdrop -->
-    <div class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
+    <div class="fixed inset-0 bg-black bg-opacity-50"></div>
     
     <!-- Menu Panel -->
     <div class="fixed right-0 top-0 h-full w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out">
@@ -516,22 +516,6 @@
             <span class="relative z-10">Call Now</span>
           </a>
         </div>
-        
-        <!-- Additional Trust Indicators -->
-        <div class="mt-6 sm:mt-8 flex flex-wrap justify-center gap-4 sm:gap-6 animate-fade-in" style="animation-delay: 0.6s">
-          <div class="flex items-center gap-2 text-sm text-gray-300">
-            <i data-lucide="check-circle" class="w-4 h-4 text-green-400"></i>
-            <span>Quality Assured</span>
-          </div>
-          <div class="flex items-center gap-2 text-sm text-gray-300">
-            <i data-lucide="clock" class="w-4 h-4 text-blue-400"></i>
-            <span>Fast Processing</span>
-          </div>
-          <div class="flex items-center gap-2 text-sm text-gray-300">
-            <i data-lucide="shield" class="w-4 h-4 text-yellow-400"></i>
-            <span>Warranty Included</span>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -593,19 +577,19 @@
   <section class="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-5">
-      <div class="absolute top-0 left-1/4 w-32 h-32 bg-red/10 rounded-full blur-2xl"></div>
-      <div class="absolute bottom-0 right-1/4 w-48 h-48 bg-navy/10 rounded-full blur-3xl"></div>
+      <div class="absolute top-0 left-1/4 w-32 h-32 bg-red/10 rounded-full"></div>
+      <div class="absolute bottom-0 right-1/4 w-48 h-48 bg-navy/10 rounded-full"></div>
     </div>
     
     <div class="relative z-10 container mx-auto px-6">
       <!-- Section Header -->
       <div class="text-center mb-16">
-        <div class="inline-flex items-center gap-2 bg-gradient-to-r from-red to-navy text-white px-6 py-3 rounded-full mb-6 shadow-lg animate-bounce-in">
+        <div class="inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded-full mb-6 shadow-lg animate-bounce-in">
           <i data-lucide="star" class="w-5 h-5"></i>
-          <span class="text-sm font-bold text-white">FEATURED VEHICLES</span>
+          <span class="text-base font-bold text-white">FEATURED VEHICLES</span>
         </div>
-        <h2 class="text-4xl md:text-5xl font-black text-black mb-6 font-heading animate-slide-in">Premium Selection</h2>
-        <p class="text-xl text-gray-700 max-w-3xl mx-auto animate-fade-in font-medium">Handpicked Japanese vehicles offering exceptional quality and value</p>
+        <h2 class="text-4xl md:text-5xl font-black text-navy mb-6 font-heading animate-slide-in">Premium Selection</h2>
+        <p class="text-xl text-navy max-w-3xl mx-auto animate-fade-in font-medium">Handpicked Japanese vehicles offering exceptional quality and value</p>
       </div>
       
       <!-- Enhanced Vehicle Tabs with Search -->
@@ -632,7 +616,7 @@
         <!-- Filter Tabs -->
         <div class="flex justify-center">
           <div class="bg-white rounded-2xl shadow-xl p-2 flex gap-2 border border-gray-100">
-            <button onclick="showVehicleCategory('all')" class="vehicle-tab-btn px-6 py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r from-red to-red/90 text-white shadow-lg transform hover:scale-105">
+            <button onclick="showVehicleCategory('all')" class="vehicle-tab-btn px-6 py-3 rounded-xl font-semibold transition-all duration-300 text-gray-600 hover:bg-gray-100 hover:text-navy">
               <i data-lucide="grid" class="w-4 h-4 inline mr-2"></i>
               All Vehicles
             </button>
@@ -664,7 +648,7 @@
              data-year="2011">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-red-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-red-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="x-circle" class="w-3 h-3"></i>
               SOLD
             </span>
@@ -726,7 +710,7 @@
         </div>
 
         <!-- Vehicle 2 - BMW X1 (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="BMW X1" 
              data-type="HATCHBACKS"
@@ -735,7 +719,7 @@
              data-year="2011">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -798,7 +782,7 @@
         </div>
 
         <!-- Vehicle 3 - BMW 5 Series (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="BMW 5 Series" 
              data-type="SEDANS"
@@ -807,7 +791,7 @@
              data-year="2014">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -871,7 +855,7 @@
         </div>
 
         <!-- Vehicle 4 - Honda Fit (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Honda Fit" 
              data-type="HATCHBACKS"
@@ -880,7 +864,7 @@
              data-year="2009">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -943,7 +927,7 @@
         </div>
 
         <!-- Vehicle 5 - Toyota Passo Blue (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Toyota Passo Blue" 
              data-type="HATCHBACKS"
@@ -952,7 +936,7 @@
              data-year="2012">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -1016,7 +1000,7 @@
         </div>
 
         <!-- Vehicle 6 - Toyota Passo Yellow (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Toyota Passo Yellow" 
              data-type="HATCHBACKS"
@@ -1025,7 +1009,7 @@
              data-year="2013">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -1089,7 +1073,7 @@
         </div>
 
         <!-- Vehicle 7 - Toyota Passo Brown (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Toyota Passo Brown" 
              data-type="HATCHBACKS"
@@ -1098,7 +1082,7 @@
              data-year="2014">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -1162,7 +1146,7 @@
         </div>
 
         <!-- Vehicle 8 - Isuzu MUX (Hire Fleet) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="hire" 
              data-name="Isuzu MUX" 
              data-type="PICKUP TRUCKS"
@@ -1235,7 +1219,7 @@
         </div>
 
         <!-- Vehicle 9 - Toyota Passo (For Hire) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="hire" 
              data-name="Toyota Passo" 
              data-type="HATCHBACKS"
@@ -1244,7 +1228,7 @@
              data-year="2012">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-blue-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="users" class="w-3 h-3"></i>
               FOR HIRE
             </span>
@@ -1308,7 +1292,7 @@
         </div>
 
         <!-- Vehicle 10 - Isuzu Van (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Isuzu Van" 
              data-type="VANS & MPVS"
@@ -1317,7 +1301,7 @@
              data-year="2018">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -1381,7 +1365,7 @@
         </div>
 
         <!-- Vehicle 11 - Lexus RX 300t F-Sport (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Lexus RX 300t" 
              data-type="HATCHBACKS"
@@ -1390,7 +1374,7 @@
              data-year="2018">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -1453,7 +1437,7 @@
         </div>
 
         <!-- Vehicle 12 - Nissan Juke (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Nissan Juke" 
              data-type="HATCHBACKS"
@@ -1462,7 +1446,7 @@
              data-year="2012">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -1526,7 +1510,7 @@
         </div>
 
         <!-- Vehicle 13 - Mitsubishi Pajero (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Mitsubishi Pajero" 
              data-type="SUV"
@@ -1535,7 +1519,7 @@
              data-year="2012">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -1599,7 +1583,7 @@
         </div>
 
         <!-- Vehicle 14 - Subaru Forester (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Subaru Forester" 
              data-type="SUV"
@@ -1608,7 +1592,7 @@
              data-year="2019">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -1672,7 +1656,7 @@
         </div>
 
         <!-- Vehicle 15 - Toyota Allion A18 G (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Toyota Allion A18 G" 
              data-type="HATCHBACKS"
@@ -1681,7 +1665,7 @@
              data-year="2015">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -1745,7 +1729,7 @@
         </div>
 
         <!-- Vehicle 16 - Toyota Hilux 2021 (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Toyota Hilux" 
              data-type="PICKUP TRUCKS"
@@ -1754,7 +1738,7 @@
              data-year="2021">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -1817,8 +1801,9 @@
           </div>
         </div>
 
+                
         <!-- Vehicle 17 - Toyota Crown Athlete (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div id="toyota-crown" class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
              data-category="sale" 
              data-name="Toyota Crown Athlete" 
              data-type="HATCHBACKS"
@@ -1827,7 +1812,7 @@
              data-year="2006">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -1891,7 +1876,7 @@
         </div>
 
         <!-- Vehicle 18 - Toyota Velfire (For Hire) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="hire" 
              data-name="Toyota Velfire" 
              data-type="VANS & MPVS"
@@ -1900,7 +1885,7 @@
              data-year="2011">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-blue-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="users" class="w-3 h-3"></i>
               FOR HIRE
             </span>
@@ -1964,7 +1949,7 @@
         </div>
 
         <!-- Vehicle 19 - Toyota Alphard 2020 (For Hire) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="hire" 
              data-name="Toyota Alphard" 
              data-type="VANS & MPVS"
@@ -1973,7 +1958,7 @@
              data-year="2020">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-blue-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="users" class="w-3 h-3"></i>
               FOR HIRE
             </span>
@@ -2036,8 +2021,89 @@
           </div>
         </div>
 
-        <!-- Vehicle 20 - Toyota Land Cruiser Prado 2017 Black (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <!-- Vehicle 20 - Toyota Alphard 2020 (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="Toyota Alphard" 
+             data-type="VANS & MPVS"
+             data-fuel="Gasoline" 
+             data-transmission="Automatic" 
+             data-year="2020">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Discount Badge -->
+          <div class="absolute top-3 right-3 z-20">
+            <span class="bg-orange-500 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1 animate-pulse">
+              <i data-lucide="percent" class="w-3 h-3"></i>
+              5% OFF
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-48 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-toyota-alphard-2020-sale.html'">
+            <img src="images/vehicles/Toyota-Alphard-1.jpg" alt="Toyota Alphard 2020" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Toyota Alphard</h3>
+                <p class="text-xs text-gray-500">2020 Model • 11,018 km</p>
+              </div>
+              <span class="bg-indigo-600 text-white px-2 py-1 rounded-full text-xs font-medium">Vans & MPVs</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>7 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2000cc Gasoline</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">USD23,000</span>
+                <span class="text-xs text-gray-500 block">5% discount applied</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-toyota-alphard-2020-sale.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle 21 - Toyota Land Cruiser Prado 2017 Black (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Land Cruiser Prado" 
              data-type="SUV"
@@ -2046,7 +2112,7 @@
              data-year="2017">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -2110,7 +2176,7 @@
         </div>
 
         <!-- Vehicle 21 - Mazda CX-8 (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Mazda CX-8" 
              data-type="SUV"
@@ -2119,7 +2185,7 @@
              data-year="2020">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -2183,7 +2249,7 @@
         </div>
 
         <!-- Vehicle 22 - Legend 2023 (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Legend" 
              data-type="SUV"
@@ -2192,7 +2258,7 @@
              data-year="2023">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -2256,7 +2322,7 @@
         </div>
 
         <!-- Vehicle 23 - Mazda CX-5 (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Mazda CX-5" 
              data-type="SUV"
@@ -2265,9 +2331,17 @@
              data-year="2012">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
+            </span>
+          </div>
+          
+          <!-- Discount Badge -->
+          <div class="absolute top-3 right-3 z-20">
+            <span class="bg-orange-500 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1 animate-pulse">
+              <i data-lucide="percent" class="w-3 h-3"></i>
+              5% OFF
             </span>
           </div>
           
@@ -2328,7 +2402,7 @@
         </div>
 
         <!-- Vehicle 24 - Toyota Velfire (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Toyota Velfire" 
              data-type="VANS & MPVS"
@@ -2337,9 +2411,17 @@
              data-year="2010">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
+            </span>
+          </div>
+          
+          <!-- Discount Badge -->
+          <div class="absolute top-3 right-3 z-20">
+            <span class="bg-orange-500 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1 animate-pulse">
+              <i data-lucide="percent" class="w-3 h-3"></i>
+              5% OFF
             </span>
           </div>
           
@@ -2400,7 +2482,7 @@
         </div>
 
         <!-- Vehicle 25 - Lexus RX270 (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Lexus RX270" 
              data-type="SUV"
@@ -2409,9 +2491,17 @@
              data-year="2015">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
+            </span>
+          </div>
+          
+          <!-- Discount Badge -->
+          <div class="absolute top-3 right-3 z-20">
+            <span class="bg-orange-500 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1 animate-pulse">
+              <i data-lucide="percent" class="w-3 h-3"></i>
+              5% OFF
             </span>
           </div>
           
@@ -2453,8 +2543,8 @@
             <div class="flex items-center justify-between pt-3 border-t border-gray-100">
               <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
               <div class="text-right">
-                <span class="text-lg font-black text-red">USD 18,000</span>
-                <span class="text-xs text-gray-500 block">ZMW 415,000</span>
+                <span class="text-lg font-black text-red">USD18,500</span>
+                <span class="text-xs text-gray-500 block">ZMW 426,000</span>
               </div>
             </div>
             
@@ -2473,7 +2563,7 @@
         </div>
 
         <!-- Vehicle 26 - Mitsubishi Pajero 2014 (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden" 
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="Mitsubishi Pajero" 
              data-type="SUV"
@@ -2482,7 +2572,7 @@
              data-year="2014">
           <!-- Status Badge -->
           <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold shadow-md flex items-center gap-1">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
               <i data-lucide="check-circle" class="w-3 h-3"></i>
               FOR SALE
             </span>
@@ -2534,6 +2624,298 @@
             <!-- Action Buttons -->
             <div class="flex gap-2 mt-3">
               <a href="vehicle-mitsubishi-pajero-2014.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle 27 - Haojue EG 150 (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="Haojue EG 150" 
+             data-type="MOTORCYCLES"
+             data-fuel="Petrol" 
+             data-transmission="Manual" 
+             data-year="2024">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-48 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-haojue-eg150-2024.html'">
+            <img src="images/vehicles/eg-150-1.jpeg" alt="Haojue EG 150 2024" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Haojue EG 150</h3>
+                <p class="text-xs text-gray-500">2024 Model • 150cc Motorcycle</p>
+              </div>
+              <span class="bg-orange-600 text-white px-2 py-1 rounded-full text-xs font-heading">Motorcycles</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>150cc Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Manual</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="trending-up" class="w-3 h-3 text-gray-400"></i>
+                <span>Excellent Fuel Economy</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="shield" class="w-3 h-3 text-gray-400"></i>
+                <span>Reliable</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">ZMW37,500</span>
+                <span class="text-xs text-gray-500 block">Great Value</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-haojue-eg150-2024.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle 28 - Haojue Express 125 (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="Haojue Express 125" 
+             data-type="MOTORCYCLES"
+             data-fuel="Petrol" 
+             data-transmission="Manual" 
+             data-year="2024">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-48 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-haojue-express125-2024.html'">
+            <img src="images/vehicles/eg-150-2.jpeg" alt="Haojue Express 125 2024" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Haojue Express 125</h3>
+                <p class="text-xs text-gray-500">2024 Model • 125cc Motorcycle</p>
+              </div>
+              <span class="bg-orange-600 text-white px-2 py-1 rounded-full text-xs font-heading">Motorcycles</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>125cc Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Manual</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="trending-up" class="w-3 h-3 text-gray-400"></i>
+                <span>Excellent Fuel Economy</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="shield" class="w-3 h-3 text-gray-400"></i>
+                <span>Economical</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">ZMW36,500</span>
+                <span class="text-xs text-gray-500 block">Great Value</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-haojue-express125-2024.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle 29 - T21 Electric Motorcycle (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="T21 Electric Motorcycle" 
+             data-type="ELECTRIC"
+             data-fuel="Electric" 
+             data-transmission="Automatic" 
+             data-year="2024">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-48 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-t21-electric-2024.html'">
+            <img src="images/vehicles/T21-Electric-Motorcycle-1.jpeg" alt="T21 Electric Motorcycle 2024" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">T21 Electric Motorcycle</h3>
+                <p class="text-xs text-gray-500">2024 Model • Electric Motor</p>
+              </div>
+              <span class="bg-purple-600 text-white px-2 py-1 rounded-full text-xs font-heading">Electric</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>8 kW Power</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="battery-charging" class="w-3 h-3 text-gray-400"></i>
+                <span>Lithium-Ion</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="leaf" class="w-3 h-3 text-gray-400"></i>
+                <span>Zero Emissions</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="shield" class="w-3 h-3 text-gray-400"></i>
+                <span>Advanced Tech</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Future of Mobility</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">USD2,500</span>
+                <span class="text-xs text-gray-500 block">Eco-Friendly</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-t21-electric-2024.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle 30 - Toyota Crown (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="Toyota Crown" 
+             data-type="SEDANS"
+             data-fuel="Petrol" 
+             data-transmission="Automatic" 
+             data-year="2018">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-48 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-toyota-crown-2018.html'">
+            <img src="images/vehicles/Crown-1.jpeg" alt="Toyota Crown 2018" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">Toyota Crown</h3>
+                <p class="text-xs text-gray-500">2018 Model • Premium Sedan</p>
+              </div>
+              <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs font-medium">Sedans</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2500cc Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">ZMW180,000</span>
+                <span class="text-xs text-gray-500 block">USD6,800</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-toyota-crown-2018.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
                 <i data-lucide="eye" class="w-3 h-3"></i>
                 View Details
               </a>
@@ -2630,7 +3012,7 @@
       <!-- Services Grid -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="group relative bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200 rounded-2xl p-8 text-gray-800 hover:scale-105 transition-all duration-300 shadow-xl">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-red/20 rounded-full blur-2xl"></div>
+          <div class="absolute top-0 right-0 w-32 h-32 bg-red/20 rounded-full"></div>
           <div class="relative z-10">
             <div class="bg-red w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <i data-lucide="car" class="w-8 h-8 text-white"></i>
@@ -2655,7 +3037,7 @@
         </div>
         
         <div class="group relative bg-gradient-to-br from-red-50 to-red-100 border-2 border-red-200 rounded-2xl p-8 text-gray-800 hover:scale-105 transition-all duration-300 shadow-xl">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-white/50 rounded-full blur-2xl"></div>
+          <div class="absolute top-0 right-0 w-32 h-32 bg-white/50 rounded-full"></div>
           <div class="relative z-10">
             <div class="bg-red w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <i data-lucide="key" class="w-8 h-8 text-white"></i>
@@ -2680,7 +3062,7 @@
         </div>
         
         <div class="group relative bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200 rounded-2xl p-8 text-gray-800 hover:scale-105 transition-all duration-300 shadow-xl">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-white/50 rounded-full blur-2xl"></div>
+          <div class="absolute top-0 right-0 w-32 h-32 bg-white/50 rounded-full"></div>
           <div class="relative z-10">
             <div class="bg-green-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <i data-lucide="ship" class="w-8 h-8 text-white"></i>
@@ -2779,131 +3161,7 @@
     </div>
   </section>
 
-  <!-- CUSTOMER TESTIMONIALS CAROUSEL -->
-  <section class="py-12 sm:py-20 bg-gray-50 relative overflow-hidden">
-    <!-- Background Pattern -->
-    <div class="absolute inset-0 opacity-5">
-      <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-red/10 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-navy/10 rounded-full blur-3xl"></div>
-    </div>
-    
-    <div class="relative z-10 container mx-auto px-4 sm:px-6">
-      <div class="text-center mb-12 sm:mb-16">
-        <div class="inline-flex items-center gap-2 bg-gradient-to-r from-red to-navy text-white px-6 py-3 rounded-full mb-6 shadow-lg animate-bounce-in">
-          <i data-lucide="message-circle-quote" class="w-5 h-5"></i>
-          <span class="text-sm font-bold">CUSTOMER TESTIMONIALS</span>
-        </div>
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-black text-navy mb-4 sm:mb-6 font-heading">What Our Customers Say</h2>
-        <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-          Real experiences from satisfied customers across Zambia
-        </p>
-      </div>
-      
-      <!-- Testimonials Carousel -->
-      <div class="relative max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          <!-- Testimonial 1 -->
-          <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-            <div class="flex items-start gap-4 mb-4">
-              <div class="w-12 h-12 bg-gradient-to-br from-red to-navy rounded-full flex items-center justify-center text-white font-bold text-lg">
-                RB
-              </div>
-              <div class="flex-1">
-                <h4 class="font-bold text-navy text-lg mb-1">Robert Banda</h4>
-                <div class="flex items-center gap-1 mb-2">
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                </div>
-                <p class="text-sm text-gray-500">Ndola, Zambia</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-2 mb-3">
-              <i data-lucide="quote" class="w-5 h-5 text-red/20 flex-shrink-0 mt-1"></i>
-            </div>
-            <p class="text-gray-700 leading-relaxed mb-4 group-hover:text-navy transition-colors">
-              "Excellent service! My Toyota Hilux arrived in perfect condition and the team was very helpful throughout the process. Highly recommend Zamto Africa!"
-            </p>
-            <div class="flex items-center gap-2 text-sm text-gray-500">
-              <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
-              <span>Verified Purchase</span>
-            </div>
-          </div>
-          
-          <!-- Testimonial 2 -->
-          <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-            <div class="flex items-start gap-4 mb-4">
-              <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                MC
-              </div>
-              <div class="flex-1">
-                <h4 class="font-bold text-navy text-lg mb-1">Mary Chanda</h4>
-                <div class="flex items-center gap-1 mb-2">
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                </div>
-                <p class="text-sm text-gray-500">Lusaka, Zambia</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-2 mb-3">
-              <i data-lucide="quote" class="w-5 h-5 text-red/20 flex-shrink-0 mt-1"></i>
-            </div>
-            <p class="text-gray-700 leading-relaxed mb-4 group-hover:text-navy transition-colors">
-              "Great experience hiring a vehicle for my wedding. The Toyota Velfire was clean and well-maintained. Professional service from start to finish."
-            </p>
-            <div class="flex items-center gap-2 text-sm text-gray-500">
-              <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
-              <span>Verified Rental</span>
-            </div>
-          </div>
-          
-          <!-- Testimonial 3 -->
-          <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
-            <div class="flex items-start gap-4 mb-4">
-              <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                JK
-              </div>
-              <div class="flex-1">
-                <h4 class="font-bold text-navy text-lg mb-1">James Kunda</h4>
-                <div class="flex items-center gap-1 mb-2">
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                  <i data-lucide="star" class="w-4 h-4 text-yellow-400 fill-current"></i>
-                </div>
-                <p class="text-sm text-gray-500">Kitwe, Zambia</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-2 mb-3">
-              <i data-lucide="quote" class="w-5 h-5 text-red/20 flex-shrink-0 mt-1"></i>
-            </div>
-            <p class="text-gray-700 leading-relaxed mb-4 group-hover:text-navy transition-colors">
-              "Best prices in Zambia! Got my Mazda CX-5 at a great deal and the import process was smooth. Thank you Zamto Africa team!"
-            </p>
-            <div class="flex items-center gap-2 text-sm text-gray-500">
-              <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
-              <span>Verified Purchase</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- View All Testimonials Button -->
-        <div class="text-center mt-8 sm:mt-12">
-          <a href="testimonials.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-navy to-red text-white px-8 py-4 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
-            <i data-lucide="users" class="w-5 h-5"></i>
-            Read All Testimonials
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
   <!-- CTA Section -->
   <section class="py-12 sm:py-16 lg:py-20 bg-navy text-white">
     <div class="container mx-auto px-4 sm:px-6 text-center">
@@ -3203,22 +3461,28 @@
     
     // Enhanced showVehicleCategory Function with Search Integration
     function showVehicleCategory(category) {
-      // Update tab buttons with solid background and visible text
+      // Update tab buttons to default styling
       const tabButtons = document.querySelectorAll('.vehicle-tab-btn');
       tabButtons.forEach(btn => {
-        btn.classList.remove('bg-gradient-to-r', 'from-red', 'to-red/90', 'text-white', 'shadow-lg', 'bg-navy');
+        btn.classList.remove('bg-gradient-to-r', 'from-red', 'to-red/90', 'from-blue-500', 'to-blue-600', 'from-green-500', 'to-green-600', 'text-white', 'shadow-lg', 'bg-navy');
         btn.classList.add('text-gray-600', 'hover:bg-gray-100', 'hover:text-navy');
       });
       
-      // Highlight active button with solid background and white text
+      // Highlight active button with professional navy theme
       const activeButton = Array.from(tabButtons).find(btn => 
         btn.getAttribute('onclick').includes(category)
       );
       
       if (activeButton) {
         activeButton.classList.remove('text-gray-600', 'hover:bg-gray-100', 'hover:text-navy');
-        // Add solid navy background with white text (visible)
-        activeButton.classList.add('bg-navy', 'text-white', 'shadow-lg');
+        // Professional navy theme with subtle variations
+        if (category === 'all') {
+          activeButton.classList.add('bg-gradient-to-r', 'from-navy', 'to-navy/90', 'text-white', 'shadow-lg');
+        } else if (category === 'sale') {
+          activeButton.classList.add('bg-gradient-to-r', 'from-slate-700', 'to-slate-800', 'text-white', 'shadow-lg');
+        } else if (category === 'hire') {
+          activeButton.classList.add('bg-gradient-to-r', 'from-gray-700', 'to-gray-800', 'text-white', 'shadow-lg');
+        }
       }
       
       // Filter vehicle cards
@@ -3253,7 +3517,11 @@
     }
     
     // Initialize counters when DOM is loaded
-    document.addEventListener('DOMContentLoaded', animateCounters);
+    document.addEventListener('DOMContentLoaded', function() {
+      animateCounters();
+      // Initialize All Vehicles button as active
+      showVehicleCategory('all');
+    });
     
     // Mobile Menu Toggle
     const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -3263,24 +3531,36 @@
     if (mobileMenuButton && mobileMenu) {
       mobileMenuButton.addEventListener('click', () => {
         mobileMenu.classList.remove('hidden');
+        mobileMenu.querySelector('.fixed.right-0').classList.remove('translate-x-full');
+        mobileMenu.querySelector('.fixed.right-0').classList.add('translate-x-0');
         document.body.style.overflow = 'hidden';
       });
     }
     
     if (closeMobileMenu && mobileMenu) {
       closeMobileMenu.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+        mobileMenu.querySelector('.fixed.right-0').classList.remove('translate-x-0');
+        mobileMenu.querySelector('.fixed.right-0').classList.add('translate-x-full');
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300);
         document.body.style.overflow = 'auto';
       });
     }
     
     // Close mobile menu when clicking outside
-    mobileMenu.addEventListener('click', (e) => {
-      if (e.target === mobileMenu) {
-        mobileMenu.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-      }
-    });
+    if (mobileMenu) {
+      mobileMenu.addEventListener('click', (e) => {
+        if (e.target === mobileMenu) {
+          mobileMenu.querySelector('.fixed.right-0').classList.remove('translate-x-0');
+          mobileMenu.querySelector('.fixed.right-0').classList.add('translate-x-full');
+          setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+          }, 300);
+          document.body.style.overflow = 'auto';
+        }
+      });
+    }
   </script>
 </body>
 </html>
