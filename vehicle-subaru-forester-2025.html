@@ -1,712 +1,693 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html class="scroll-smooth" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subaru Forester 2019 | Zamto Africa Car Hire</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="responsive-framework.css">
-    
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Subaru Forester 2019 | Zamto Africa Car Hire</title>
+<meta content="" name="description">
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="logo.png" rel="icon" type="image/png"/>
+<link href="logo.png" rel="apple-touch-icon" sizes="180x180"/>
+<!-- Google Fonts - Professional Typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;family=Playfair+Display:wght@400;500;600;700;800;900&amp;family=Source+Sans+Pro:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="image-gallery.js"></script>
+<style>
         :root {
-            --navy: #003087;
-            --red: #e11d48;
+          --navy: #003087;
+          --red: #e11d48;
         }
+        .bg-navy { background-color: var(--navy); }
+        .bg-red { background-color: var(--red); }
+        .text-navy { color: var(--navy); }
+        .hover-red:hover { background-color: #be123c; }
+        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,48,135,0.2); transition: all 0.4s; }
         
+        /* Professional Typography */
+        body {
+          font-family: 'Source Sans Pro', sans-serif;
+        }
         .font-heading {
-            font-family: 'Montserrat', sans-serif;
+          font-family: 'Montserrat', sans-serif;
         }
-        
         .font-serif {
-            font-family: 'Playfair Display', serif;
+          font-family: 'Playfair Display', serif;
+        }
+        .font-montserrat {
+          font-family: 'Montserrat', sans-serif;
         }
         
-        .font-body {
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-        
-        .text-navy {
-            color: var(--navy);
-        }
-        
-        .bg-navy {
-            background-color: var(--navy);
-        }
-        
-        .text-red {
-            color: var(--red);
-        }
-        
-        .bg-red {
-            background-color: var(--red);
-        }
-        
-        .hover\:bg-navy:hover {
-            background-color: var(--navy);
-        }
-        
-        .hover\:text-navy:hover {
-            color: var(--navy);
-        }
-        
-        .border-navy {
-            border-color: var(--navy);
-        }
-        
-        .card-hover {
+        .image-gallery img {
             transition: all 0.3s ease;
         }
         
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
-        
-        .gallery-thumb {
-            cursor: pointer;
-            transition: all 0.3s ease;
-            opacity: 0.7;
-        }
-        
-        .gallery-thumb:hover,
-        .gallery-thumb.active {
-            opacity: 1;
-            border-color: var(--navy);
-        }
-        
-        .tab-button {
-            transition: all 0.3s ease;
-            border-bottom: 3px solid transparent;
-        }
-        
-        .tab-button:hover {
-            background-color: rgba(0, 48, 135, 0.1);
-        }
-        
-        .tab-button.active {
-            border-bottom-color: var(--navy);
-            background-color: rgba(0, 48, 135, 0.1);
-        }
-        
-        .lightbox {
-            display: none;
-            position: fixed;
-            z-index: 9999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.9);
-            cursor: pointer;
-        }
-        
-        .lightbox.active {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90vh;
-            object-fit: contain;
-        }
-        
-        .feature-icon {
-            transition: all 0.3s ease;
-        }
-        
-        .feature-card:hover .feature-icon {
-            transform: scale(1.1);
-            color: var(--navy);
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .fade-in {
-            animation: fadeIn 0.6s ease-out;
-        }
-        
-        /* Subaru Forester page specific responsive styles */
-        @media (max-width: 768px) {
-            .vehicle-details-grid {
-                grid-template-columns: 1fr !important;
-                gap: 2rem !important;
-            }
-            
-            .thumbnail-grid {
-                grid-template-columns: repeat(2, 1fr) !important;
-                gap: 0.5rem !important;
-            }
-            
-            .tab-buttons {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-            
-            .contact-grid {
-                grid-template-columns: 1fr !important;
-                gap: 1.5rem !important;
-            }
-            
-            .hero-title {
-                font-size: 2rem !important;
-                line-height: 1.2 !important;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.25rem !important;
-            }
-        }
-        
-        @media (min-width: 768px) and (max-width: 1023px) {
-            .thumbnail-grid {
-                grid-template-columns: repeat(4, 1fr) !important;
-            }
-            
-            .contact-grid {
-                grid-template-columns: repeat(3, 1fr) !important;
-            }
+        .image-gallery img:hover {
+            transform: scale(1.05);
         }
     </style>
-</head>
-<body class="font-body bg-gray-50">
-    <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-4">
-                    <img src="logo.png" alt="Zamto Africa" class="h-12 w-auto">
-                    <div>
-                        <h1 class="text-2xl font-black font-heading text-navy">Zamto Africa</h1>
-                        <p class="text-sm text-gray-600">Premium Car Hire & Sales</p>
-                    </div>
-                </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-navy transition font-medium">Home</a>
-                    <a href="inventory.html" class="text-gray-700 hover:text-navy transition font-medium">Inventory</a>
-                    <a href="#contact" class="text-gray-700 hover:text-navy transition font-medium">Contact</a>
-                </nav>
-                <button class="md:hidden" onclick="toggleMobileMenu()">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+</meta></head>
+<body class="bg-white text-gray-800 pt-32">
+<!-- WhatsApp -->
+<a class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white p-5 rounded-full shadow-2xl hover:scale-110 transition" href="https://wa.me/260572213038">
+<i class="w-9 h-9" data-lucide="message-circle"></i>
+</a>
+<!-- HEADER - Modern Standard Design -->
+<header class="fixed top-0 w-full z-50 bg-white shadow-lg border-b border-gray-200">
+<!-- Top Bar -->
+<div class="bg-navy text-white py-2">
+<div class="container mx-auto px-6 flex justify-between items-center text-sm">
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-2">
+<i class="w-4 h-4" data-lucide="mail"></i>
+            zamtoafrica@gmail.com
+          </span>
+<span class="hidden md:flex items-center gap-2">
+<i class="w-4 h-4" data-lucide="map-pin"></i>
+            Thornpark, Lusaka
+          </span>
+</div>
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-2 hover:text-red-300 transition" href="tel:+260572213038">
+<i class="w-4 h-4" data-lucide="phone"></i>
+            +260 572 213 038
+          </a>
+</div>
+</div>
+</div>
+<!-- Main Navigation -->
+<div class="bg-white py-4">
+<div class="container mx-auto px-6">
+<div class="flex items-center justify-between">
+<!-- Logo Section -->
+<div class="flex items-center gap-3 lg:gap-4">
+<!-- Enhanced Logo -->
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-red to-navy rounded-2xl opacity-20 group-hover:opacity-40 transition duration-300"></div>
+<div class="relative bg-white p-2 rounded-2xl shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 border-2 border-red">
+<img alt="Zamto Africa" class="w-10 h-10 lg:w-14 lg:h-14 object-contain" src="logo.png"/>
+</div>
+</div>
+<div class="hidden sm:block">
+<h1 class="text-xl lg:text-2xl font-black text-navy font-heading">ZAMTO AFRICA</h1>
+<p class="text-xs lg:text-sm text-red font-medium hidden lg:block">Japanese Imported Vehicles</p>
+</div>
+</div>
+<!-- Mobile Menu Button -->
+<button class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition" id="mobile-menu-button">
+<i class="w-6 h-6 text-navy" data-lucide="menu"></i>
+</button>
+<!-- Desktop Navigation Menu -->
+<nav class="hidden lg:flex items-center gap-6 lg:gap-8">
+<a class="text-navy hover:text-red font-semibold font-heading transition relative group" href="index.html">
+              Home
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+</a>
+<a class="text-navy hover:text-red font-semibold font-heading transition relative group" href="about.html">
+              About
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+</a>
+<a class="text-navy hover:text-red font-semibold font-heading transition relative group" href="inventory.html">
+              Inventory
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+</a>
+<a class="text-navy hover:text-red font-semibold font-heading transition relative group" href="services.html">
+              Services
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+</a>
+<a class="text-navy hover:text-red font-semibold font-heading transition relative group" href="testimonials.html">
+              Testimonials
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+</a>
+<a class="text-navy hover:text-red font-semibold font-heading transition relative group" href="blog.html">
+              Blog
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+</a>
+<a class="text-navy hover:text-red font-semibold font-heading transition relative group" href="contact.html">
+              Contact
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-red transition-all duration-300 group-hover:w-full"></span>
+</a>
+</nav>
+<!-- CTA Button -->
+<div class="hidden lg:flex items-center gap-4">
+<a class="bg-gradient-to-r from-red to-red-600 hover:from-red-600 hover:to-red text-white px-6 py-3 rounded-lg font-semibold font-heading transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center gap-2" href="tel:+260572213038">
+<i class="w-5 h-5" data-lucide="phone"></i>
+<span class="hidden xl:inline">Call Now</span>
+<span class="xl:hidden">Call</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Mobile Menu -->
+<div class="fixed inset-0 z-40 lg:hidden hidden" id="mobile-menu">
+<!-- Backdrop -->
+<div class="fixed inset-0 bg-black bg-opacity-50"></div>
+<!-- Menu Panel -->
+<div class="fixed right-0 top-0 h-full w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out">
+<div class="flex flex-col h-full">
+<!-- Menu Header -->
+<div class="flex items-center justify-between p-6 border-b border-gray-200">
+<div class="flex items-center gap-3">
+<div class="bg-gradient-to-r from-red to-navy p-1 rounded-xl">
+<img alt="Zamto Africa" class="w-10 h-10 rounded-lg bg-white" src="logo.png"/>
+</div>
+<div>
+<h3 class="text-lg font-black text-navy font-heading">ZAMTO AFRICA</h3>
+<p class="text-xs text-gray-600">Japanese Imported Vehicles</p>
+</div>
+</div>
+<button class="p-2 rounded-lg hover:bg-gray-100 transition" id="close-mobile-menu">
+<i class="w-5 h-5 text-gray-600" data-lucide="x"></i>
+</button>
+</div>
+<!-- Menu Items -->
+<nav class="flex-1 overflow-y-auto p-6">
+<div class="space-y-2">
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="index.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="home"></i>Home
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="about.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="info"></i>About
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="inventory.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="car"></i>Inventory
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="services.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="wrench"></i>Services
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="testimonials.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="star"></i>Testimonials
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="blog.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="blog"></i>Blog
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="contact.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="phone"></i>Contact
+            </a>
+</div>
+<!-- Mobile CTA -->
+<div class="mt-8 p-4 bg-gradient-to-r from-red to-navy rounded-xl">
+<a class="block w-full text-white text-center font-semibold font-heading py-3 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300" href="tel:+260572213038">
+<i class="w-5 h-5 inline mr-2" data-lucide="phone"></i>
+              Call Us Now: +260 572 213 038
+            </a>
+</div>
+</nav>
+<!-- Menu Footer -->
+<div class="p-6 border-t border-gray-200">
+<div class="text-center text-sm text-gray-600">
+<p>© 2025 Zamto Africa Company Ltd.</p>
+<p class="mt-1">All rights reserved</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
-        <div class="bg-white w-64 h-full shadow-lg">
-            <div class="p-6">
-                <button onclick="toggleMobileMenu()" class="mb-6">
-                    <i data-lucide="x" class="w-6 h-6"></i>
-                </button>
-                <nav class="flex flex-col space-y-4">
-                    <a href="index.html" class="text-gray-700 hover:text-navy transition font-medium">Home</a>
-                    <a href="inventory.html" class="text-gray-700 hover:text-navy transition font-medium">Inventory</a>
-                    <a href="#contact" class="text-gray-700 hover:text-navy transition font-medium">Contact</a>
-                </nav>
-            </div>
-        </div>
-    </div>
+<!-- Mobile Menu -->
+<div class="fixed inset-0 z-40 lg:hidden hidden" id="mobile-menu">
+<!-- Backdrop -->
+<div class="fixed inset-0 bg-black bg-opacity-50"></div>
+<!-- Menu Panel -->
+<div class="fixed right-0 top-0 h-full w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out">
+<div class="flex flex-col h-full">
+<!-- Menu Header -->
+<div class="flex items-center justify-between p-6 border-b border-gray-200">
+<div class="flex items-center gap-3">
+<div class="bg-gradient-to-r from-red to-navy p-1 rounded-xl">
+<img alt="Zamto Africa" class="w-10 h-10 rounded-lg bg-white" src="logo.png"/>
+</div>
+<div>
+<h3 class="text-lg font-black text-navy font-heading">ZAMTO AFRICA</h3>
+<p class="text-xs text-gray-600">Japanese Imported Vehicles</p>
+</div>
+</div>
+<button class="p-2 rounded-lg hover:bg-gray-100 transition" id="close-mobile-menu">
+<i class="w-5 h-5 text-gray-600" data-lucide="x"></i>
+</button>
+</div>
+<!-- Menu Items -->
+<nav class="flex-1 overflow-y-auto p-6">
+<div class="space-y-2">
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="index.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="home"></i>Home
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="about.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="info"></i>About
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="inventory.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="car"></i>Inventory
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="services.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="wrench"></i>Services
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="testimonials.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="star"></i>Testimonials
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="blog.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="blog"></i>Blog
+            </a>
+<a class="block px-4 py-3 text-navy hover:bg-red hover:text-white rounded-lg font-semibold font-heading transition-all duration-300" href="contact.html">
+<i class="w-5 h-5 inline mr-3" data-lucide="phone"></i>Contact
+            </a>
+</div>
+<!-- Mobile CTA -->
+<div class="mt-8 p-4 bg-gradient-to-r from-red to-navy rounded-xl">
+<a class="block w-full text-white text-center font-semibold font-heading py-3 rounded-lg hover:bg-white hover:bg-opacity-20 transition-all duration-300" href="tel:+260572213038">
+<i class="w-5 h-5 inline mr-2" data-lucide="phone"></i>
+              Call Us Now: +260 572 213 038
+            </a>
+</div>
+</nav>
+<!-- Menu Footer -->
+<div class="p-6 border-t border-gray-200">
+<div class="text-center text-sm text-gray-600">
+<p>© 2025 Zamto Africa Company Ltd.</p>
+<p class="mt-1">All rights reserved</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Breadcrumbs -->
+<div class="bg-gray-50 py-4">
+<div class="container mx-auto px-6">
+<div class="flex items-center gap-2 text-sm text-gray-600">
+<a class="hover:text-navy transition" href="index.html">Home</a>
+<i class="w-4 h-4" data-lucide="chevron-right"></i>
+<a class="hover:text-navy transition" href="inventory.html">Inventory</a>
+<i class="w-4 h-4" data-lucide="chevron-right"></i>
+<span class="text-navy font-medium">ZAMTO AFRICA</span>
+</div>
+</div>
+</div>
+<!-- Vehicle Status Banner -->
+<div class="bg-gradient-to-r from-green-600 to-green-700 text-white py-3">
+<div class="container mx-auto px-6 text-center">
+<div class="flex items-center justify-center gap-2">
+<i class="w-5 h-5" data-lucide="check-circle"></i>
+<span class="font-medium">This vehicle is currently available for purchase</span>
+</div>
+</div>
+</div>
+<!-- Vehicle Details -->
+<section class="py-12 bg-white">
+<div class="container mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-12">
+<!-- Enhanced Image Gallery -->
+<div class="space-y-4">
+<!-- Main Image with Zoom -->
+<div class="bg-gray-100 rounded-2xl h-96 overflow-hidden relative group">
+<picture>
+<source media="(max-width: 768px)" srcset="images/vehicles/Subaru-Forester-1.jpg"/>
+<source media="(max-width: 1200px)" srcset="images/vehicles/Subaru-Forester-1.jpg"/>
+<img alt="Subaru Forester 2.0L 2025 - Front View" class="main-vehicle-image w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer" data-gallery="" loading="lazy" onclick="openLightbox([], 0)" src=""/>
+</picture>
+<div class="absolute top-4 right-4 bg-white rounded-lg px-3 py-1 shadow-md">
+<span class="text-sm font-medium text-gray-700">Click to zoom</span>
+</div>
+<div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-lg shadow-lg">
+<span class="text-sm font-bold">FOR SALE</span>
+</div>
+</div>
+<!-- Thumbnail Gallery -->
+<div class="grid grid-cols-4 gap-2">
 
-    <!-- Vehicle Hero Section -->
-    <section class="bg-gradient-to-br from-navy to-blue-900 text-white py-20">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-6xl font-black font-heading mb-6 fade-in">Subaru Forester 2019</h1>
-                <p class="text-xl md:text-2xl mb-8 fade-in">Modern SUV with Advanced Safety Features</p>
-                <div class="flex flex-wrap justify-center gap-4 fade-in">
-                    <span class="bg-white text-navy px-4 py-2 rounded-full font-semibold">2019 Model</span>
-                    <span class="bg-green-500 text-white px-4 py-2 rounded-full font-semibold">FOR SALE</span>
-                    <span class="bg-blue-500 text-white px-4 py-2 rounded-full font-semibold">Excellent Condition</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Vehicle Gallery -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-6xl mx-auto">
-                <!-- Main Image -->
-                <div class="mb-8">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="images/vehicles/Subaru-Forester-1.jpg">
-                        <source media="(max-width: 1200px)" srcset="images/vehicles/Subaru-Forester-1.jpg">
-                        <img id="mainImage" src="images/vehicles/Subaru-Forester-1.jpg" alt="Subaru Forester 2019" 
-                             class="w-full h-96 object-cover rounded-xl shadow-lg cursor-pointer"
-                             onclick="openLightbox(['images/vehicles/Subaru-Forester-1.jpg', 'images/vehicles/Subaru-Forester-2.jpg', 'images/vehicles/Subaru-Forester-3.jpg'], 0)" loading="lazy">
-                    </picture>
-                </div>
+
+<div class="bg-gray-100 rounded-lg h-20 overflow-hidden flex items-center justify-center cursor-pointer hover:bg-gray-200 transition-colors duration-300" onclick="window.openLightbox(['images/vehicles/Subaru-Forester-1.jpg','images/vehicles/Subaru-Forester-2.jpg','images/vehicles/Subaru-Forester-3.jpg'], 0)">
+<div class="text-center">
+<i class="w-6 h-6 text-gray-400 mx-auto mb-1" data-lucide="grid"></i>
+<span class="text-xs text-gray-500 font-medium">View All 0</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Vehicle Information -->
+<div class="space-y-6">
+<!-- Title and Price -->
+<div>
+<h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-navy mb-2 font-heading">Subaru Forester</h1>
+<p class="text-lg text-gray-600 mb-4"></p>
+<div class="flex items-baseline gap-4 mb-6">
+<div class="text-4xl sm:text-5xl font-black text-red">ZMW495,000</div>
+</div>
+</div>
+<!-- Quick Specs -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="bg-gray-50 p-4 rounded-xl text-center">
+<i class="w-8 h-8 text-red mx-auto mb-2 feature-icon" data-lucide="calendar"></i>
+<p class="text-sm text-gray-600">Year</p>
+<p class="font-bold text-navy">2019</p>
+</div>
+<div class="bg-gray-50 p-4 rounded-xl text-center">
+<i class="w-8 h-8 text-red mx-auto mb-2 feature-icon" data-lucide="gauge"></i>
+<p class="text-sm text-gray-600">Engine</p>
+<p class="font-bold text-navy">2.0L FB20</p>
+</div>
+<div class="bg-gray-50 p-4 rounded-xl text-center">
+<i class="w-8 h-8 text-red mx-auto mb-2 feature-icon" data-lucide="settings"></i>
+<p class="text-sm text-gray-600">Transmission</p>
+<p class="font-bold text-navy">CVT</p>
+</div>
+<div class="bg-gray-50 p-4 rounded-xl text-center">
+<i class="w-8 h-8 text-red mx-auto mb-2 feature-icon" data-lucide="users"></i>
+<p class="text-sm text-gray-600">Seats</p>
+<p class="font-bold text-navy">5 Seats</p>
+</div>
+<div class="bg-gray-50 p-4 rounded-xl text-center">
+<i class="w-8 h-8 text-red mx-auto mb-2 feature-icon" data-lucide="car"></i>
+<p class="text-sm text-gray-600">Doors</p>
+<p class="font-bold text-navy">5 Doors</p>
+</div>
+<div class="bg-gray-50 p-4 rounded-xl text-center">
+<i class="w-8 h-8 text-red mx-auto mb-2 feature-icon" data-lucide="zap"></i>
+<p class="text-sm text-gray-600">Fuel</p>
+<p class="font-bold text-navy">Petrol</p>
+</div>
+</div>
+<!-- Description -->
+<div>
+<h3 class="text-xl font-bold text-navy mb-3 font-heading">Description</h3>
+<p class="text-gray-700 leading-relaxed"></p>
+<div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mt-4">
+<p class="text-blue-800 font-medium mb-2">✓ Professionally Inspected</p>
+<p class="text-blue-800 font-medium">✓ Complete Service History Available</p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+<a class="bg-navy hover:bg-blue-900 text-white px-6 py-4 rounded-xl font-bold font-heading transition-all duration-300 flex items-center justify-center gap-2" href="tel:+260572213038">
+<i class="w-5 h-5" data-lucide="phone"></i>
+              Call Now
+            </a>
+<a class="bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-xl font-bold font-heading transition-all duration-300 flex items-center justify-center gap-2" href="https://wa.me/260572213038" target="_blank">
+<i class="w-5 h-5" data-lucide="message-circle"></i>
+              WhatsApp Inquiry
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vehicle Tabs -->
+<section class="py-12 bg-gray-50">
+<div class="container mx-auto px-6">
+<!-- Tab Buttons -->
+<div class="flex flex-wrap gap-2 mb-8 tab-buttons border-b border-gray-200 pb-4">
+<button class="px-6 py-3 font-semibold text-navy tab-active" onclick="switchTab('specifications')">Specifications</button>
+<button class="px-6 py-3 font-semibold text-gray-600" onclick="switchTab('features')">Features &amp; Amenities</button>
+<button class="px-6 py-3 font-semibold text-gray-600" onclick="switchTab('condition')">Condition Report</button>
+</div>
+<!-- Tab Contents -->
+<div class="bg-white rounded-2xl shadow-lg p-6">
+<!-- Specifications Tab -->
+<div class="tab-content" id="specifications-tab">
+<h3 class="text-2xl font-bold text-navy mb-6 font-heading">Detailed Specifications</h3>
+
+<div class="specifications-grid grid grid-cols-1 md:grid-cols-2 gap-6"><div class="space-y-4"></div><div class="space-y-4"></div></div></div>
+<!-- Features Tab -->
+<div class="tab-content hidden" id="features-tab">
+<h3 class="text-2xl font-bold text-navy mb-6 font-heading">Features &amp; Amenities</h3>
+
+<div class="features-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div></div>
+<!-- Condition Report Tab -->
+<div class="tab-content hidden" id="condition-tab">
+<h3 class="text-2xl font-bold text-navy mb-6 font-heading">Vehicle Condition Report</h3>
+<div class="space-y-6">
+<div class="bg-blue-50 border border-blue-200 rounded-xl p-6">
+<h4 class="text-lg font-bold text-navy mb-3">Overall Rating: <span class="text-green-600">Excellent</span></h4>
+<p class="text-gray-700">
+                This Subaru Forester has undergone a comprehensive inspection and is in excellent mechanical and cosmetic condition. 
+                The vehicle has been well-maintained with regular servicing and shows no signs of major accidents or damage.
+              </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-gray-50 rounded-xl p-6">
+<h4 class="text-lg font-bold text-navy mb-4">Mechanical Condition</h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<i class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" data-lucide="check-circle"></i>
+<span class="text-gray-700">Engine Performance: Excellent</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" data-lucide="check-circle"></i>
+<span class="text-gray-700">Transmission: Smooth Operation</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" data-lucide="check-circle"></i>
+<span class="text-gray-700">Brake System: Fully Functional</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" data-lucide="check-circle"></i>
+<span class="text-gray-700">Suspension: No Issues Detected</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" data-lucide="check-circle"></i>
+<span class="text-gray-700">Electrical Systems: All Working</span>
+</li>
+</ul>
+</div>
+<div class="bg-gray-50 rounded-xl p-6">
+<h4 class="text-lg font-bold text-navy mb-4">Exterior &amp; Interior Condition</h4>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<i class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" data-lucide="check-circle"></i>
+<span class="text-gray-700">Body Paint: Minor Wear</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" data-lucide="check-circle"></i>
+<span class="text-gray-700">Tires: Good Tread Depth</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" data-lucide="check-circle"></i>
+<span class="text-gray-700">Interior Upholstery: Clean &amp; Well Maintained</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" data-lucide="check-circle"></i>
+<span class="text-gray-700">Air Conditioning: Cold Air Output</span>
+</li>
+<li class="flex items-start gap-3">
+<i class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" data-lucide="check-circle"></i>
+<span class="text-gray-700">Audio System: Full Functionality</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Similar Vehicles -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-black text-navy mb-4 font-heading">Similar Vehicles</h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">Check out these other premium Vans in our inventory</p>
+</div>
+<div class="similar-vehicles-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Toyota Land Cruiser Prado 2017 -->
+<div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
+<div class="relative">
+<img alt="Toyota Land Cruiser Prado 2017" class="w-full h-48 object-cover" src="images/vehicles/Black-landcruiser-1.jpg"/>
+<div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+              FOR SALE
+            </div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-navy mb-2">Toyota Land Cruiser Prado</h3>
+<p class="text-gray-600 mb-4">2017 Model • 89,120 km</p>
+<div class="text-2xl font-black text-red mb-4">USD 29,500 / ZMW 677,000</div>Toyota 
+<a class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center" href="vehicle-prado-2017.html">
+              View Details
+            </a>
+</div>
+</div>
+<!-- Toyota Harrier 2016 -->
+<div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
+<div class="relative">
+<img alt="Toyota Harrier 2016" class="w-full h-48 object-cover" src="images/vehicles/2016 TOYOTA HARRIER SUV Black-1.jpg"/>
+<div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+              FOR SALE
+            </div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-navy mb-2">Toyota Harrier</h3>
+<p class="text-gray-600 mb-4">2016 Model • 89,120 km</p>
+<div class="text-2xl font-black text-red mb-4">USD 22,000</div>
+<a class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center" href="vehicle-toyota-harrier-2016-black.html">
+              View Details
+            </a>
+</div>
+</div>
+<!-- Mitsubishi Pajero 2012 -->
+<div class="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 card-hover">
+<div class="relative">
+<img alt="Mitsubishi Pajero 2012" class="w-full h-48 object-cover" src="images/vehicles/Mistubishi-Pajero-1.jpg"/>
+<div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+              FOR SALE
+            </div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-navy mb-2">Mitsubishi Pajero</h3>
+<p class="text-gray-600 mb-4">2012 Model • 178,797 km</p>
+<div class="text-2xl font-black text-red mb-4">USD 16,500 / ZMW 366,000</div>
+<a class="bg-navy hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-bold transition w-full block text-center" href="vehicle-mitsubishi-pajero-2012.html">
+              View Details
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-16 bg-gradient-to-r from-navy to-blue-900 text-white">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-3xl md:text-4xl font-black mb-6 font-heading">Ready to Own This Subaru Forester 2025?</h2>
+<p class="text-xl mb-8 max-w-2xl mx-auto">Contact us today for a private viewing or to discuss financing options</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-white text-navy hover:bg-gray-100 px-8 py-4 rounded-xl font-bold font-heading transition flex items-center justify-center gap-2" href="tel:+260572213038">
+<i class="w-5 h-5" data-lucide="phone"></i>
+          Call Us Now
+        </a>
+<a class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold font-heading transition flex items-center justify-center gap-2" href="https://wa.me/260572213038" target="_blank">
+<i class="w-5 h-5" data-lucide="message-circle"></i>
+          WhatsApp Inquiry
+        </a>
+</div>
+</div>
+</section>
+<!-- FOOTER - Modern Standard Design -->
+<!-- FOOTER - Modern Standard Design -->
+<footer class="bg-navy text-white">
+<div class="py-12">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-xl font-bold mb-4 font-heading">ZAMTO AFRICA</h3>
+<p class="text-gray-300">Zambia's premier destination for authentic Japanese imported vehicles.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a class="text-gray-300 hover:text-white transition" href="index.html">Home</a></li>
+<li><a class="text-gray-300 hover:text-white transition" href="inventory.html">Inventory</a></li>
+<li><a class="text-gray-300 hover:text-white transition" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Contact</h4>
+<p class="text-gray-300">+260 572 213 038</p>
+<p class="text-gray-300">zamtoafrica@gmail.com</p>
+<p class="text-gray-300">Great East Road, Lusaka</p>
+</div>
+<div>
+<h4 class="font-bold mb-4">Follow Us</h4>
+<div class="flex gap-4">
+<a class="text-gray-300 hover:text-white transition" href="#">
+<i class="w-5 h-5" data-lucide="facebook"></i>
+</a>
+<a class="text-gray-300 hover:text-white transition" href="#">
+<i class="w-5 h-5" data-lucide="instagram"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 py-6">
+<div class="container mx-auto px-6 text-center text-gray-400">
+                © 2025 Zamto Africa Company Ltd. All rights reserved.
+            </div>
+</div>
+</footer>
+<script>
+        lucide.createIcons();
+        
+        // Mobile Menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+        
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+        
+        // Tab functionality
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.add('hidden');
+            });
+            
+            // Remove active state from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-navy', 'text-white');
+                btn.classList.add('bg-white', 'text-navy', 'border', 'border-navy');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName + '-tab').classList.remove('hidden');
+            
+            // Add active state to clicked button
+            const activeBtn = document.querySelector(`[data-tab="${tabName}"]`);
+            activeBtn.classList.remove('bg-white', 'text-navy', 'border', 'border-navy');
+            activeBtn.classList.add('bg-navy', 'text-white');
+        }
+        
+        // Image Gallery functionality
+        document.querySelectorAll('.thumbnail-image').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                const mainImg = document.querySelector('.main-vehicle-image');
+                const gallery = mainImg.dataset.gallery.split(',');
+                const clickedSrc = this.src;
+                const index = gallery.findIndex(img => img.includes(clickedSrc.split('/').pop()));
                 
-                <!-- Thumbnails -->
-                <div class="grid grid-cols-4 gap-4">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="images/vehicles/Subaru-Forester-1.jpg">
-                        <source media="(max-width: 1200px)" srcset="images/vehicles/Subaru-Forester-1.jpg">
-                        <img src="images/vehicles/Subaru-Forester-1.jpg" alt="Subaru Forester Front" 
-                             class="w-full h-24 object-cover rounded-lg gallery-thumb active border-2 border-navy"
-                             onclick="changeImage(0, 'images/vehicles/Subaru-Forester-1.jpg')" loading="lazy">
-                    </picture>
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="images/vehicles/Subaru-Forester-2.jpg">
-                        <source media="(max-width: 1200px)" srcset="images/vehicles/Subaru-Forester-2.jpg">
-                        <img src="images/vehicles/Subaru-Forester-2.jpg" alt="Subaru Forester Side" 
-                             class="w-full h-24 object-cover rounded-lg gallery-thumb border-2 border-transparent"
-                             onclick="changeImage(1, 'images/vehicles/Subaru-Forester-2.jpg')" loading="lazy">
-                    </picture>
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="images/vehicles/Subaru-Forester-3.jpg">
-                        <source media="(max-width: 1200px)" srcset="images/vehicles/Subaru-Forester-3.jpg">
-                        <img src="images/vehicles/Subaru-Forester-3.jpg" alt="Subaru Forester Interior" 
-                             class="w-full h-24 object-cover rounded-lg gallery-thumb border-2 border-transparent"
-                             onclick="changeImage(2, 'images/vehicles/Subaru-Forester-3.jpg')" loading="lazy">
-                    </picture>
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="images/vehicles/Subaru-Forester-1.jpg">
-                        <source media="(max-width: 1200px)" srcset="images/vehicles/Subaru-Forester-1.jpg">
-                        <img src="images/vehicles/Subaru-Forester-1.jpg" alt="Subaru Forester Rear" 
-                             class="w-full h-24 object-cover rounded-lg gallery-thumb border-2 border-transparent"
-                             onclick="changeImage(3, 'images/vehicles/Subaru-Forester-1.jpg')" loading="lazy">
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Vehicle Details -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="max-w-6xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-12">
-                    <!-- Left Column - Info -->
-                    <div>
-                        <h2 class="text-3xl md:text-4xl font-black font-heading text-navy mb-6">Vehicle Overview</h2>
-                        <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-                            The Subaru Forester 2019 represents the perfect blend of reliability, safety, and modern technology. 
-                            With only 72,000 km on the odometer, this well-maintained SUV offers exceptional value for discerning buyers 
-                            who prioritize safety features and all-weather capability.
-                        </p>
-                        
-                        <!-- Key Features -->
-                        <div class="grid grid-cols-2 gap-6 mb-8">
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="calendar" class="w-6 h-6 text-navy"></i>
-                                <div>
-                                    <p class="font-semibold">Year</p>
-                                    <p class="text-gray-600">2019</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="gauge" class="w-6 h-6 text-navy"></i>
-                                <div>
-                                    <p class="font-semibold">Mileage</p>
-                                    <p class="text-gray-600">72,000 km</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="users" class="w-6 h-6 text-navy"></i>
-                                <div>
-                                    <p class="font-semibold">Seats</p>
-                                    <p class="text-gray-600">5 Passengers</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="car" class="w-6 h-6 text-navy"></i>
-                                <div>
-                                    <p class="font-semibold">Doors</p>
-                                    <p class="text-gray-600">5 Doors</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Price -->
-                        <div class="bg-navy text-white p-8 rounded-xl">
-                            <h3 class="text-2xl font-bold mb-4">Pricing</h3>
-                            <div class="text-4xl font-black mb-4">ZMW495,000</div>
-                            <p class="text-lg mb-6">Modern SUV with excellent condition and comprehensive documentation included</p>
-                            <div class="flex flex-col sm:flex-row gap-4">
-                                <a href="https://wa.me/260572213038" target="_blank" 
-                                   class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold transition flex items-center justify-center">
-                                    <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
-                                    WhatsApp Us
-                                </a>
-                                <a href="tel:+260572213038" 
-                                   class="bg-white text-navy hover:bg-gray-100 px-6 py-3 rounded-xl font-semibold transition flex items-center justify-center">
-                                    <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
-                                    Call Us
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                if (index !== -1) {
+                    mainImg.src = gallery[index];
                     
-                    <!-- Right Column - Tabs -->
-                    <div>
-                        <div class="bg-white rounded-xl shadow-lg p-6">
-                            <!-- Tab Buttons -->
-                            <div class="flex space-x-4 mb-6 border-b">
-                                <button onclick="showTab('engine')" class="tab-button active px-4 py-2 font-semibold text-navy">
-                                    Engine
-                                </button>
-                                <button onclick="showTab('dimensions')" class="tab-button px-4 py-2 font-semibold text-gray-600">
-                                    Dimensions
-                                </button>
-                                <button onclick="showTab('features')" class="tab-button px-4 py-2 font-semibold text-gray-600">
-                                    Features
-                                </button>
-                                <button onclick="showTab('safety')" class="tab-button px-4 py-2 font-semibold text-gray-600">
-                                    Safety
-                                </button>
-                            </div>
-                            
-                            <!-- Tab Content -->
-                            <div id="engine" class="tab-content">
-                                <h3 class="text-xl font-bold text-navy mb-4">Engine & Performance</h3>
-                                <div class="space-y-3">
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Engine Type</span>
-                                        <span class="text-gray-600">2.0L FB20 Boxer Engine</span>
-                                    </div>
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Horsepower</span>
-                                        <span class="text-gray-600">154 hp @ 6,000 rpm</span>
-                                    </div>
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Torque</span>
-                                        <span class="text-gray-600">196 Nm @ 4,000 rpm</span>
-                                    </div>
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Transmission</span>
-                                        <span class="text-gray-600">Lineartronic CVT</span>
-                                    </div>
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Fuel Type</span>
-                                        <span class="text-gray-600">Petrol</span>
-                                    </div>
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Drive Train</span>
-                                        <span class="text-gray-600">Symmetrical All-Wheel Drive</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div id="dimensions" class="tab-content hidden">
-                                <h3 class="text-xl font-bold text-navy mb-4">Dimensions & Capacity</h3>
-                                <div class="space-y-3">
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Length</span>
-                                        <span class="text-gray-600">4,640 mm</span>
-                                    </div>
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Width</span>
-                                        <span class="text-gray-600">1,815 mm</span>
-                                    </div>
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Height</span>
-                                        <span class="text-gray-600">1,730 mm</span>
-                                    </div>
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Wheelbase</span>
-                                        <span class="text-gray-600">2,670 mm</span>
-                                    </div>
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Cargo Capacity</span>
-                                        <span class="text-gray-600">509 liters</span>
-                                    </div>
-                                    <div class="flex justify-between py-2 border-b">
-                                        <span class="font-medium">Fuel Tank</span>
-                                        <span class="text-gray-600">60 liters</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div id="features" class="tab-content hidden">
-                                <h3 class="text-xl font-bold text-navy mb-4">Features & Technology</h3>
-                                <div class="grid grid-cols-2 gap-4">
-                                    <div class="feature-card flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-                                        <i data-lucide="smartphone" class="w-6 h-6 text-navy feature-icon"></i>
-                                        <span class="text-sm">Apple CarPlay & Android Auto</span>
-                                    </div>
-                                    <div class="feature-card flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-                                        <i data-lucide="wind" class="w-6 h-6 text-navy feature-icon"></i>
-                                        <span class="text-sm">Dual-Zone Climate Control</span>
-                                    </div>
-                                    <div class="feature-card flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-                                        <i data-lucide="sun" class="w-6 h-6 text-navy feature-icon"></i>
-                                        <span class="text-sm">Panoramic Sunroof</span>
-                                    </div>
-                                    <div class="feature-card flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-                                        <i data-lucide="map" class="w-6 h-6 text-navy feature-icon"></i>
-                                        <span class="text-sm">GPS Navigation</span>
-                                    </div>
-                                    <div class="feature-card flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-                                        <i data-lucide="camera" class="w-6 h-6 text-navy feature-icon"></i>
-                                        <span class="text-sm">360° Camera System</span>
-                                    </div>
-                                    <div class="feature-card flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-                                        <i data-lucide="volume-2" class="w-6 h-6 text-navy feature-icon"></i>
-                                        <span class="text-sm">Premium Audio System</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div id="safety" class="tab-content hidden">
-                                <h3 class="text-xl font-bold text-navy mb-4">Safety Features</h3>
-                                <div class="space-y-3">
-                                    <div class="flex items-center space-x-3 p-3 bg-green-50 rounded-lg">
-                                        <i data-lucide="shield" class="w-6 h-6 text-green-600"></i>
-                                        <span class="text-sm">EyeSight Driver Assist Technology</span>
-                                    </div>
-                                    <div class="flex items-center space-x-3 p-3 bg-green-50 rounded-lg">
-                                        <i data-lucide="alert-triangle" class="w-6 h-6 text-green-600"></i>
-                                        <span class="text-sm">Pre-Collision Braking</span>
-                                    </div>
-                                    <div class="flex items-center space-x-3 p-3 bg-green-50 rounded-lg">
-                                        <i data-lucide="compass" class="w-6 h-6 text-green-600"></i>
-                                        <span class="text-sm">Lane Keep Assist</span>
-                                    </div>
-                                    <div class="flex items-center space-x-3 p-3 bg-green-50 rounded-lg">
-                                        <i data-lucide="radar" class="w-6 h-6 text-green-600"></i>
-                                        <span class="text-sm">Adaptive Cruise Control</span>
-                                    </div>
-                                    <div class="flex items-center space-x-3 p-3 bg-green-50 rounded-lg">
-                                        <i data-lucide="eye" class="w-6 h-6 text-green-600"></i>
-                                        <span class="text-sm">Blind Spot Monitoring</span>
-                                    </div>
-                                    <div class="flex items-center space-x-3 p-3 bg-green-50 rounded-lg">
-                                        <i data-lucide="zap" class="w-6 h-6 text-green-600"></i>
-                                        <span class="text-sm">7 Airbags System</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-navy text-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-black font-heading mb-8">Interested in this Subaru Forester?</h2>
-                <p class="text-xl mb-8">Get in touch with us for more information or to schedule a viewing</p>
-                
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <div class="text-center">
-                        <i data-lucide="phone" class="w-12 h-12 mx-auto mb-4"></i>
-                        <h3 class="text-xl font-bold mb-2">Call Us</h3>
-                        <p class="text-lg">+260 572 213 038</p>
-                    </div>
-                    <div class="text-center">
-                        <i data-lucide="message-circle" class="w-12 h-12 mx-auto mb-4"></i>
-                        <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
-                        <p class="text-lg">+260 572 213 038</p>
-                    </div>
-                    <div class="text-center">
-                        <i data-lucide="mail" class="w-12 h-12 mx-auto mb-4"></i>
-                        <h3 class="text-xl font-bold mb-2">Email</h3>
-                        <p class="text-lg">info@zamtoafrica.com</p>
-                    </div>
-                </div>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://wa.me/260572213038" target="_blank" 
-                       class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-semibold transition flex items-center justify-center">
-                        <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i>
-                        WhatsApp Now
-                    </a>
-                    <a href="inventory.html" 
-                       class="bg-white text-navy hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold transition flex items-center justify-center">
-                        <i data-lucide="arrow-left" class="w-5 h-5 mr-2"></i>
-                        Back to Inventory
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <img src="logo.png" alt="Zamto Africa" class="h-12 w-auto mb-4">
-                    <p class="text-gray-400">Premium car hire and sales service in Zambia</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
-                        <li><a href="inventory.html" class="hover:text-white transition">Inventory</a></li>
-                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Services</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>Car Hire</li>
-                        <li>Vehicle Sales</li>
-                        <li>Corporate Services</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Contact</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>+260 572 213 038</li>
-                        <li>info@zamtoafrica.com</li>
-                        <li>Lusaka, Zambia</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Zamto Africa. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <img id="lightboxImage" src="" alt="Vehicle Image">
-    </div>
-
-    <script>
-        // Initialize all functionality after DOM content is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            // Initialize Lucide icons
-            lucide.createIcons();
-            
-            // Mobile Menu Toggle
-            window.toggleMobileMenu = function() {
-                const menu = document.getElementById('mobileMenu');
-                menu.classList.toggle('hidden');
-            };
-            
-            // Gallery Functions
-            let currentImageIndex = 0;
-            let galleryImages = [];
-            
-            window.changeImage = function(index, imageSrc) {
-                currentImageIndex = index;
-                const mainImage = document.getElementById('mainImage');
-                mainImage.src = imageSrc;
-                
-                // Update thumbnails
-                const thumbnails = document.querySelectorAll('.gallery-thumb');
-                thumbnails.forEach((thumb, i) => {
-                    if (i === index) {
-                        thumb.classList.add('active', 'border-navy');
-                        thumb.classList.remove('border-transparent');
-                    } else {
-                        thumb.classList.remove('active', 'border-navy');
-                        thumb.classList.add('border-transparent');
-                    }
-                });
-            };
-            
-            window.openLightbox = function(images, startIndex = 0) {
-                galleryImages = images;
-                currentImageIndex = startIndex;
-                const lightbox = document.getElementById('lightbox');
-                const lightboxImage = document.getElementById('lightboxImage');
-                
-                lightboxImage.src = images[currentImageIndex];
-                lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            };
-            
-            window.closeLightbox = function() {
-                const lightbox = document.getElementById('lightbox');
-                lightbox.classList.remove('active');
-                document.body.style.overflow = 'auto';
-            };
-            
-            // Lightbox navigation
-            document.addEventListener('keydown', (e) => {
-                const lightbox = document.getElementById('lightbox');
-                if (lightbox.classList.contains('active')) {
-                    if (e.key === 'ArrowLeft' && currentImageIndex > 0) {
-                        currentImageIndex--;
-                        document.getElementById('lightboxImage').src = galleryImages[currentImageIndex];
-                    } else if (e.key === 'ArrowRight' && currentImageIndex < galleryImages.length - 1) {
-                        currentImageIndex++;
-                        document.getElementById('lightboxImage').src = galleryImages[currentImageIndex];
-                    } else if (e.key === 'Escape') {
-                        closeLightbox();
-                    }
+                    // Update ring states
+                    document.querySelectorAll('.thumbnail-image').forEach(t => {
+                        t.parentElement.classList.remove('ring-2', 'ring-blue-500');
+                    });
+                    this.parentElement.classList.add('ring-2', 'ring-blue-500');
                 }
-            });
-            
-            // Tab Functions
-            window.showTab = function(tabName) {
-                // Hide all tab contents
-                const tabContents = document.querySelectorAll('.tab-content');
-                tabContents.forEach(content => {
-                    content.classList.add('hidden');
-                });
-                
-                // Remove active class from all tab buttons
-                const tabButtons = document.querySelectorAll('.tab-button');
-                tabButtons.forEach(button => {
-                    button.classList.remove('active', 'text-navy');
-                    button.classList.add('text-gray-600');
-                });
-                
-                // Show selected tab content
-                const tabElement = document.getElementById(tabName);
-                if (tabElement) {
-                    tabElement.classList.remove('hidden');
-                }
-                
-                // Add active class to clicked button
-                if (event && event.target) {
-                    event.target.classList.add('active', 'text-navy');
-                    event.target.classList.remove('text-gray-600');
-                }
-            };
-            
-            // Smooth scroll for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-            
-            // Re-initialize Lucide icons after dynamic content changes
-            const observer = new MutationObserver(() => {
-                lucide.createIcons();
-            });
-            
-            observer.observe(document.body, {
-                childList: true,
-                subtree: true
             });
         });
+        
+        // Lightbox functionality
+        window.openLightbox = function(images, startIndex = 0) {
+            // Simple lightbox implementation
+            const lightbox = document.createElement('div');
+            lightbox.className = 'fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center';
+            lightbox.innerHTML = `
+                <div class="relative max-w-4xl max-h-screen">
+                    <img src="${images[startIndex]}" class="max-w-full max-h-full object-contain">
+                    <button class="absolute top-4 right-4 bg-white text-black p-2 rounded-full" onclick="this.parentElement.parentElement.remove()">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(lightbox);
+            lucide.createIcons();
+            
+            // Close on background click
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.remove();
+                }
+            });
+        };
     </script>
 </body>
 </html>

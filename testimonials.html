@@ -43,7 +43,7 @@
     "description": "Premier destination for authentic Japanese imported vehicles in Zambia",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Roma Park",
+      "streetAddress": "Thornpark",
       "addressLocality": "Lusaka",
       "addressCountry": "Zambia"
     },
@@ -175,7 +175,7 @@
           </span>
           <span class="hidden md:flex items-center gap-2">
             <i data-lucide="map-pin" class="w-4 h-4"></i>
-            Roma Park, Lusaka
+            Thornpark, Lusaka
           </span>
         </div>
         <div class="flex items-center gap-4">
@@ -633,7 +633,7 @@
                 <i data-lucide="map-pin" class="w-5 h-5 text-red mt-1 flex-shrink-0"></i>
                 <div>
                   <p class="text-gray-300">Handyman's Great East Road</p>
-                  <p class="text-gray-300">Plot 1222, Roma Park</p>
+                  <p class="text-gray-300">Plot 1222, Thornpark</p>
                   <p class="text-gray-300">Lusaka, Zambia</p>
                 </div>
               </div>
@@ -671,7 +671,7 @@
       <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
           <div class="text-gray-400 text-sm">
-            &copy; 2025 Zamto Africa Company Ltd. All rights reserved.
+            &copy; <span id="current-year">2025</span> Zamto Africa Company Ltd. All rights reserved.
           </div>
           <div class="flex gap-6 text-sm">
             <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
@@ -730,6 +730,14 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
         closeMobileMenuFunc();
+      }
+    });
+    
+    // Update copyright year
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentYearElement = document.getElementById('current-year');
+      if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
       }
     });
   </script>
