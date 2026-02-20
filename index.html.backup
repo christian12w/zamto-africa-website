@@ -666,591 +666,7 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
         
-        <!-- LAST 8 VEHICLES MOVED TO TOP - Vehicle 45 - 2016 LEXUS LX570 SUV BLACK (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
-             data-category="sale" 
-             data-name="LEXUS LX570" 
-             data-type="SUV"
-             data-fuel="Petrol" 
-             data-transmission="Automatic" 
-             data-year="2016">
-          <!-- Status Badge -->
-          <div class="absolute top-3 left-3 z-20">
-            <span class="bg-red-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3"></i>
-              SOLD
-            </span>
-          </div>
-          
-          <!-- Vehicle Image -->
-          <div class="relative h-56 overflow-hidden cursor-pointer"
-               onclick="window.location.href='vehicle-lexus-lx570-2016-black.html'">
-            <img src="images/vehicles/Lexus-LX570-BLACK-1.jpg" alt="2016 LEXUS LX570 BLACK" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
-          </div>
-          
-          <div class="p-4">
-            <!-- Vehicle Header -->
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-navy mb-1">LEXUS LX570</h3>
-                <p class="text-xs text-gray-500">2016 Model • Black • 82,071 km</p>
-              </div>
-              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
-            </div>
-            
-            <!-- Specifications -->
-            <div class="space-y-1 mb-3">
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
-                <span>8 Seats</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
-                <span>5 Doors</span>
-              </div>
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
-                <span>5700cc V8 Petrol</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
-                <span>Automatic</span>
-              </div>
-            </div>
-            
-            <!-- Condition & Price -->
-            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
-              <div class="text-right">
-                <span class="text-lg font-black text-red">$60,800</span>
-                <span class="text-xs text-gray-500 block">ZMW1,350,000</span>
-              </div>
-            </div>
-            
-            <!-- Action Buttons -->
-            <div class="flex gap-2 mt-3">
-              <a href="vehicle-lexus-lx570-2016-black.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="eye" class="w-3 h-3"></i>
-                View Details
-              </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="message-circle" class="w-3 h-3"></i>
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- LAST 8 VEHICLES MOVED TO TOP - Vehicle 44 - 2016 LEXUS LX570 SUV GOLD (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
-             data-category="sale" 
-             data-name="LEXUS LX570" 
-             data-type="SUV"
-             data-fuel="Petrol" 
-             data-transmission="Automatic" 
-             data-year="2016">
-          <!-- Status Badge -->
-          <div class="absolute top-3 left-3 z-20">
-            <span class="bg-red-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3"></i>
-              SOLD
-            </span>
-          </div>
-          
-          <!-- Vehicle Image -->
-          <div class="relative h-56 overflow-hidden cursor-pointer"
-               onclick="window.location.href='vehicle-lexus-lx570-2016-gold.html'">
-            <img src="images/vehicles/Lexus-LX570-GOLD-1.jpg" alt="2016 LEXUS LX570 GOLD" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
-          </div>
-          
-          <div class="p-4">
-            <!-- Vehicle Header -->
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-navy mb-1">LEXUS LX570</h3>
-                <p class="text-xs text-gray-500">2016 Model • Gold • 45,011 km</p>
-              </div>
-              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
-            </div>
-            
-            <!-- Specifications -->
-            <div class="space-y-1 mb-3">
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
-                <span>8 Seats</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
-                <span>5 Doors</span>
-              </div>
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
-                <span>5700cc V8 Petrol</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
-                <span>Automatic</span>
-              </div>
-            </div>
-            
-            <!-- Condition & Price -->
-            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
-              <div class="text-right">
-                <span class="text-lg font-black text-red">$68,800</span>
-                <span class="text-xs text-gray-500 block">ZMW1,528,000</span>
-              </div>
-            </div>
-            
-            <!-- Action Buttons -->
-            <div class="flex gap-2 mt-3">
-              <a href="vehicle-lexus-lx570-2016-gold.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="eye" class="w-3 h-3"></i>
-                View Details
-              </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="message-circle" class="w-3 h-3"></i>
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- LAST 8 VEHICLES MOVED TO TOP - Vehicle 43 - 2020 TOYOTA RAV 4 SUVs & Crossovers SILVER (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
-             data-category="sale" 
-             data-name="TOYOTA RAV 4" 
-             data-type="SUV"
-             data-fuel="Petrol" 
-             data-transmission="Automatic" 
-             data-year="2020">
-          <!-- Status Badge -->
-          <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3"></i>
-              FOR SALE
-            </span>
-          </div>
-          
-          <!-- Vehicle Image -->
-          <div class="relative h-56 overflow-hidden cursor-pointer"
-               onclick="window.location.href='vehicle-toyota-rav4-2020.html'">
-            <img src="images/vehicles/Honda-rav-4-1.jpg" alt="2020 TOYOTA RAV 4 SILVER" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
-          </div>
-          
-          <div class="p-4">
-            <!-- Vehicle Header -->
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-navy mb-1">TOYOTA RAV 4</h3>
-                <p class="text-xs text-gray-500">2020 Model • Silver • 112,127 km</p>
-              </div>
-              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
-            </div>
-            
-            <!-- Specifications -->
-            <div class="space-y-1 mb-3">
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
-                <span>5 Seats</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
-                <span>5 Doors</span>
-              </div>
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
-                <span>2500cc Petrol</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
-                <span>Automatic</span>
-              </div>
-            </div>
-            
-            <!-- Condition & Price -->
-            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
-              <div class="text-right">
-                <span class="text-lg font-black text-red">$24,200</span>
-                <span class="text-xs text-gray-500 block">ZMW537,000</span>
-              </div>
-            </div>
-            
-            <!-- Action Buttons -->
-            <div class="flex gap-2 mt-3">
-              <a href="vehicle-toyota-rav4-2020.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="eye" class="w-3 h-3"></i>
-                View Details
-              </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="message-circle" class="w-3 h-3"></i>
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- LAST 8 VEHICLES MOVED TO TOP - Vehicle 43 - 2016 LEXUS RX200T SUVs & Crossovers WHITE (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
-             data-category="sale" 
-             data-name="LEXUS RX200T" 
-             data-type="SUV"
-             data-fuel="Petrol" 
-             data-transmission="Automatic" 
-             data-year="2016">
-          <!-- Status Badge -->
-          <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3"></i>
-              FOR SALE
-            </span>
-          </div>
-          
-          <!-- Vehicle Image -->
-          <div class="relative h-56 overflow-hidden cursor-pointer"
-               onclick="window.location.href='vehicle-lexus-rx200t-2016.html'">
-            <img src="images/vehicles/Lexus-RX 200t-1.jpg" alt="2016 LEXUS RX200T WHITE" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
-          </div>
-          
-          <div class="p-4">
-            <!-- Vehicle Header -->
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-navy mb-1">LEXUS RX200T</h3>
-                <p class="text-xs text-gray-500">2016 Model • White • 137,341 km</p>
-              </div>
-              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
-            </div>
-            
-            <!-- Specifications -->
-            <div class="space-y-1 mb-3">
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
-                <span>5 Seats</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
-                <span>5 Doors</span>
-              </div>
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
-                <span>2000cc Turbo Petrol</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
-                <span>Automatic</span>
-              </div>
-            </div>
-            
-            <!-- Condition & Price -->
-            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
-              <div class="text-right">
-                <span class="text-lg font-black text-red">$25,800</span>
-                <span class="text-xs text-gray-500 block">ZMW573,000</span>
-              </div>
-            </div>
-            
-            <!-- Action Buttons -->
-            <div class="flex gap-2 mt-3">
-              <a href="vehicle-lexus-rx200t-2016.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="eye" class="w-3 h-3"></i>
-                View Details
-              </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="message-circle" class="w-3 h-3"></i>
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- LAST 8 VEHICLES MOVED TO TOP - Vehicle 42 - 2018 TOYOTA HILUX Pick-Up Double Cab BLACK (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
-             data-category="sale" 
-             data-name="TOYOTA HILUX" 
-             data-type="PICKUP TRUCKS"
-             data-fuel="Diesel" 
-             data-transmission="Automatic" 
-             data-year="2018">
-          <!-- Status Badge -->
-          <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3"></i>
-              FOR SALE
-            </span>
-          </div>
-          
-          <!-- Vehicle Image -->
-          <div class="relative h-56 overflow-hidden cursor-pointer"
-               onclick="window.location.href='vehicle-toyota-hilux-2018-black.html'">
-            <img src="images/vehicles/2018 TOYOTA HILUX Pick-Up Double Cab Black-1.jpg" alt="2018 TOYOTA HILUX BLACK" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
-          </div>
-          
-          <div class="p-4">
-            <!-- Vehicle Header -->
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-navy mb-1">TOYOTA HILUX</h3>
-                <p class="text-xs text-gray-500">2018 Model • Black • 99,321 km</p>
-              </div>
-              <span class="bg-orange-100 text-orange-700 px-2 py-1 rounded-full text-xs font-medium">Pickup Trucks</span>
-            </div>
-            
-            <!-- Specifications -->
-            <div class="space-y-1 mb-3">
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
-                <span>5 Seats</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
-                <span>4 Doors</span>
-              </div>
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
-                <span>2400cc Diesel</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
-                <span>Manual</span>
-              </div>
-            </div>
-            
-            <!-- Condition & Price -->
-            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
-              <div class="text-right">
-                <span class="text-lg font-black text-red">$33,800</span>
-                <span class="text-xs text-gray-500 block">ZMW747,000</span>
-              </div>
-            </div>
-            
-            <!-- Action Buttons -->
-            <div class="flex gap-2 mt-3">
-              <a href="vehicle-toyota-hilux-2018-black.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="eye" class="w-3 h-3"></i>
-                View Details
-              </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="message-circle" class="w-3 h-3"></i>
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- LAST 8 VEHICLES MOVED TO TOP - Vehicle 41 - 2021 TOYOTA HILUX Pick-Up Double Cab BRONZE (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
-             data-category="sale" 
-             data-name="TOYOTA HILUX" 
-             data-type="PICKUP TRUCKS"
-             data-fuel="Diesel" 
-             data-transmission="Automatic" 
-             data-year="2021">
-          <!-- Status Badge -->
-          <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3"></i>
-              FOR SALE
-            </span>
-          </div>
-          
-          <!-- Vehicle Image -->
-          <div class="relative h-56 overflow-hidden cursor-pointer"
-               onclick="window.location.href='vehicle-toyota-hilux-2021-bronze.html'">
-            <img src="images/vehicles/Toyota-Hilux-Bronze-1.jpg" alt="2021 TOYOTA HILUX BRONZE" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
-          </div>
-          
-          <div class="p-4">
-            <!-- Vehicle Header -->
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-navy mb-1">TOYOTA HILUX</h3>
-                <p class="text-xs text-gray-500">2021 Model • Bronze • 110,792 km</p>
-              </div>
-              <span class="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs font-semibold">Pickup Trucks</span>
-            </div>
-            
-            <!-- Specifications -->
-            <div class="space-y-1 mb-3">
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
-                <span>5 Seats</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
-                <span>Double Cab</span>
-              </div>
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
-                <span>2400cc Diesel</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
-                <span>Manual</span>
-              </div>
-            </div>
-            
-            <!-- Condition & Price -->
-            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
-              <div class="text-right">
-                <span class="text-lg font-black text-red">$36,800</span>
-                <span class="text-xs text-gray-500 block">ZMW818,000</span>
-              </div>
-            </div>
-            
-            <!-- Action Buttons -->
-            <div class="flex gap-2 mt-3">
-              <a href="vehicle-toyota-hilux-2021-bronze.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="eye" class="w-3 h-3"></i>
-                View Details
-              </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="message-circle" class="w-3 h-3"></i>
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- LAST 8 VEHICLES MOVED TO TOP - Vehicle 40 - 2021 TOYOTA HILUX Pick-Up Double Cab WHITE (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
-             data-category="sale" 
-             data-name="TOYOTA HILUX" 
-             data-type="PICKUP TRUCKS"
-             data-fuel="Diesel" 
-             data-transmission="Automatic" 
-             data-year="2021">
-          <!-- Status Badge -->
-          <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3"></i>
-              FOR SALE
-            </span>
-          </div>
-          
-          <!-- Vehicle Image -->
-          <div class="relative h-56 overflow-hidden cursor-pointer"
-               onclick="window.location.href='vehicle-toyota-hilux-2021-white.html'">
-            <img src="images/vehicles/2021 TOYOTA HILUX SUV White-1.jpg" alt="2021 TOYOTA HILUX WHITE" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
-          </div>
-          
-          <div class="p-4">
-            <!-- Vehicle Header -->
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-navy mb-1">TOYOTA HILUX</h3>
-                <p class="text-xs text-gray-500">2021 Model • White • 63,893 km</p>
-              </div>
-              <span class="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs font-semibold">Pickup Trucks</span>
-            </div>
-            
-            <!-- Specifications -->
-            <div class="space-y-1 mb-3">
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
-                <span>5 Seats</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
-                <span>Double Cab</span>
-              </div>
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
-                <span>2400cc Diesel</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
-                <span>Manual</span>
-              </div>
-            </div>
-            
-            <!-- Condition & Price -->
-            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
-              <div class="text-right">
-                <span class="text-lg font-black text-red">$36,800</span>
-                <span class="text-xs text-gray-500 block">ZMW818,000</span>
-              </div>
-            </div>
-            
-            <!-- Action Buttons -->
-            <div class="flex gap-2 mt-3">
-              <a href="vehicle-toyota-hilux-2021-white.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="eye" class="w-3 h-3"></i>
-                View Details
-              </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="message-circle" class="w-3 h-3"></i>
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- LAST 8 VEHICLES MOVED TO TOP - Vehicle 39 - 2020 TOYOTA ALPHARD STATION WAGON WHITE (For Sale) -->
-        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
-             data-category="sale" 
-             data-name="TOYOTA ALPHARD" 
-             data-type="STATION WAGON"
-             data-fuel="Petrol" 
-             data-transmission="Automatic" 
-             data-year="2020">
-          <!-- Status Badge -->
-          <div class="absolute top-3 left-3 z-20">
-            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3 h-3"></i>
-              FOR SALE
-            </span>
-          </div>
-          
-          <!-- Vehicle Image -->
-          <div class="relative h-56 overflow-hidden cursor-pointer"
-               onclick="window.location.href='vehicle-toyota-alphard-2020-white.html'">
-            <img src="images/vehicles/Toyota-Alphard-White-1.jpg" alt="2020 TOYOTA ALPHARD WHITE" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
-          </div>
-          
-          <div class="p-4">
-            <!-- Vehicle Header -->
-            <div class="flex items-start justify-between mb-3">
-              <div>
-                <h3 class="text-lg font-bold text-navy mb-1">TOYOTA ALPHARD</h3>
-                <p class="text-xs text-gray-500">2020 Model • White • 124,253 km</p>
-              </div>
-              <span class="bg-indigo-600 text-white px-2 py-1 rounded-full text-xs font-medium">Station Wagon</span>
-            </div>
-            
-            <!-- Specifications -->
-            <div class="space-y-1 mb-3">
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
-                <span>7 Seats</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
-                <span>5 Doors</span>
-              </div>
-              <div class="flex items-center gap-2 text-xs text-gray-600">
-                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
-                <span>2500cc Petrol</span>
-                <span class="text-gray-300">•</span>
-                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
-                <span>Automatic</span>
-              </div>
-            </div>
-            
-            <!-- Condition & Price -->
-            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
-              <div class="text-right">
-                <span class="text-lg font-black text-red">$23,800</span>
-                <span class="text-xs text-gray-500 block">ZMW528,000</span>
-              </div>
-            </div>
-            
-            <!-- Action Buttons -->
-            <div class="flex gap-2 mt-3">
-              <a href="vehicle-toyota-alphard-2020-white.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="eye" class="w-3 h-3"></i>
-                View Details
-              </a>
-              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
-                <i data-lucide="message-circle" class="w-3 h-3"></i>
-                WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Original Vehicle 42 - 2018 TOYOTA HILUX Pick-Up Double Cab BLACK (For Sale) -->
+        <!-- Vehicle 42 - 2018 TOYOTA HILUX Pick-Up Double Cab BLACK (For Sale) -->
         <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
              data-category="sale" 
              data-name="TOYOTA HILUX" 
@@ -4479,13 +3895,589 @@
           </div>
         </div>
 
+        <!-- Vehicle 39 - 2020 TOYOTA ALPHARD STATION WAGON WHITE (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="TOYOTA ALPHARD" 
+             data-type="STATION WAGON"
+             data-fuel="Petrol" 
+             data-transmission="Automatic" 
+             data-year="2020">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-56 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-toyota-alphard-2020-white.html'">
+            <img src="images/vehicles/Toyota-Alphard-White-1.jpg" alt="2020 TOYOTA ALPHARD WHITE" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">TOYOTA ALPHARD</h3>
+                <p class="text-xs text-gray-500">2020 Model • White • 124,253 km</p>
+              </div>
+              <span class="bg-indigo-600 text-white px-2 py-1 rounded-full text-xs font-medium">Station Wagon</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>7 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2500cc Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">$23,800</span>
+                <span class="text-xs text-gray-500 block">ZMW528,000</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-toyota-alphard-2020-white.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Vehicle 40 - 2021 TOYOTA HILUX Pick-Up Double Cab WHITE (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="TOYOTA HILUX" 
+             data-type="PICKUP TRUCKS"
+             data-fuel="Diesel" 
+             data-transmission="Automatic" 
+             data-year="2021">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-56 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-toyota-hilux-2021-white.html'">
+            <img src="images/vehicles/2021 TOYOTA HILUX SUV White-1.jpg" alt="2021 TOYOTA HILUX WHITE" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">TOYOTA HILUX</h3>
+                <p class="text-xs text-gray-500">2021 Model • White • 63,893 km</p>
+              </div>
+              <span class="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs font-semibold">Pickup Trucks</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>Double Cab</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2400cc Diesel</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Manual</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">$36,800</span>
+                <span class="text-xs text-gray-500 block">ZMW818,000</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-toyota-hilux-2021-white.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Vehicle 41 - 2021 TOYOTA HILUX Pick-Up Double Cab BRONZE (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="TOYOTA HILUX" 
+             data-type="PICKUP TRUCKS"
+             data-fuel="Diesel" 
+             data-transmission="Automatic" 
+             data-year="2021">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-56 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-toyota-hilux-2021-bronze.html'">
+            <img src="images/vehicles/Toyota-Hilux-Bronze-1.jpg" alt="2021 TOYOTA HILUX BRONZE" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">TOYOTA HILUX</h3>
+                <p class="text-xs text-gray-500">2021 Model • Bronze • 110,792 km</p>
+              </div>
+              <span class="bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs font-semibold">Pickup Trucks</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>Double Cab</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2400cc Diesel</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Manual</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">$36,800</span>
+                <span class="text-xs text-gray-500 block">ZMW818,000</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-toyota-hilux-2021-bronze.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Vehicle 42 - 2018 TOYOTA HILUX Pick-Up Double Cab BLACK (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="TOYOTA HILUX" 
+             data-type="PICKUP TRUCKS"
+             data-fuel="Diesel" 
+             data-transmission="Automatic" 
+             data-year="2018">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-56 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-toyota-hilux-2018-black.html'">
+            <img src="images/vehicles/2018 TOYOTA HILUX Pick-Up Double Cab Black-1.jpg" alt="2018 TOYOTA HILUX BLACK" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">TOYOTA HILUX</h3>
+                <p class="text-xs text-gray-500">2018 Model • Black • 99,321 km</p>
+              </div>
+              <span class="bg-orange-100 text-orange-700 px-2 py-1 rounded-full text-xs font-medium">Pickup Trucks</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>4 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2400cc Diesel</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Manual</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">$33,800</span>
+                <span class="text-xs text-gray-500 block">ZMW747,000</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-toyota-hilux-2018-black.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Vehicle 43 - 2016 LEXUS RX200T SUVs & Crossovers WHITE (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="LEXUS RX200T" 
+             data-type="SUV"
+             data-fuel="Petrol" 
+             data-transmission="Automatic" 
+             data-year="2016">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-56 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-lexus-rx200t-2016.html'">
+            <img src="images/vehicles/Lexus-RX 200t-1.jpg" alt="2016 LEXUS RX200T WHITE" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">LEXUS RX200T</h3>
+                <p class="text-xs text-gray-500">2016 Model • White • 137,341 km</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2000cc Turbo Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">$25,800</span>
+                <span class="text-xs text-gray-500 block">ZMW573,000</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-lexus-rx200t-2016.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Vehicle 43 - 2020 TOYOTA RAV 4 SUVs & Crossovers SILVER (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="TOYOTA RAV 4" 
+             data-type="SUV"
+             data-fuel="Petrol" 
+             data-transmission="Automatic" 
+             data-year="2020">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              FOR SALE
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-56 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-toyota-rav4-2020.html'">
+            <img src="images/vehicles/Honda-rav-4-1.jpg" alt="2020 TOYOTA RAV 4 SILVER" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">TOYOTA RAV 4</h3>
+                <p class="text-xs text-gray-500">2020 Model • Silver • 112,127 km</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>2500cc Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">$24,200</span>
+                <span class="text-xs text-gray-500 block">ZMW537,000</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-toyota-rav4-2020.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Vehicle 44 - 2016 LEXUS LX570 SUV GOLD (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="LEXUS LX570" 
+             data-type="SUV"
+             data-fuel="Petrol" 
+             data-transmission="Automatic" 
+             data-year="2016">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-red-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              SOLD
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-56 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-lexus-lx570-2016-gold.html'">
+            <img src="images/vehicles/Lexus-LX570-GOLD-1.jpg" alt="2016 LEXUS LX570 GOLD" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">LEXUS LX570</h3>
+                <p class="text-xs text-gray-500">2016 Model • Gold • 45,011 km</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>8 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>5700cc V8 Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">$68,800</span>
+                <span class="text-xs text-gray-500 block">ZMW1,528,000</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-lexus-lx570-2016-gold.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Vehicle 45 - 2016 LEXUS LX570 SUV BLACK (For Sale) -->
+        <div class="vehicle-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative" 
+             data-category="sale" 
+             data-name="LEXUS LX570" 
+             data-type="SUV"
+             data-fuel="Petrol" 
+             data-transmission="Automatic" 
+             data-year="2016">
+          <!-- Status Badge -->
+          <div class="absolute top-3 left-3 z-20">
+            <span class="bg-red-600 text-white px-3 py-1.5 rounded-full text-sm font-bold shadow-md flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3 h-3"></i>
+              SOLD
+            </span>
+          </div>
+          
+          <!-- Vehicle Image -->
+          <div class="relative h-56 overflow-hidden cursor-pointer"
+               onclick="window.location.href='vehicle-lexus-lx570-2016-black.html'">
+            <img src="images/vehicles/Lexus-LX570-BLACK-1.jpg" alt="2016 LEXUS LX570 BLACK" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+          
+          <div class="p-4">
+            <!-- Vehicle Header -->
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3 class="text-lg font-bold text-navy mb-1">LEXUS LX570</h3>
+                <p class="text-xs text-gray-500">2016 Model • Black • 82,071 km</p>
+              </div>
+              <span class="bg-blue-600 text-white px-2 py-1 rounded-full text-xs font-heading">SUVs & Crossovers</span>
+            </div>
+            
+            <!-- Specifications -->
+            <div class="space-y-1 mb-3">
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="users" class="w-3 h-3 text-gray-400"></i>
+                <span>8 Seats</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="car" class="w-3 h-3 text-gray-400"></i>
+                <span>5 Doors</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-gray-600">
+                <i data-lucide="zap" class="w-3 h-3 text-gray-400"></i>
+                <span>5700cc V8 Petrol</span>
+                <span class="text-gray-300">•</span>
+                <i data-lucide="settings" class="w-3 h-3 text-gray-400"></i>
+                <span>Automatic</span>
+              </div>
+            </div>
+            
+            <!-- Condition & Price -->
+            <div class="flex items-center justify-between pt-3 border-t border-gray-100">
+              <span class="text-xs text-gray-500 font-medium">Excellent Condition</span>
+              <div class="text-right">
+                <span class="text-lg font-black text-red">$60,800</span>
+                <span class="text-xs text-gray-500 block">ZMW1,350,000</span>
+              </div>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="flex gap-2 mt-3">
+              <a href="vehicle-lexus-lx570-2016-black.html" class="flex-1 bg-navy hover:bg-blue-900 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3 h-3"></i>
+                View Details
+              </a>
+              <a href="https://wa.me/260572213038" target="_blank" class="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg text-xs font-bold transition-colors flex items-center justify-center gap-1">
+                <i data-lucide="message-circle" class="w-3 h-3"></i>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
