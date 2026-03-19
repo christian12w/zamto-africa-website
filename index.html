@@ -1272,7 +1272,7 @@
           <!-- Vehicle Image -->
           <div class="relative h-56 overflow-hidden cursor-pointer"
                onclick="window.location.href='vehicle-toyota-land-cruiser-200-series-2020.html'">
-            <img src="images/vehicles/oyota Land Cruiser 200 Series URJ202-1.jpg" alt="2020 Toyota Land Cruiser 200 Series White SUV - Premium Japanese Imported Vehicle Zambia - Zamto Africa" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <img src="images/vehicles/Toyota Land Cruiser 200 Series URJ202-1.jpg" alt="2020 Toyota Land Cruiser 200 Series White SUV - Premium Japanese Imported Vehicle Zambia - Zamto Africa" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
           </div>
           
           <div class="p-4">
@@ -1345,7 +1345,7 @@
           <!-- Vehicle Image -->
           <div class="relative h-56 overflow-hidden cursor-pointer"
                onclick="window.location.href='vehicle-toyota-hilux-double-cab-2023.html'">
-            <img src="images/vehicles/oyota Hilux Double Cab (2023 Model Year)-1.jpg" alt="2023 Toyota Hilux Double Cab Black Pickup Truck - 4x4 Automatic - Japanese Imported Vehicle Zambia - Zamto Africa" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <img src="images/vehicles/Toyota Hilux Double Cab (2023 Model Year)-1.jpg" alt="2023 Toyota Hilux Double Cab Black Pickup Truck - 4x4 Automatic - Japanese Imported Vehicle Zambia - Zamto Africa" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" loading="lazy">
           </div>
           
           <div class="p-4">
@@ -5244,6 +5244,159 @@
       <i data-lucide="phone" class="w-5 h-5 sm:w-6 sm:h-6 relative z-10"></i>
     </a>
   </div>
+
+  <!-- Image Optimization Script -->
+  <script>
+    // Advanced Image Loading Optimization
+    class ImageOptimizer {
+      constructor() {
+        this.init();
+      }
+
+      init() {
+        // Add blur-up placeholder styles
+        this.addBlurStyles();
+        
+        // Optimize existing images
+        this.optimizeImages();
+        
+        // Setup intersection observer for lazy loading
+        this.setupIntersectionObserver();
+        
+        // Preload critical images
+        this.preloadCriticalImages();
+      }
+
+      addBlurStyles() {
+        const style = document.createElement('style');
+        style.textContent = `
+          .lazy-image {
+            filter: blur(5px);
+            transition: filter 0.3s ease-out;
+          }
+          .lazy-image.loaded {
+            filter: blur(0);
+          }
+          .image-placeholder {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+          }
+          @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+          }
+        `;
+        document.head.appendChild(style);
+      }
+
+      optimizeImages() {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+          // Add blur-up effect
+          img.classList.add('lazy-image');
+          
+          // Add placeholder background
+          if (!img.complete) {
+            img.classList.add('image-placeholder');
+          }
+
+          // Optimize image loading
+          img.addEventListener('load', () => {
+            img.classList.remove('image-placeholder');
+            img.classList.add('loaded');
+          });
+
+          // Add error handling
+          img.addEventListener('error', () => {
+            img.classList.remove('image-placeholder');
+            img.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjRjVGNUY1Ii8+CjxwYXRoIGQ9Ik0yMCAyNkMxNy43OTA5IDI2IDE2IDI0LjIwOTEgMTYgMjJDMTYgMTkuNzkwOSAxNy43OTA5IDE4IDIwIDE4QzIyLjIwOTEgMTggMjQgMTkuNzkwOSAyNCAyMkMyNCAyNC4yMDkxIDIyLjIwOTEgMjYgMjAgMjZaIiBmaWxsPSIjQ0NDQ0NDIi8+CjxwYXRoIGQ9Ik0yMCAxNEMxOC44OTU0IDE0IDE4IDEzLjEwNDYgMTggMTJDMTggMTAuODk1NCAxOC44OTU0IDEwIDIwIDEwQzIxLjEwNDYgMTAgMjIgMTAuODk1NCAyMiAxMkMyMiAxMy4xMDQ2IDIxLjEwNDYgMTQgMjAgMTRaIiBmaWxsPSIjQ0NDQ0NDIi8+Cjwvc3ZnPgo=';
+          });
+        });
+      }
+
+      setupIntersectionObserver() {
+        const imageObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              
+              // Load image with slight delay for smooth loading
+              setTimeout(() => {
+                if (img.dataset.src) {
+                  img.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                }
+              }, 100);
+              
+              imageObserver.unobserve(img);
+            }
+          });
+        }, {
+          rootMargin: '50px 0px',
+          threshold: 0.01
+        });
+
+        // Observe all lazy images
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+          imageObserver.observe(img);
+        });
+      }
+
+      preloadCriticalImages() {
+        // Preload first 3 vehicle images (above the fold)
+        const criticalImages = document.querySelectorAll('img[loading="lazy"]:nth-child(-n+3)');
+        criticalImages.forEach((img, index) => {
+          setTimeout(() => {
+            if (img.dataset.src) {
+              const tempImg = new Image();
+              tempImg.onload = () => {
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+              };
+              tempImg.src = img.dataset.src;
+            }
+          }, index * 200); // Stagger loading
+        });
+      }
+    }
+
+    // Initialize when DOM is ready
+    document.addEventListener('DOMContentLoaded', () => {
+      new ImageOptimizer();
+    });
+
+    // Add WebP support detection
+    function supportsWebP() {
+      return new Promise(resolve => {
+        const webP = new Image();
+        webP.onload = webP.onerror = () => {
+          resolve(webP.height === 2);
+        };
+        webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+      });
+    }
+
+    // Convert images to WebP if supported
+    supportsWebP().then(supported => {
+      if (supported) {
+        document.querySelectorAll('img').forEach(img => {
+          const src = img.src;
+          if (src.includes('.jpg') || src.includes('.jpeg') || src.includes('.png')) {
+            const webpSrc = src.replace(/\.(jpg|jpeg|png)$/, '.webp');
+            // Check if WebP version exists
+            fetch(webpSrc, { method: 'HEAD' })
+              .then(response => {
+                if (response.ok) {
+                  img.src = webpSrc;
+                }
+              })
+              .catch(() => {});
+          }
+        });
+      }
+    });
+  </script>
 
   <script>
     lucide.createIcons();
